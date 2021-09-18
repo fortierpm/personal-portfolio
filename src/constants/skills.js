@@ -1,4 +1,4 @@
-const skillList = {
+const skills = {
     frontend: [
         {
             name: "HTML",
@@ -81,17 +81,32 @@ const skillList = {
             ]
         },
         {
-            name: "Next.js",
-            description: "JavaScript development framework",
-            proficiency: 0.8,
+            name: "react-static",
+            description: "React.js static site generator",
+            proficiency: 0.7,
             subSkillList: [
+                {
+                    name: "react-static <Head>",
+                    proficiency: 0.9
+                }
+            ]
+        },
+        {
+            name: "Next.js",
+            description: "React.js development framework",
+            proficiency: 0.6,
+            subSkillList: [
+                {
+                    name: "CSS Modules",
+                    proficiency: 0.9,
+                },
+                {
+                    name: "'next/head' <Head>",
+                    proficiency: 0.9,
+                },
                 {
                     name: "SSG",
                     proficiency: 0.6,
-                },
-                {
-                    name: "Routing",
-                    proficiency: 0.8,
                 }
             ]
         },
@@ -220,8 +235,12 @@ const skillList = {
                     proficiency: 0.9,
                 },
                 {
-                    name: "SVG Export",
+                    name: "Smart selection",
                     proficiency: 0.9,
+                },
+                {
+                    name: "SVG Export",
+                    proficiency: 1,
                 }
             ]
         },
@@ -275,20 +294,7 @@ const skillList = {
             name: "Photoshop",
             description: "raster graphics editor",
             proficiency: 0.5,
-            subSkillList: [
-                {
-                    name: "Masks",
-                    proficiency: 1,
-                },
-                {
-                    name: "Post-processing",
-                    proficiency: 0.9,
-                },
-                {
-                    name: "Perspective manipulation",
-                    proficiency: 0.9
-                }
-            ]
+            subSkillList: []
         }
     ],
     mathTechnologies: [
@@ -315,4 +321,5 @@ const skillList = {
         },
     ]
 };
-export default skillList;
+
+export default skills;

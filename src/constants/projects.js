@@ -17,6 +17,20 @@ const projects = [
             ["CSS", "#skills"],
             ["JavaScript", "#skills"]
         ]
+    },
+    {
+        title: "Project 2",
+        date: "Sep 17, 2021",
+        thumb: thumb1,
+        authors: [
+            ["Peter Fortier", peterFortier, "https://google.com"],
+            ["Jacob Merrick", jacobMerrick, "https://google.com"]
+        ],
+        tags: [
+            ["HTML", "#skills"],
+            ["CSS", "#skills"],
+            ["JavaScript", "#skills"]
+        ]
     }
 ];
 export default projects;

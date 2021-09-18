@@ -1,3 +1,5 @@
+import React from "react";
+
 import logoImage from "../img/fortierpm-logo.svg";
 
 export default function TopNavbar() {

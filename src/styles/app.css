@@ -1,8 +1,21 @@
 .App {
-    min-height: 100vh;
-    padding: 0 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill-clickable {
+  cursor: pointer;
+}
+.skill-desc, .subskill-name {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.prof-guage-prim {
+  width: 16rem;
+}
+.prof-guage-sec {
+  width: 12rem;
+}
