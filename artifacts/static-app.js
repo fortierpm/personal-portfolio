@@ -117,6 +117,12 @@ module.exports = require("react");
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "static/author.fb64dfe1.jpg";
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -124,7 +130,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _utils = __webpack_require__(5);
+var _utils = __webpack_require__(6);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
@@ -137,13 +143,13 @@ var requireById = function requireById(id) {
 exports["default"] = requireById;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof = __webpack_require__(4);
+var _typeof = __webpack_require__(5);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -211,21 +217,21 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(9);
+var _propTypes = __webpack_require__(10);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(11);
+var _hoistNonReactStatics = __webpack_require__(12);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _context = __webpack_require__(10);
+var _context = __webpack_require__(11);
 
 var _context2 = _interopRequireDefault(_context);
 
-var _utils = __webpack_require__(5);
+var _utils = __webpack_require__(6);
 
 var _helpers = __webpack_require__(32);
 
@@ -614,95 +620,644 @@ function universal(asyncModule) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(28)(module)))
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(40);
-/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_app_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(22);
-/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_logo_png__WEBPACK_IMPORTED_MODULE_7__);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(0);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// EXTERNAL MODULE: external "react-static"
+var external_react_static_ = __webpack_require__(20);
+
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/fortierpm-logo.svg
+var fortierpm_logo = __webpack_require__(21);
+var fortierpm_logo_default = /*#__PURE__*/__webpack_require__.n(fortierpm_logo);
+
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/TopNavbar.js
 
 
+function TopNavbar() {
+  return /*#__PURE__*/external_react_default.a.createElement("header", {
+    className: "top-navbar"
+  }, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "header-logo"
+  }, /*#__PURE__*/external_react_default.a.createElement("img", {
+    className: "logo-image",
+    src: fortierpm_logo_default.a,
+    alt: "Logo"
+  })), /*#__PURE__*/external_react_default.a.createElement("nav", {
+    className: "navbar"
+  }, /*#__PURE__*/external_react_default.a.createElement("ul", {
+    className: "nav-list"
+  }, /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "nav-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#hero",
+    className: "nav-link"
+  }, "Home")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "nav-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#projects",
+    className: "nav-link"
+  }, "Projects")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "nav-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#skills",
+    className: "nav-link"
+  }, "Skills")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "nav-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#contact",
+    className: "nav-link"
+  }, "Contact")))));
+}
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProjectCard.js
 
 
+var ProjectCard_ProjectCard = function ProjectCard(_ref) {
+  var project = _ref.project,
+      year = _ref.year,
+      month = _ref.month,
+      day = _ref.day;
+  return /*#__PURE__*/external_react_default.a.createElement("article", {
+    className: "project-card"
+  }, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "card-title"
+  }, /*#__PURE__*/external_react_default.a.createElement("p", {
+    className: "card-date"
+  }, /*#__PURE__*/external_react_default.a.createElement("time", {
+    dateTime: "".concat(year, "/").concat(month, "/").concat(day)
+  }, project.date)), /*#__PURE__*/external_react_default.a.createElement("h3", null, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "#"
+  }, project.title))), /*#__PURE__*/external_react_default.a.createElement("img", {
+    className: "card-thumb",
+    src: project.thumb,
+    alt: "Project thumbnail",
+    width: 50,
+    height: 50
+  }), /*#__PURE__*/external_react_default.a.createElement("address", {
+    className: "card-authorship"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    className: "author1-avatar",
+    rel: "author",
+    href: project.authors[0][2]
+  }, /*#__PURE__*/external_react_default.a.createElement("img", {
+    className: "avatar-img",
+    src: project.authors[0][1],
+    alt: "",
+    width: 50,
+    height: 50
+  })), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "author-list"
+  }, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "author-prefix"
+  }, project.authors.length < 2 ? "Author" : "Authors"), project.authors.map(function (author) {
+    return /*#__PURE__*/external_react_default.a.createElement("a", {
+      className: "author-link",
+      rel: "author",
+      href: author[2],
+      key: author[0]
+    }, author[0], /*#__PURE__*/external_react_default.a.createElement("br", null));
+  }))), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "card-tags"
+  }, project.tags.map(function (tag) {
+    return /*#__PURE__*/external_react_default.a.createElement("a", {
+      className: "tag-link",
+      href: tag[1],
+      key: tag[0]
+    }, tag[0]);
+  })));
+};
+
+/* harmony default export */ var components_ProjectCard = (ProjectCard_ProjectCard);
+// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
+var slicedToArray_ = __webpack_require__(22);
+var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
+
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProfBar.js
 
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3___default()(this, result); }; }
+var ProfBar_ProfBar = function ProfBar(_ref) {
+  var _ref$tier = _ref.tier,
+      tier = _ref$tier === void 0 ? "primary" : _ref$tier,
+      proficiency = _ref.proficiency;
+  var level = "";
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+  switch (proficiency) {
+    case 1:
+      level = "Expert";
+      break;
 
+    case 0.9:
+      level = "Near Expert";
+      break;
 
+    case 0.8:
+      level = "Advanced";
+      break;
 
+    case 0.7:
+      level = "Advanced";
+      break;
 
+    case 0.6:
+      level = "Proficient";
+      break;
 
-var App = /*#__PURE__*/function (_Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2___default()(App, _Component);
+    case 0.5:
+      level = "Proficient";
+      break;
 
-  var _super = _createSuper(App);
+    case 0.4:
+      level = "Developing";
+      break;
 
-  function App() {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, App);
+    case 0.3:
+      level = "Beginner";
+      break;
 
-    return _super.apply(this, arguments);
+    default:
+      level = "Not specified";
   }
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(App, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: "App"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("header", {
-        className: "App-header"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        src: _logo_png__WEBPACK_IMPORTED_MODULE_7___default.a,
-        className: "App-logo",
-        alt: "logo"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", null, "Edit ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("code", null, "src/App.js"), " and save to reload."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", null, "Learn", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        className: "App-link",
-        href: "https://reactjs.org",
-        target: "_blank",
-        rel: "noopener noreferrer"
-      }, "React"), ' ', "and", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        className: "App-link",
-        href: "https://react-static.js.org",
-        target: "_blank",
-        rel: "noopener noreferrer"
-      }, "React Static"))));
-    }
-  }]);
+  return /*#__PURE__*/external_react_default.a.createElement("svg", {
+    className: "prof-guage ".concat(tier === "secondary" ? "prof-guage-sec" : "prof-guage-prim"),
+    viewBox: "0 0 1000 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    "aria-label": "Skill Level: ".concat(level)
+  }, /*#__PURE__*/external_react_default.a.createElement("rect", {
+    width: "1000",
+    height: "20",
+    rx: "10",
+    fill: "black"
+  }), /*#__PURE__*/external_react_default.a.createElement("mask", {
+    id: proficiency
+    /* required for creating unique stop ids */
+    ,
+    style: {
+      maskType: "alpha"
+    },
+    maskUnits: "userSpaceOnUse",
+    x: "0",
+    y: "0",
+    width: "1000",
+    height: "20"
+  }, /*#__PURE__*/external_react_default.a.createElement("rect", {
+    width: 1000 * proficiency,
+    height: "20",
+    fill: "#C994C4"
+  })), /*#__PURE__*/external_react_default.a.createElement("g", {
+    mask: "url(#".concat(proficiency, ")")
+  }, /*#__PURE__*/external_react_default.a.createElement("rect", {
+    width: "1000",
+    height: "20",
+    rx: "10",
+    fill: "url(#paint0_linear)"
+  })), /*#__PURE__*/external_react_default.a.createElement("defs", null, /*#__PURE__*/external_react_default.a.createElement("linearGradient", {
+    id: "paint0_linear",
+    x1: "0",
+    y1: "0",
+    x2: "1000",
+    y2: "0",
+    gradientUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/external_react_default.a.createElement("stop", {
+    stopColor: "#FF1F1F"
+  }), /*#__PURE__*/external_react_default.a.createElement("stop", {
+    offset: "1",
+    stopColor: "#760AFF"
+  }))));
+};
 
-  return App;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+/* harmony default export */ var components_ProfBar = (ProfBar_ProfBar);
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/SubSkillList.js
 
-/* harmony default export */ __webpack_exports__["a"] = (App);
+
+
+var SubSkillList_SubSkillList = function SubSkillList(_ref) {
+  var open = _ref.open,
+      skill = _ref.skill;
+  return /*#__PURE__*/external_react_default.a.createElement("ul", {
+    className: "subskill-list"
+  }, open ? skill.subSkillList.map(function (subSkill) {
+    return /*#__PURE__*/external_react_default.a.createElement("div", {
+      className: "subskill-body",
+      key: subSkill.name
+    }, /*#__PURE__*/external_react_default.a.createElement("p", {
+      className: "subskill-name"
+    }, subSkill.name), /*#__PURE__*/external_react_default.a.createElement(components_ProfBar, {
+      tier: "secondary",
+      proficiency: subSkill.proficiency
+    }));
+  }) : "");
+};
+
+/* harmony default export */ var components_SubSkillList = (SubSkillList_SubSkillList);
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/SkillList.js
+
+
+
+
+
+var SkillList_SkillList = function SkillList(_ref) {
+  var skills = _ref.skills,
+      skillGroup = _ref.skillGroup;
+  return /*#__PURE__*/external_react_default.a.createElement("ul", {
+    className: "skill-list"
+  }, skills[skillGroup].map(function (skill) {
+    var _useState = Object(external_react_["useState"])(false),
+        _useState2 = slicedToArray_default()(_useState, 2),
+        openState = _useState2[0],
+        setOpenState = _useState2[1];
+
+    var handleClick = function handleClick(e) {
+      setOpenState(!openState);
+    };
+
+    return /*#__PURE__*/external_react_default.a.createElement("div", {
+      onClick: handleClick,
+      className: "skill ".concat(skill.subSkillList.length > 0 ? "skill-clickable" : ""),
+      key: skill.name
+    }, /*#__PURE__*/external_react_default.a.createElement("div", {
+      className: "skill-body"
+    }, /*#__PURE__*/external_react_default.a.createElement("h4", {
+      className: "skill-name"
+    }, skill.name), /*#__PURE__*/external_react_default.a.createElement("p", {
+      className: "skill-desc"
+    }, skill.description), /*#__PURE__*/external_react_default.a.createElement(components_ProfBar, {
+      proficiency: skill.proficiency
+    })), /*#__PURE__*/external_react_default.a.createElement(components_SubSkillList, {
+      open: openState,
+      skill: skill
+    }));
+  }));
+};
+
+/* harmony default export */ var components_SkillList = (SkillList_SkillList);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/global.css
+var global = __webpack_require__(40);
+
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/app.css
+var app = __webpack_require__(41);
+
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/project-thumb.jpg
+var project_thumb = __webpack_require__(8);
+var project_thumb_default = /*#__PURE__*/__webpack_require__.n(project_thumb);
+
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/author.jpg
+var img_author = __webpack_require__(1);
+var author_default = /*#__PURE__*/__webpack_require__.n(img_author);
+
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/constants/projects.js
+
+
+
+var projects = [{
+  title: "Project 1",
+  date: "Sep 17, 2021",
+  thumb: project_thumb_default.a,
+  authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
+  tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+}, {
+  title: "Project 2",
+  date: "Sep 17, 2021",
+  thumb: project_thumb_default.a,
+  authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
+  tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+}];
+/* harmony default export */ var constants_projects = (projects);
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/constants/skills.js
+var skills_skills = {
+  frontend: [{
+    name: "HTML",
+    description: "markup language",
+    proficiency: 0.9,
+    // scale of (0-10) / 10
+    subSkillList: [{
+      name: "Semantic HTML",
+      proficiency: 0.9 // scale of (0-10) / 10
+
+    }, {
+      name: "Accessible HTML",
+      proficiency: 0.9
+    }, {
+      name: "XHTML",
+      proficiency: 0.8
+    }, {
+      name: "SVG",
+      proficiency: 1
+    }]
+  }, {
+    name: "CSS",
+    description: "style sheet language",
+    proficiency: 0.9,
+    subSkillList: [{
+      name: "Sass",
+      proficiency: 0.9
+    }, {
+      name: "Bootstrap",
+      proficiency: 0.7
+    }, {
+      name: "PostCSS",
+      proficiency: 0.5
+    }]
+  }, {
+    name: "JavaScript",
+    description: "OOP language",
+    proficiency: 0.9,
+    subSkillList: [{
+      name: "ES6",
+      proficiency: 0.9
+    }, {
+      name: "DOM",
+      proficiency: 0.9
+    }, {
+      name: "TypeScript",
+      proficiency: 0.7
+    }]
+  }, {
+    name: "React.js",
+    description: "JavaScript library",
+    proficiency: 0.8,
+    subSkillList: [{
+      name: "State",
+      proficiency: 0.8
+    }, {
+      name: "Functional Components and Props",
+      proficiency: 0.8
+    }, {
+      name: "Hooks",
+      proficiency: 0.8
+    }]
+  }, {
+    name: "react-static",
+    description: "React.js static site generator",
+    proficiency: 0.7,
+    subSkillList: [{
+      name: "react-static <Head>",
+      proficiency: 0.9
+    }]
+  }, {
+    name: "Next.js",
+    description: "React.js development framework",
+    proficiency: 0.6,
+    subSkillList: [{
+      name: "CSS Modules",
+      proficiency: 0.9
+    }, {
+      name: "'next/head' <Head>",
+      proficiency: 0.9
+    }, {
+      name: "SSG",
+      proficiency: 0.6
+    }]
+  }, {
+    name: "Three.js",
+    description: "JavaScript library",
+    proficiency: 0.6,
+    subSkillList: []
+  }, {
+    name: "GSAP",
+    description: "JavaScript library",
+    proficiency: 0.6,
+    subSkillList: []
+  }],
+  backend: [{
+    name: "Python",
+    description: "OOP language",
+    proficiency: 0.9,
+    subSkillList: [{
+      name: "Tkinter",
+      proficiency: 0.8
+    }, {
+      name: "Pillow",
+      proficiency: 0.8
+    }]
+  }, {
+    name: "Node.js",
+    description: "JavaScript runtime environment",
+    proficiency: 0.7,
+    subSkillList: [{
+      name: "npm - Node package manager",
+      proficiency: 0.7
+    }, {
+      name: "npx - npm package runner",
+      proficiency: 0.7
+    }]
+  }, {
+    name: "C++",
+    description: "JavaScript runtime environment",
+    proficiency: 0.6,
+    subSkillList: []
+  }],
+  integratedDevelopmentEnvironments: [{
+    name: "Visual Studio Code",
+    description: "IDE",
+    proficiency: 0.8,
+    subSkillList: [{
+      name: "Localhost",
+      proficiency: 1
+    }, {
+      name: "Snippets",
+      proficiency: 1
+    }, {
+      name: "Shortcuts",
+      proficiency: 0.8
+    }, {
+      name: "Source control with Git",
+      proficiency: 0.8
+    }, {
+      name: "Extensions, config.json's, and customization",
+      proficiency: 1
+    }]
+  }, {
+    name: "Atom",
+    description: "IDE",
+    proficiency: 0.7,
+    subSkillList: []
+  }],
+  versionControl: [{
+    name: "Github",
+    description: "internet hosted version control using Git",
+    proficiency: 0.8,
+    subSkillList: []
+  }, {
+    name: "Git",
+    description: "version control software",
+    proficiency: 0.6,
+    subSkillList: []
+  }],
+  webHosting: [{
+    name: "Github Pages",
+    description: "version control software",
+    proficiency: 0.9,
+    subSkillList: []
+  }, {
+    name: "Netlify",
+    description: "version control software",
+    proficiency: 0.9,
+    subSkillList: []
+  }],
+  prototyping: [{
+    name: "Figma",
+    description: "layout prototyping tool",
+    proficiency: 0.8,
+    subSkillList: [{
+      name: "Prototype smart animations",
+      proficiency: 0.9
+    }, {
+      name: "Smart selection",
+      proficiency: 0.9
+    }, {
+      name: "SVG Export",
+      proficiency: 1
+    }]
+  }, {
+    name: "Affinity Designer",
+    description: "vector graphics editor",
+    proficiency: 0.9,
+    subSkillList: [{
+      name: "Masks",
+      proficiency: 1
+    }, {
+      name: "Filters",
+      proficiency: 0.9
+    }, {
+      name: "SVG Export",
+      proficiency: 1
+    }]
+  }, {
+    name: "InDesign",
+    description: "vector graphics editor",
+    proficiency: 0.5,
+    subSkillList: []
+  }],
+  imageEditing: [{
+    name: "Affinity Photo",
+    description: "raster graphics editor",
+    proficiency: 0.9,
+    subSkillList: [{
+      name: "Masks",
+      proficiency: 1
+    }, {
+      name: "Post-processing",
+      proficiency: 0.9
+    }, {
+      name: "Perspective manipulation",
+      proficiency: 0.9
+    }]
+  }, {
+    name: "Photoshop",
+    description: "raster graphics editor",
+    proficiency: 0.5,
+    subSkillList: []
+  }],
+  mathTechnologies: [{
+    name: "Mathematica",
+    description: "mathematical computation program",
+    proficiency: 0.8,
+    subSkillList: [{
+      name: "Graphics and Plots",
+      proficiency: 0.8
+    }, {
+      name: "Loops",
+      proficiency: 1
+    }]
+  }, {
+    name: "LaTeX",
+    description: "document preparation system",
+    proficiency: 0.4,
+    subSkillList: []
+  }]
+};
+/* harmony default export */ var constants_skills = (skills_skills);
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/App.js
+
+ // components
+
+
+
+ // styles
+
+
+ // constants
+
+
+
+
+var App_App = function App() {
+  var skillKeys = Object.keys(constants_skills);
+  return /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "App"
+  }, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Head"], null, /*#__PURE__*/external_react_default.a.createElement("meta", {
+    charSet: "UTF-8"
+  }), /*#__PURE__*/external_react_default.a.createElement("title", null, "Peter Fortier"), /*#__PURE__*/external_react_default.a.createElement("meta", {
+    name: "description",
+    content: "Peter Fortier's personal portfolio webpage"
+  }), /*#__PURE__*/external_react_default.a.createElement("link", {
+    rel: "icon",
+    href: "./favicon.ico"
+  })), /*#__PURE__*/external_react_default.a.createElement(TopNavbar, null), /*#__PURE__*/external_react_default.a.createElement("main", null, /*#__PURE__*/external_react_default.a.createElement("section", {
+    id: "hero"
+  }), /*#__PURE__*/external_react_default.a.createElement("section", {
+    id: "projects"
+  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Projects"), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "project-cards-container"
+  }, constants_projects.map(function (project) {
+    var projectDate = new Date(project.date);
+    var year = projectDate.getFullYear();
+    var month = "".concat(projectDate.getMonth() + 1 < 10 ? "0".concat(projectDate.getMonth() + 1) : projectDate.getMonth() + 1); // add one because .getMonth starts counting months at 0 for Jan
+
+    var day = "".concat(projectDate.getDate() < 10 ? "0".concat(projectDate.getDate()) : projectDate.getDate());
+    return /*#__PURE__*/external_react_default.a.createElement(components_ProjectCard, {
+      project: project,
+      year: year,
+      month: month,
+      day: day,
+      key: project.title
+    });
+  }))), /*#__PURE__*/external_react_default.a.createElement("section", {
+    id: "skills"
+  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Skills"), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "skills-container"
+  }, skillKeys.map(function (skillGroup) {
+    var resultPt1 = skillGroup.replace(/([A-Z])/g, " $1");
+    var resultPt2 = resultPt1.charAt(0).toUpperCase() + resultPt1.slice(1);
+    return /*#__PURE__*/external_react_default.a.createElement("div", {
+      className: "skill-group",
+      key: skillGroup
+    }, /*#__PURE__*/external_react_default.a.createElement("h3", null, resultPt2), /*#__PURE__*/external_react_default.a.createElement(components_SkillList, {
+      skills: constants_skills,
+      skillGroup: skillGroup
+    }));
+  }))), /*#__PURE__*/external_react_default.a.createElement("section", {
+    id: "certificates"
+  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Certificates")), /*#__PURE__*/external_react_default.a.createElement("section", {
+    id: "contact"
+  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Contact"))), /*#__PURE__*/external_react_default.a.createElement("footer", null, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "copywrite"
+  }, "\xA92021 All Rights Reserved")));
+};
+
+/* harmony default export */ var src_App = __webpack_exports__["a"] = (App_App);
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/typeof");
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof2 = __webpack_require__(4);
+var _typeof2 = __webpack_require__(5);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -733,7 +1288,7 @@ var _react = __webpack_require__(0);
 
 var React = _interopRequireWildcard(_react);
 
-var _requireById = __webpack_require__(1);
+var _requireById = __webpack_require__(2);
 
 var _requireById2 = _interopRequireDefault(_requireById);
 
@@ -862,31 +1417,31 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 };
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/getPrototypeOf");
-
-/***/ }),
 /* 8 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\node_modules\\react-static\\lib\\browser");
+module.exports = __webpack_require__.p + "static/project-thumb.8f10ca46.jpg";
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports) {
 
-module.exports = require("prop-types");
+module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\node_modules\\react-static\\lib\\browser");
 
 /***/ }),
 /* 10 */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -913,76 +1468,155 @@ var ReportContext = _react2["default"].createContext({
 exports["default"] = ReportContext;
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\artifacts\\__react_static_root__\\node_modules\\react-static\\lib\\browser\\components\\Default404");
-
-/***/ }),
 /* 15 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("path");
+"use strict";
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return '@media ' + item[2] + '{' + content + '}';
+      } else {
+        return content;
+      }
+    }).join('');
+  }; // import a list of modules into the list
+
+
+  list.i = function (modules, mediaQuery) {
+    if (typeof modules === 'string') {
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    for (var i = 0; i < this.length; i++) {
+      var id = this[i][0];
+
+      if (id != null) {
+        alreadyImportedModules[id] = true;
+      }
+    }
+
+    for (i = 0; i < modules.length; i++) {
+      var item = modules[i]; // skip already imported module
+      // this implementation is not 100% perfect for weird media query combinations
+      // when a module is imported multiple times with different media queries.
+      // I hope this will never occur (Hey this way we have smaller bundles)
+
+      if (item[0] == null || !alreadyImportedModules[item[0]]) {
+        if (mediaQuery && !item[2]) {
+          item[2] = mediaQuery;
+        } else if (mediaQuery) {
+          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';
+        }
+
+        list.push(item);
+      }
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || '';
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+  return '/*# ' + data + ' */';
+}
 
 /***/ }),
 /* 16 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-plugin-universal-import/universalImport");
+module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\artifacts\\__react_static_root__\\node_modules\\react-static\\lib\\browser\\components\\Default404");
 
 /***/ }),
 /* 17 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-hot-loader");
+module.exports = require("path");
 
 /***/ }),
 /* 18 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/classCallCheck");
+module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
 /* 19 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/createClass");
+module.exports = require("react-hot-loader");
 
 /***/ }),
 /* 20 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/inherits");
+module.exports = require("react-static");
 
 /***/ }),
 /* 21 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/possibleConstructorReturn");
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMyAxMzgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyI+CiAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLC03MzUuODg0LC0xMzEwLjYxKSI+CiAgICAgICAgPHBhdGggaWQ9ImZvcnRpZXJwbUxvZ28iIGQ9Ik03NjAuNjMzLDEzMTAuNjFMODM4LjQxNCwxMzg4LjM5TDc3OC4zMSwxNDQ4LjQ5TDc3MS4yMzksMTQ0MS40Mkw3ODcuNjMxLDE0MjUuMDNMNzg2LjA1NCwxNDI0Ljk0Qzc3OS42ODEsMTQyNC4zNSA3NzMuODYsMTQyMS40MSA3NjguNTg5LDE0MTYuMTRDNzYzLjI4MiwxNDEwLjg0IDc2MC4zMTIsMTQwNS4wNSA3NTkuNjgsMTM5OC43OUw3NTkuNTUyLDEzOTYuNTRMNzQyLjk1NSwxNDEzLjE0TDczNS44ODQsMTQwNi4wN0w3NzQuNzc1LDEzNjcuMTdMNzM5LjQxOSwxMzMxLjgyTDc0Ni40OSwxMzI0Ljc1TDc4MS44NDYsMTM2MC4xTDc4OC45MTcsMTM1My4wM0w3NTMuNTYyLDEzMTcuNjhMNzYwLjYzMywxMzEwLjYxWk03ODEuODQ2LDEzNzQuMjVMNzc3Ljk2NSwxMzc4LjEzQzc3NS4wMSwxMzgxLjQ2IDc3My4wMTMsMTM4NC4zNiA3NzEuOTUxLDEzODYuNzlDNzcwLjQxNCwxMzkwLjMxIDc3MC4zMzYsMTM5My44NSA3NzAuODA0LDEzOTcuNTZDNzcxLjI2MiwxNDAxLjE5IDc3Mi43ODUsMTQwNC43OSA3NzYuMzQsMTQwOC4zNEM3NzkuNTc3LDE0MTEuNTcgNzgyLjk0NywxNDEzLjAxIDc4Ni43MjgsMTQxMy42NkM3OTAuNDE1LDE0MTQuMyA3OTMuODY5LDE0MTQuMTEgNzk3LjE3MSwxNDEyLjY4QzgwMC40NiwxNDExLjI2IDgxMC4xMywxNDAyLjUzIDgxMC4xMywxNDAyLjUzTDc4MS44NDYsMTM3NC4yNVpNNzk1Ljk4OCwxMzYwLjFMNzg4LjkxNywxMzY3LjE3TDgxNy4yMDEsMTM5NS40Nkw4MjQuMjcyLDEzODguMzlDODI0LjI3MiwxMzg4LjM5IDc5NS45ODgsMTM2MC4xIDc5NS45ODgsMTM2MC4xWiIvPgogICAgPC9nPgo8L3N2Zz4K"
 
 /***/ }),
 /* 22 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/logo.80dd36d9.png";
+module.exports = require("@babel/runtime/helpers/slicedToArray");
 
 /***/ }),
 /* 23 */
@@ -1003,7 +1637,7 @@ module.exports = __webpack_require__(33);
 
 var plugins = __webpack_require__(25)["default"];
 
-var _require = __webpack_require__(8),
+var _require = __webpack_require__(9),
     registerPlugins = _require.registerPlugins;
 
 registerPlugins(plugins);
@@ -1034,7 +1668,7 @@ var plugins = [{
 
 /* eslint-disable import/no-dynamic-require */
 
-var _require = __webpack_require__(8),
+var _require = __webpack_require__(9),
     registerTemplates = _require.registerTemplates;
 
 var _require2 = __webpack_require__(27),
@@ -1052,13 +1686,13 @@ if (false) {}
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "notFoundTemplate", function() { return notFoundTemplate; });
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
+/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
+/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_universal_component__WEBPACK_IMPORTED_MODULE_3__);
 
 
@@ -1078,7 +1712,7 @@ var universalOptions = {
 var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/node_modules/react-static/lib/browser/components/Default404",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 14, 7))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 16, 7))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1086,7 +1720,7 @@ var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/node_modules/react-static/lib/browser/components/Default404');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(14);
+    return /*require.resolve*/(16);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/node_modules/react-static/lib/browser/components/Default404";
@@ -1158,7 +1792,7 @@ var _extends = Object.assign || function (target) {
 
 exports["default"] = requireUniversalModule;
 
-var _utils = __webpack_require__(5);
+var _utils = __webpack_require__(6);
 
 var CHUNK_NAMES = exports.CHUNK_NAMES = new Set();
 var MODULE_IDS = exports.MODULE_IDS = new Set();
@@ -1346,10 +1980,10 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	".": 1,
-	"./": 1,
-	"./index": 1,
-	"./index.js": 1
+	".": 2,
+	"./": 2,
+	"./index": 2,
+	"./index.js": 2
 };
 
 
@@ -1379,7 +2013,7 @@ webpackContext.id = 30;
 "use strict";
 
 
-var _typeof = __webpack_require__(4);
+var _typeof = __webpack_require__(5);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1407,11 +2041,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(9);
+var _propTypes = __webpack_require__(10);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _context = __webpack_require__(10);
+var _context = __webpack_require__(11);
 
 var _context2 = _interopRequireDefault(_context);
 
@@ -1494,11 +2128,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.__handleAfter = exports.__update = undefined;
 
-var _hoistNonReactStatics = __webpack_require__(11);
+var _hoistNonReactStatics = __webpack_require__(12);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _index = __webpack_require__(2);
+var _index = __webpack_require__(3);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -1556,9 +2190,9 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(12);
+var _interopRequireDefault = __webpack_require__(13);
 
-var _interopRequireWildcard = __webpack_require__(13);
+var _interopRequireWildcard = __webpack_require__(14);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1605,9 +2239,9 @@ module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.j
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(13);
+var _interopRequireWildcard = __webpack_require__(14);
 
-var _interopRequireDefault = __webpack_require__(12);
+var _interopRequireDefault = __webpack_require__(13);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1656,11 +2290,11 @@ module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(17);
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
 
 
  // Your top level component
@@ -1722,9 +2356,13 @@ module.exports = function (originalModule) {
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(41)(false);
+exports = module.exports = __webpack_require__(15)(false);
+// Imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);", ""]);
+
 // Module
-exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.App {\n  text-align: center;\n}\n\n.App-logo {\n  -webkit-animation: App-logo-spin infinite 20s linear;\n          animation: App-logo-spin infinite 20s linear;\n  height: 40vmin;\n  pointer-events: none;\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@-webkit-keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n", ""]);
+exports.push([module.i, "*, *::before, *::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\", \"Open Sans\", \"Helvetica Neue\", sans-serif;\n}\n\nbody {\n  width: 100%;\n  overflow-x: hidden;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\na, button, input[type=\"submit\"] {\n  cursor: pointer;\n}\n\na {\n  text-decoration: none;\n}\n\nli {\n  list-style-type: none;\n}\n\naddress {\n  font-style: normal;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;\n}\n\n", ""]);
 
 
 
@@ -1732,92 +2370,11 @@ exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  font-family: -ap
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-
-module.exports = function (useSourceMap) {
-  var list = []; // return the list of modules as css string
-
-  list.toString = function toString() {
-    return this.map(function (item) {
-      var content = cssWithMappingToString(item, useSourceMap);
-
-      if (item[2]) {
-        return '@media ' + item[2] + '{' + content + '}';
-      } else {
-        return content;
-      }
-    }).join('');
-  }; // import a list of modules into the list
+exports = module.exports = __webpack_require__(15)(false);
+// Module
+exports.push([module.i, ".App {\r\n  min-height: 100vh;\r\n  padding: 0 0.5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n.skill-clickable {\r\n  cursor: pointer;\r\n}\r\n.skill-desc, .subskill-name {\r\n  text-transform: uppercase;\r\n  font-size: 0.8rem;\r\n}\r\n.prof-guage-prim {\r\n  width: 16rem;\r\n}\r\n.prof-guage-sec {\r\n  width: 12rem;\r\n}", ""]);
 
 
-  list.i = function (modules, mediaQuery) {
-    if (typeof modules === 'string') {
-      modules = [[null, modules, '']];
-    }
-
-    var alreadyImportedModules = {};
-
-    for (var i = 0; i < this.length; i++) {
-      var id = this[i][0];
-
-      if (id != null) {
-        alreadyImportedModules[id] = true;
-      }
-    }
-
-    for (i = 0; i < modules.length; i++) {
-      var item = modules[i]; // skip already imported module
-      // this implementation is not 100% perfect for weird media query combinations
-      // when a module is imported multiple times with different media queries.
-      // I hope this will never occur (Hey this way we have smaller bundles)
-
-      if (item[0] == null || !alreadyImportedModules[item[0]]) {
-        if (mediaQuery && !item[2]) {
-          item[2] = mediaQuery;
-        } else if (mediaQuery) {
-          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';
-        }
-
-        list.push(item);
-      }
-    }
-  };
-
-  return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-  var content = item[1] || '';
-  var cssMapping = item[3];
-
-  if (!cssMapping) {
-    return content;
-  }
-
-  if (useSourceMap && typeof btoa === 'function') {
-    var sourceMapping = toComment(cssMapping);
-    var sourceURLs = cssMapping.sources.map(function (source) {
-      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
-    });
-    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-  }
-
-  return [content].join('\n');
-} // Adapted from convert-source-map (MIT)
-
-
-function toComment(sourceMap) {
-  // eslint-disable-next-line no-undef
-  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-  return '/*# ' + data + ' */';
-}
 
 /***/ })
 /******/ ]);
