@@ -9,9 +9,13 @@
 .skill-clickable {
   cursor: pointer;
 }
-.skill-desc, .subskill-name {
+.skill-desc{
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+.subskill-name {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 .prof-guage-prim {
   width: 16rem;

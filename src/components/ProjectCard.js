@@ -4,7 +4,7 @@ const ProjectCard = ({ project, year, month, day }) => {
   return (
     <article className="project-card">
       <div className="card-title">
-        <p className="card-date"><time dateTime={`${year}/${month}/${day}`}>{project.date}</time></p>
+        <p className="card-date"><time dateTime={`${year}-${month}-${day}`}>{project.date}</time></p>
         <h3><a href="#">{project.title}</a></h3>
       </div>
       <img className="card-thumb" src={project.thumb} alt="Project thumbnail" width={50} height={50} />
