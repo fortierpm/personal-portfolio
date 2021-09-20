@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 23);
+/******/ 	return __webpack_require__(__webpack_require__.s = 26);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -121,6 +121,18 @@ module.exports = __webpack_require__.p + "static/author.fb64dfe1.jpg";
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/react-fontawesome");
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/project-thumb.8f10ca46.jpg";
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -130,11 +142,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _utils = __webpack_require__(6);
+var _utils = __webpack_require__(11);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(30)("" + id);
+    return __webpack_require__(33)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -143,13 +155,25 @@ var requireById = function requireById(id) {
 exports["default"] = requireById;
 
 /***/ }),
-/* 3 */
+/* 5 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/slicedToArray");
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-brands-svg-icons");
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof = __webpack_require__(5);
+var _typeof = __webpack_require__(10);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -188,7 +212,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(29);
+var _requireUniversalModule = __webpack_require__(32);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -203,7 +227,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(31);
+var _reportChunks = __webpack_require__(34);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -217,23 +241,23 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(10);
+var _propTypes = __webpack_require__(14);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(12);
+var _hoistNonReactStatics = __webpack_require__(16);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _context = __webpack_require__(11);
+var _context = __webpack_require__(15);
 
 var _context2 = _interopRequireDefault(_context);
 
-var _utils = __webpack_require__(6);
+var _utils = __webpack_require__(11);
 
-var _helpers = __webpack_require__(32);
+var _helpers = __webpack_require__(35);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -617,10 +641,16 @@ function universal(asyncModule) {
     return UniversalComponent;
   }(_react2["default"].Component), _class.contextType = _context2["default"], _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(28)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(31)(module)))
 
 /***/ }),
-/* 4 */
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-solid-svg-icons");
+
+/***/ }),
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -630,10 +660,10 @@ var external_react_ = __webpack_require__(0);
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
 // EXTERNAL MODULE: external "react-static"
-var external_react_static_ = __webpack_require__(20);
+var external_react_static_ = __webpack_require__(24);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/fortierpm-logo.svg
-var fortierpm_logo = __webpack_require__(21);
+var fortierpm_logo = __webpack_require__(25);
 var fortierpm_logo_default = /*#__PURE__*/__webpack_require__.n(fortierpm_logo);
 
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/TopNavbar.js
@@ -674,6 +704,65 @@ function TopNavbar() {
     className: "nav-link"
   }, "Contact")))));
 }
+// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
+var slicedToArray_ = __webpack_require__(5);
+var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
+
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/IDos.js
+
+
+var presentIndex = 0; // = first text
+
+var futureIndex = 1; // = upcoming text
+
+var iDo = "";
+var futureIDo = "";
+
+var IDos_IDos = function IDos(_ref) {
+  var idos = _ref.idos;
+
+  var _useState = Object(external_react_["useState"])(idos[0]),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      currentIDo = _useState2[0],
+      setCurrentIDo = _useState2[1];
+
+  var _useState3 = Object(external_react_["useState"])(idos[1]),
+      _useState4 = slicedToArray_default()(_useState3, 2),
+      nextIDo = _useState4[0],
+      setNextIDo = _useState4[1];
+
+  Object(external_react_["useEffect"])(function () {
+    var repeat = setInterval(function () {
+      if (presentIndex === idos.length) {
+        presentIndex = 0;
+      }
+
+      if (futureIndex === idos.length) {
+        futureIndex = 0;
+      }
+
+      iDo = idos[presentIndex];
+      futureIDo = idos[futureIndex];
+      presentIndex++;
+      futureIndex++;
+      setCurrentIDo(iDo);
+      setNextIDo(futureIDo);
+    }, 3000); // every 1 second
+
+    return function () {
+      return clearInterval(repeat);
+    };
+  }, [currentIDo]);
+  return /*#__PURE__*/external_react_default.a.createElement("p", {
+    className: "subheader"
+  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "I do "), /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "current-ido"
+  }, currentIDo), /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "next-ido"
+  }, nextIDo));
+};
+
+/* harmony default export */ var components_IDos = (IDos_IDos);
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProjectCard.js
 
 
@@ -689,7 +778,7 @@ var ProjectCard_ProjectCard = function ProjectCard(_ref) {
   }, /*#__PURE__*/external_react_default.a.createElement("p", {
     className: "card-date"
   }, /*#__PURE__*/external_react_default.a.createElement("time", {
-    dateTime: "".concat(year, "/").concat(month, "/").concat(day)
+    dateTime: "".concat(year, "-").concat(month, "-").concat(day)
   }, project.date)), /*#__PURE__*/external_react_default.a.createElement("h3", null, /*#__PURE__*/external_react_default.a.createElement("a", {
     href: "#"
   }, project.title))), /*#__PURE__*/external_react_default.a.createElement("img", {
@@ -733,10 +822,32 @@ var ProjectCard_ProjectCard = function ProjectCard(_ref) {
 };
 
 /* harmony default export */ var components_ProjectCard = (ProjectCard_ProjectCard);
-// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
-var slicedToArray_ = __webpack_require__(22);
-var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProjectCardStack.js
 
+
+
+var ProjectCardStack_ProjectCardStack = function ProjectCardStack(_ref) {
+  var projects = _ref.projects,
+      projectGroup = _ref.projectGroup;
+  return /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "card-stack"
+  }, projects[projectGroup].map(function (project) {
+    var projectDate = new Date(project.date);
+    var year = "".concat(projectDate.getFullYear());
+    var month = "".concat(projectDate.getMonth() + 1 < 10 ? "0".concat(projectDate.getMonth() + 1) : projectDate.getMonth() + 1); // add one because .getMonth starts counting months at 0 for Jan
+
+    var day = "".concat(projectDate.getDate() < 10 ? "0".concat(projectDate.getDate()) : projectDate.getDate());
+    return /*#__PURE__*/external_react_default.a.createElement(components_ProjectCard, {
+      project: project,
+      year: year,
+      month: month,
+      day: day,
+      key: project.title
+    });
+  }));
+};
+
+/* harmony default export */ var components_ProjectCardStack = (ProjectCardStack_ProjectCardStack);
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProfBar.js
 
 
@@ -746,41 +857,22 @@ var ProfBar_ProfBar = function ProfBar(_ref) {
       proficiency = _ref.proficiency;
   var level = "";
 
-  switch (proficiency) {
-    case 1:
-      level = "Expert";
-      break;
-
-    case 0.9:
-      level = "Near Expert";
-      break;
-
-    case 0.8:
-      level = "Advanced";
-      break;
-
-    case 0.7:
-      level = "Advanced";
-      break;
-
-    case 0.6:
-      level = "Proficient";
-      break;
-
-    case 0.5:
-      level = "Proficient";
-      break;
-
-    case 0.4:
-      level = "Developing";
-      break;
-
-    case 0.3:
-      level = "Beginner";
-      break;
-
-    default:
-      level = "Not specified";
+  if (proficiency === 1) {
+    level = "Expert";
+  } else if (proficiency >= 0.9) {
+    level = "Near Expert";
+  } else if (proficiency >= 0.7) {
+    level = "Advanced";
+  } else if (proficiency >= 0.5) {
+    level = "Proficient";
+  } else if (proficiency >= 0.4) {
+    level = "Competent";
+  } else if (proficiency >= 0.1) {
+    level = "Beginner";
+  } else if (proficiency >= 0) {
+    level = "Unskilled";
+  } else {
+    level = "Not Specified";
   }
 
   return /*#__PURE__*/external_react_default.a.createElement("svg", {
@@ -844,7 +936,7 @@ var SubSkillList_SubSkillList = function SubSkillList(_ref) {
     className: "subskill-list"
   }, open ? skill.subSkillList.map(function (subSkill) {
     return /*#__PURE__*/external_react_default.a.createElement("div", {
-      className: "subskill-body",
+      className: "subskill",
       key: subSkill.name
     }, /*#__PURE__*/external_react_default.a.createElement("p", {
       className: "subskill-name"
@@ -882,7 +974,7 @@ var SkillList_SkillList = function SkillList(_ref) {
       className: "skill ".concat(skill.subSkillList.length > 0 ? "skill-clickable" : ""),
       key: skill.name
     }, /*#__PURE__*/external_react_default.a.createElement("div", {
-      className: "skill-body"
+      className: "skill-main"
     }, /*#__PURE__*/external_react_default.a.createElement("h4", {
       className: "skill-name"
     }, skill.name), /*#__PURE__*/external_react_default.a.createElement("p", {
@@ -897,14 +989,76 @@ var SkillList_SkillList = function SkillList(_ref) {
 };
 
 /* harmony default export */ var components_SkillList = (SkillList_SkillList);
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/CertificateList.js
+
+
+var CertificateList_CertificateList = function CertificateList(_ref) {
+  var certificates = _ref.certificates;
+  return /*#__PURE__*/external_react_default.a.createElement("ul", {
+    className: "certificate-list"
+  }, certificates.map(function (certificate) {
+    var issuedDate = new Date(certificate.dateIssued);
+    var issuedYear = "".concat(issuedDate.getFullYear());
+    var issuedMonth = "".concat(issuedDate.getMonth() + 1 < 10 ? "0".concat(issuedDate.getMonth() + 1) : issuedDate.getMonth() + 1); // add one because .getMonth starts counting months at 0 for Jan
+
+    var expiresDate, expiresYear, expiresMonth;
+
+    if (certificate.expires) {
+      expiresDate = new Date(certificate.expires);
+      expiresYear = "".concat(expiresDate.getFullYear());
+      expiresMonth = "".concat(expiresDate.getMonth() + 1 < 10 ? "0".concat(expiresDate.getMonth() + 1) : expiresDate.getMonth() + 1); // add one because .getMonth starts counting months at 0 for Jan
+    }
+
+    return /*#__PURE__*/external_react_default.a.createElement("article", {
+      className: "certificate",
+      key: certificate.title
+    }, /*#__PURE__*/external_react_default.a.createElement("h3", {
+      className: "certificate-title"
+    }, certificate.title), /*#__PURE__*/external_react_default.a.createElement("p", {
+      className: "certificate-issuer"
+    }, /*#__PURE__*/external_react_default.a.createElement("a", {
+      href: certificate.orgLink,
+      target: "_blank"
+    }, certificate.issuingOrg)), /*#__PURE__*/external_react_default.a.createElement("p", {
+      className: "certificate-dateissued"
+    }, /*#__PURE__*/external_react_default.a.createElement("time", {
+      dateTime: "".concat(issuedYear, "-").concat(issuedMonth)
+    }, certificate.dateIssued)), /*#__PURE__*/external_react_default.a.createElement("p", {
+      className: "certificate-dateexpires"
+    }, certificate.expires ? /*#__PURE__*/external_react_default.a.createElement("time", {
+      dateTime: "".concat(issuedYear, "-").concat(issuedMonth)
+    }, certificate.expires) : "No Expiration Date"), /*#__PURE__*/external_react_default.a.createElement("p", {
+      className: "certificate-id"
+    }, certificate.credentialID ? "Credential ID ".concat(certificate.credentialID) : ""), /*#__PURE__*/external_react_default.a.createElement("p", {
+      className: "certificate-url"
+    }, /*#__PURE__*/external_react_default.a.createElement("a", {
+      href: certificate.credentialURL,
+      target: "_blank"
+    }, "See certificate")));
+  }));
+};
+
+/* harmony default export */ var components_CertificateList = (CertificateList_CertificateList);
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/global.css
-var global = __webpack_require__(40);
+var global = __webpack_require__(43);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/app.css
-var app = __webpack_require__(41);
+var app = __webpack_require__(44);
 
+// EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
+var react_fontawesome_ = __webpack_require__(2);
+
+// EXTERNAL MODULE: external "@fortawesome/free-solid-svg-icons"
+var free_solid_svg_icons_ = __webpack_require__(8);
+
+// EXTERNAL MODULE: external "@fortawesome/free-brands-svg-icons"
+var free_brands_svg_icons_ = __webpack_require__(6);
+
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/constants/idos.js
+var idos_idos = ["Web Design", "JavaScript", "React", "Graphics", "Image Editing"];
+/* harmony default export */ var constants_idos = (idos_idos);
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/project-thumb.jpg
-var project_thumb = __webpack_require__(8);
+var project_thumb = __webpack_require__(3);
 var project_thumb_default = /*#__PURE__*/__webpack_require__.n(project_thumb);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/author.jpg
@@ -915,23 +1069,46 @@ var author_default = /*#__PURE__*/__webpack_require__.n(img_author);
 
 
 
-var projects = [{
-  title: "Project 1",
-  date: "Sep 17, 2021",
-  thumb: project_thumb_default.a,
-  authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
-  tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
-}, {
-  title: "Project 2",
-  date: "Sep 17, 2021",
-  thumb: project_thumb_default.a,
-  authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
-  tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
-}];
-/* harmony default export */ var constants_projects = (projects);
+var projects_projects = {
+  "React": [{
+    title: "Project 1",
+    date: "Sep 17, 2021",
+    thumb: project_thumb_default.a,
+    authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+  }, {
+    title: "Project 2",
+    date: "Sep 17, 2021",
+    thumb: project_thumb_default.a,
+    authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+  }],
+  "Javascript": [{
+    title: "Project 3",
+    date: "Sep 17, 2021",
+    thumb: project_thumb_default.a,
+    authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+  }],
+  "CSS": [{
+    title: "Project 4",
+    date: "Sep 17, 2021",
+    thumb: project_thumb_default.a,
+    authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+  }],
+  "Python": [{
+    title: "Project 5",
+    date: "Sep 17, 2021",
+    thumb: project_thumb_default.a,
+    authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+  }]
+};
+/* harmony default export */ var constants_projects = (projects_projects);
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/constants/skills.js
 var skills_skills = {
-  frontend: [{
+  "Frontend": [{
     name: "HTML",
     description: "markup language",
     proficiency: 0.9,
@@ -977,6 +1154,9 @@ var skills_skills = {
     }, {
       name: "TypeScript",
       proficiency: 0.7
+    }, {
+      name: "jQuery",
+      proficiency: 0.5
     }]
   }, {
     name: "React.js",
@@ -1025,7 +1205,7 @@ var skills_skills = {
     proficiency: 0.6,
     subSkillList: []
   }],
-  backend: [{
+  "Backend": [{
     name: "Python",
     description: "OOP language",
     proficiency: 0.9,
@@ -1053,7 +1233,7 @@ var skills_skills = {
     proficiency: 0.6,
     subSkillList: []
   }],
-  integratedDevelopmentEnvironments: [{
+  "Integrated Development Environments": [{
     name: "Visual Studio Code",
     description: "IDE",
     proficiency: 0.8,
@@ -1079,7 +1259,7 @@ var skills_skills = {
     proficiency: 0.7,
     subSkillList: []
   }],
-  versionControl: [{
+  "Version Control": [{
     name: "Github",
     description: "internet hosted version control using Git",
     proficiency: 0.8,
@@ -1090,7 +1270,7 @@ var skills_skills = {
     proficiency: 0.6,
     subSkillList: []
   }],
-  webHosting: [{
+  "Web Hosting": [{
     name: "Github Pages",
     description: "version control software",
     proficiency: 0.9,
@@ -1101,7 +1281,7 @@ var skills_skills = {
     proficiency: 0.9,
     subSkillList: []
   }],
-  prototyping: [{
+  "Prototyping": [{
     name: "Figma",
     description: "layout prototyping tool",
     proficiency: 0.8,
@@ -1135,7 +1315,7 @@ var skills_skills = {
     proficiency: 0.5,
     subSkillList: []
   }],
-  imageEditing: [{
+  "Image Editing": [{
     name: "Affinity Photo",
     description: "raster graphics editor",
     proficiency: 0.9,
@@ -1155,7 +1335,7 @@ var skills_skills = {
     proficiency: 0.5,
     subSkillList: []
   }],
-  mathTechnologies: [{
+  "Math Technologies": [{
     name: "Mathematica",
     description: "mathematical computation program",
     proficiency: 0.8,
@@ -1174,13 +1354,32 @@ var skills_skills = {
   }]
 };
 /* harmony default export */ var constants_skills = (skills_skills);
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/constants/certificates.js
+var certificates_certificates = [{
+  title: "Responsive Web Design",
+  issuingOrg: "freeCodeCamp",
+  orgLink: "https://freecodecamp.org",
+  dateIssued: "November 2020",
+  // all dates need to be interpretable by new Date()
+  expires: false,
+  // if certificate expires use date string here
+  credentialID: "placeholder",
+  credentialURL: "https://freecodecamp.org/certification/fortierpm/responsive-web-design"
+}];
+/* harmony default export */ var constants_certificates = (certificates_certificates);
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/App.js
 
  // components
 
 
 
+
+
  // styles
+
+
+ // icons
+
 
 
  // constants
@@ -1188,8 +1387,11 @@ var skills_skills = {
 
 
 
+
+
 var App_App = function App() {
-  var skillKeys = Object.keys(constants_skills);
+  var projectGroupKeys = Object.keys(constants_projects);
+  var skillGroupKeys = Object.keys(constants_skills);
   return /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "App"
   }, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Head"], null, /*#__PURE__*/external_react_default.a.createElement("meta", {
@@ -1202,62 +1404,122 @@ var App_App = function App() {
     href: "./favicon.ico"
   })), /*#__PURE__*/external_react_default.a.createElement(TopNavbar, null), /*#__PURE__*/external_react_default.a.createElement("main", null, /*#__PURE__*/external_react_default.a.createElement("section", {
     id: "hero"
-  }), /*#__PURE__*/external_react_default.a.createElement("section", {
+  }, /*#__PURE__*/external_react_default.a.createElement("h1", {
+    className: "hero-header"
+  }, "Hey!", /*#__PURE__*/external_react_default.a.createElement("br", null), "I'm Peter."), /*#__PURE__*/external_react_default.a.createElement(components_IDos, {
+    idos: constants_idos
+  })), /*#__PURE__*/external_react_default.a.createElement("section", {
     id: "projects"
   }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Projects"), /*#__PURE__*/external_react_default.a.createElement("div", {
-    className: "project-cards-container"
-  }, constants_projects.map(function (project) {
-    var projectDate = new Date(project.date);
-    var year = projectDate.getFullYear();
-    var month = "".concat(projectDate.getMonth() + 1 < 10 ? "0".concat(projectDate.getMonth() + 1) : projectDate.getMonth() + 1); // add one because .getMonth starts counting months at 0 for Jan
-
-    var day = "".concat(projectDate.getDate() < 10 ? "0".concat(projectDate.getDate()) : projectDate.getDate());
-    return /*#__PURE__*/external_react_default.a.createElement(components_ProjectCard, {
-      project: project,
-      year: year,
-      month: month,
-      day: day,
-      key: project.title
-    });
+    className: "projects-container"
+  }, projectGroupKeys.map(function (projectGroup) {
+    return /*#__PURE__*/external_react_default.a.createElement("section", {
+      className: "project-group",
+      key: projectGroup
+    }, /*#__PURE__*/external_react_default.a.createElement("h3", null, projectGroup), /*#__PURE__*/external_react_default.a.createElement(components_ProjectCardStack, {
+      projects: constants_projects,
+      projectGroup: projectGroup
+    }));
   }))), /*#__PURE__*/external_react_default.a.createElement("section", {
     id: "skills"
   }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Skills"), /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "skills-container"
-  }, skillKeys.map(function (skillGroup) {
-    var resultPt1 = skillGroup.replace(/([A-Z])/g, " $1");
-    var resultPt2 = resultPt1.charAt(0).toUpperCase() + resultPt1.slice(1);
-    return /*#__PURE__*/external_react_default.a.createElement("div", {
+  }, skillGroupKeys.map(function (skillGroup) {
+    return /*#__PURE__*/external_react_default.a.createElement("section", {
       className: "skill-group",
       key: skillGroup
-    }, /*#__PURE__*/external_react_default.a.createElement("h3", null, resultPt2), /*#__PURE__*/external_react_default.a.createElement(components_SkillList, {
+    }, /*#__PURE__*/external_react_default.a.createElement("h3", null, skillGroup), /*#__PURE__*/external_react_default.a.createElement(components_SkillList, {
       skills: constants_skills,
       skillGroup: skillGroup
     }));
   }))), /*#__PURE__*/external_react_default.a.createElement("section", {
     id: "certificates"
-  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Certificates")), /*#__PURE__*/external_react_default.a.createElement("section", {
+  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Certificates"), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "certificates-container"
+  }, /*#__PURE__*/external_react_default.a.createElement(components_CertificateList, {
+    certificates: constants_certificates
+  }))), /*#__PURE__*/external_react_default.a.createElement("section", {
     id: "contact"
-  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Contact"))), /*#__PURE__*/external_react_default.a.createElement("footer", null, /*#__PURE__*/external_react_default.a.createElement("div", {
-    className: "copywrite"
-  }, "\xA92021 All Rights Reserved")));
+  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Contact"), /*#__PURE__*/external_react_default.a.createElement("section", {
+    className: "contact-info"
+  }, /*#__PURE__*/external_react_default.a.createElement("h3", null, "Info"), /*#__PURE__*/external_react_default.a.createElement("ul", {
+    className: "info-list"
+  }, /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "info-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "mailto:fortierpm@gmail.com"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    className: "icon",
+    icon: free_solid_svg_icons_["faPaperPlane"]
+  }), "fortierpm@gmail.com")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "info-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "mailto:fortie1@stolaf.edu"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    className: "icon",
+    icon: free_solid_svg_icons_["faUniversity"]
+  }), "fortie1@stolaf.edu")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "info-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "sms:+16128038780&body=Hi%20I%27m%20Peter!%20Send%20me%20a%20message."
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    className: "icon",
+    icon: free_solid_svg_icons_["faSms"]
+  }), "(612) 803-8780")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "info-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "https://www.linkedin.com/in/peter-fortier-71359221a/",
+    rel: "external noopener"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    className: "icon",
+    icon: free_brands_svg_icons_["faLinkedin"]
+  }), "LinkedIn")))), /*#__PURE__*/external_react_default.a.createElement("section", {
+    className: "contact-socials"
+  }, /*#__PURE__*/external_react_default.a.createElement("h3", null, "Socials"), /*#__PURE__*/external_react_default.a.createElement("ul", null, /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "info-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "https://www.instagram.com/petrfortier/",
+    rel: "external noopener"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    className: "icon",
+    icon: free_brands_svg_icons_["faInstagram"]
+  }), "Instagram")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "info-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "https://www.facebook.com/profile.php?id=100010683600528",
+    rel: "external noopener"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    className: "icon",
+    icon: free_brands_svg_icons_["faFacebook"]
+  }), "Facebook")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "info-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "https://twitter.com/fortier_pm",
+    rel: "external noopener"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    className: "icon",
+    icon: free_brands_svg_icons_["faTwitter"]
+  }), "Twitter")))))), /*#__PURE__*/external_react_default.a.createElement("footer", null, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "copyright"
+  }, "\xA9 2021 Peter Fortier. All Rights Reserved.")));
 };
 
 /* harmony default export */ var src_App = __webpack_exports__["a"] = (App_App);
 
 /***/ }),
-/* 5 */
+/* 10 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/typeof");
 
 /***/ }),
-/* 6 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof2 = __webpack_require__(5);
+var _typeof2 = __webpack_require__(10);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1288,7 +1550,7 @@ var _react = __webpack_require__(0);
 
 var React = _interopRequireWildcard(_react);
 
-var _requireById = __webpack_require__(2);
+var _requireById = __webpack_require__(4);
 
 var _requireById2 = _interopRequireDefault(_requireById);
 
@@ -1417,31 +1679,25 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 };
 
 /***/ }),
-/* 7 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/project-thumb.8f10ca46.jpg";
-
-/***/ }),
-/* 9 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\node_modules\\react-static\\lib\\browser");
 
 /***/ }),
-/* 10 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
 
 /***/ }),
-/* 11 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1468,25 +1724,25 @@ var ReportContext = _react2["default"].createContext({
 exports["default"] = ReportContext;
 
 /***/ }),
-/* 12 */
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 13 */
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 15 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1577,67 +1833,61 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 16 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\artifacts\\__react_static_root__\\node_modules\\react-static\\lib\\browser\\components\\Default404");
 
 /***/ }),
-/* 17 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = require("path");
 
 /***/ }),
-/* 18 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
-/* 19 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 20 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-static");
 
 /***/ }),
-/* 21 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMyAxMzgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyI+CiAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLC03MzUuODg0LC0xMzEwLjYxKSI+CiAgICAgICAgPHBhdGggaWQ9ImZvcnRpZXJwbUxvZ28iIGQ9Ik03NjAuNjMzLDEzMTAuNjFMODM4LjQxNCwxMzg4LjM5TDc3OC4zMSwxNDQ4LjQ5TDc3MS4yMzksMTQ0MS40Mkw3ODcuNjMxLDE0MjUuMDNMNzg2LjA1NCwxNDI0Ljk0Qzc3OS42ODEsMTQyNC4zNSA3NzMuODYsMTQyMS40MSA3NjguNTg5LDE0MTYuMTRDNzYzLjI4MiwxNDEwLjg0IDc2MC4zMTIsMTQwNS4wNSA3NTkuNjgsMTM5OC43OUw3NTkuNTUyLDEzOTYuNTRMNzQyLjk1NSwxNDEzLjE0TDczNS44ODQsMTQwNi4wN0w3NzQuNzc1LDEzNjcuMTdMNzM5LjQxOSwxMzMxLjgyTDc0Ni40OSwxMzI0Ljc1TDc4MS44NDYsMTM2MC4xTDc4OC45MTcsMTM1My4wM0w3NTMuNTYyLDEzMTcuNjhMNzYwLjYzMywxMzEwLjYxWk03ODEuODQ2LDEzNzQuMjVMNzc3Ljk2NSwxMzc4LjEzQzc3NS4wMSwxMzgxLjQ2IDc3My4wMTMsMTM4NC4zNiA3NzEuOTUxLDEzODYuNzlDNzcwLjQxNCwxMzkwLjMxIDc3MC4zMzYsMTM5My44NSA3NzAuODA0LDEzOTcuNTZDNzcxLjI2MiwxNDAxLjE5IDc3Mi43ODUsMTQwNC43OSA3NzYuMzQsMTQwOC4zNEM3NzkuNTc3LDE0MTEuNTcgNzgyLjk0NywxNDEzLjAxIDc4Ni43MjgsMTQxMy42NkM3OTAuNDE1LDE0MTQuMyA3OTMuODY5LDE0MTQuMTEgNzk3LjE3MSwxNDEyLjY4QzgwMC40NiwxNDExLjI2IDgxMC4xMywxNDAyLjUzIDgxMC4xMywxNDAyLjUzTDc4MS44NDYsMTM3NC4yNVpNNzk1Ljk4OCwxMzYwLjFMNzg4LjkxNywxMzY3LjE3TDgxNy4yMDEsMTM5NS40Nkw4MjQuMjcyLDEzODguMzlDODI0LjI3MiwxMzg4LjM5IDc5NS45ODgsMTM2MC4xIDc5NS45ODgsMTM2MC4xWiIvPgogICAgPC9nPgo8L3N2Zz4K"
 
 /***/ }),
-/* 22 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/slicedToArray");
-
-/***/ }),
-/* 23 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(24);
-__webpack_require__(26);
-module.exports = __webpack_require__(33);
+__webpack_require__(27);
+__webpack_require__(29);
+module.exports = __webpack_require__(36);
 
 
 /***/ }),
-/* 24 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(25)["default"];
+var plugins = __webpack_require__(28)["default"];
 
-var _require = __webpack_require__(9),
+var _require = __webpack_require__(13),
     registerPlugins = _require.registerPlugins;
 
 registerPlugins(plugins);
@@ -1645,7 +1895,7 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 25 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1661,17 +1911,17 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 26 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var _require = __webpack_require__(9),
+var _require = __webpack_require__(13),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(27),
+var _require2 = __webpack_require__(30),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -1680,19 +1930,19 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 27 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "notFoundTemplate", function() { return notFoundTemplate; });
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_universal_component__WEBPACK_IMPORTED_MODULE_3__);
 
 
@@ -1712,7 +1962,7 @@ var universalOptions = {
 var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "__react_static_root__/node_modules/react-static/lib/browser/components/Default404",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 16, 7))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 20, 7))]).then(function (proms) {
       return proms[0];
     });
   },
@@ -1720,7 +1970,7 @@ var t_0 = react_universal_component__WEBPACK_IMPORTED_MODULE_3___default()(babel
     return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '__react_static_root__/node_modules/react-static/lib/browser/components/Default404');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(16);
+    return /*require.resolve*/(20);
   },
   chunkName: function chunkName() {
     return "__react_static_root__/node_modules/react-static/lib/browser/components/Default404";
@@ -1736,7 +1986,7 @@ var notFoundTemplate = "__react_static_root__/node_modules/react-static/lib/brow
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 28 */
+/* 31 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -1765,7 +2015,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 29 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1792,7 +2042,7 @@ var _extends = Object.assign || function (target) {
 
 exports["default"] = requireUniversalModule;
 
-var _utils = __webpack_require__(6);
+var _utils = __webpack_require__(11);
 
 var CHUNK_NAMES = exports.CHUNK_NAMES = new Set();
 var MODULE_IDS = exports.MODULE_IDS = new Set();
@@ -1976,14 +2226,14 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 30 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	".": 2,
-	"./": 2,
-	"./index": 2,
-	"./index.js": 2
+	".": 4,
+	"./": 4,
+	"./index": 4,
+	"./index.js": 4
 };
 
 
@@ -2004,16 +2254,16 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 30;
+webpackContext.id = 33;
 
 /***/ }),
-/* 31 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof = __webpack_require__(5);
+var _typeof = __webpack_require__(10);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2041,11 +2291,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(10);
+var _propTypes = __webpack_require__(14);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _context = __webpack_require__(11);
+var _context = __webpack_require__(15);
 
 var _context2 = _interopRequireDefault(_context);
 
@@ -2117,7 +2367,7 @@ ReportChunks.propTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 32 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2128,11 +2378,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.__handleAfter = exports.__update = undefined;
 
-var _hoistNonReactStatics = __webpack_require__(12);
+var _hoistNonReactStatics = __webpack_require__(16);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _index = __webpack_require__(3);
+var _index = __webpack_require__(7);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -2184,15 +2434,15 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 33 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(13);
+var _interopRequireDefault = __webpack_require__(17);
 
-var _interopRequireWildcard = __webpack_require__(14);
+var _interopRequireWildcard = __webpack_require__(18);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2201,9 +2451,9 @@ exports["default"] = void 0;
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(34);
+var _useStaticInfo = __webpack_require__(37);
 
-var _Suspense = _interopRequireDefault(__webpack_require__(35));
+var _Suspense = _interopRequireDefault(__webpack_require__(38));
 /* eslint-disable import/no-dynamic-require */
 // Override the suspense module to be our own
 // This is expected to break when using preact
@@ -2214,7 +2464,7 @@ var _Suspense = _interopRequireDefault(__webpack_require__(35));
 React.Suspense = _Suspense["default"];
 React["default"].Suspense = _Suspense["default"];
 
-var App = __webpack_require__(38)["default"];
+var App = __webpack_require__(41)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -2227,30 +2477,30 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 34 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\node_modules\\react-static\\lib\\browser\\hooks\\useStaticInfo");
 
 /***/ }),
-/* 35 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(14);
+var _interopRequireWildcard = __webpack_require__(18);
 
-var _interopRequireDefault = __webpack_require__(13);
+var _interopRequireDefault = __webpack_require__(17);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(36));
+var _extends2 = _interopRequireDefault(__webpack_require__(39));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(37));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(40));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
@@ -2271,30 +2521,30 @@ var _default = Suspense;
 exports["default"] = _default;
 
 /***/ }),
-/* 36 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 37 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 38 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19);
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9);
 
 
  // Your top level component
@@ -2320,10 +2570,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(39)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(42)(module)))
 
 /***/ }),
-/* 39 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -2353,10 +2603,10 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 40 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(15)(false);
+exports = module.exports = __webpack_require__(19)(false);
 // Imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);", ""]);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);", ""]);
@@ -2367,12 +2617,12 @@ exports.push([module.i, "*, *::before, *::after {\n  margin: 0;\n  padding: 0;\n
 
 
 /***/ }),
-/* 41 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(15)(false);
+exports = module.exports = __webpack_require__(19)(false);
 // Module
-exports.push([module.i, ".App {\r\n  min-height: 100vh;\r\n  padding: 0 0.5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n.skill-clickable {\r\n  cursor: pointer;\r\n}\r\n.skill-desc, .subskill-name {\r\n  text-transform: uppercase;\r\n  font-size: 0.8rem;\r\n}\r\n.prof-guage-prim {\r\n  width: 16rem;\r\n}\r\n.prof-guage-sec {\r\n  width: 12rem;\r\n}", ""]);
+exports.push([module.i, ".App {\r\n  min-height: 100vh;\r\n  padding: 0 0.5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n.skill-clickable {\r\n  cursor: pointer;\r\n}\r\n.skill-desc{\r\n  text-transform: uppercase;\r\n  font-size: 0.8rem;\r\n}\r\n.subskill-name {\r\n  font-size: 0.8rem;\r\n  font-weight: bold;\r\n}\r\n.prof-guage-prim {\r\n  width: 16rem;\r\n}\r\n.prof-guage-sec {\r\n  width: 12rem;\r\n}", ""]);
 
 
 
