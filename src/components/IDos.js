@@ -1,43 +1,98 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
+import "../styles/idos.css";
 
 
-let presentIndex = 0; // = first text
-let futureIndex = 1; // = upcoming text
+const idos = ["Web Design", "JavaScript", "React", "Graphics", "Python", "SVGs", "Prototyping"];
+const idosLength = idos.length;
+let index = 3;
+let transIndex = 1; // value from 0-2 over var life
 
-let iDo = "";
-let futureIDo = "";
 
-const IDos = ({ idos }) => {
+const IDos = () => {
 
-  const [currentIDo, setCurrentIDo] = useState(idos[0]);
-  const [nextIDo, setNextIDo] = useState(idos[1]);
+  const [animCatch, setAnimCatch] = useState(true);
+  const [iDo1, setIDo1] = useState("JavaScript"); // correspond with position 0
+  const [iDo2, setIDo2] = useState("Web Design"); // correspond with position 1
+  const [iDo3, setIDo3] = useState("React"); // correspond with last position
+
+  const [prepDir, setPrepDir] = useState("down");
+  const [activeDir, setActiveDir] = useState("left");
+
+  const elemIDo1 = useRef(null);
+  const elemIDo2 = useRef(null);
+  const elemIDo3 = useRef(null);
 
   useEffect(() => {
     const repeat = setInterval(() => {
-      if (presentIndex === idos.length) {
-        presentIndex = 0;
+
+      setActiveDir(prepDir);
+      setPrepDir(() => {
+        let rand = Math.floor((Math.random() * 4) + 1);
+        let result = "";
+        switch (rand) {
+          case 1:
+            result = "down"; break;
+          case 2:
+            result = "up"; break;
+          case 3:
+            result = "right"; break;
+          default:
+            result = "left"; break;
+        }
+        return result;
+      });
+
+
+      if (index === idosLength) {
+        index = 0;
       }
-      if (futureIndex === idos.length) {
-        futureIndex = 0;
+
+      switch (transIndex) {
+
+        case 0: 
+          elemIDo1.current.style.animationName = `${activeDir}-1`;
+          elemIDo2.current.style.animationName = `${activeDir}-2`;
+          elemIDo3.current.style.animationName = `${prepDir}-prep`;
+          setIDo3(idos[index++]);
+          transIndex++;
+          break;
+
+        case 1:
+          elemIDo1.current.style.animationName = `${activeDir}-2`;
+          elemIDo2.current.style.animationName = `${prepDir}-prep`;
+          elemIDo3.current.style.animationName = `${activeDir}-1`;
+          setIDo2(idos[index++]);
+          transIndex++;
+          break;
+
+        case 2:
+          elemIDo1.current.style.animationName = `${prepDir}-prep`;
+          elemIDo2.current.style.animationName = `${activeDir}-1`;
+          elemIDo3.current.style.animationName = `${activeDir}-2`;
+          setIDo1(idos[index++]);
+          transIndex = 0;
+          break;
+
       }
 
-      iDo = idos[presentIndex];
-      futureIDo = idos[futureIndex];
+      setAnimCatch(!animCatch);
 
-      presentIndex++;
-      futureIndex++;
-
-      setCurrentIDo(iDo);
-      setNextIDo(futureIDo);
-    }, 3000); // every 1 second
+    }, 3000);
     return () => clearInterval(repeat);
-  }, [currentIDo]);
+
+  }, [animCatch]);
+
 
   return (
     <p className="subheader">
-      <span>I do </span>
-      <span className="current-ido">{currentIDo}</span>
-      <span className="next-ido">{nextIDo}</span>
+      <span className="subheader-text">I do </span>
+      <span className="subheader-text idobox">
+        <span className="screen-readable-label">{idos.join(", ")}</span> {/* also necessesary for correct animated display */}
+        <span ref={elemIDo1} className="ido1 ido" aria-hidden="true">{iDo1}</span>
+        <span ref={elemIDo2} className="ido2 ido" aria-hidden="true">{iDo2}</span>
+        <span ref={elemIDo3} className="ido3 ido" aria-hidden="true">{iDo3}</span>
+      </span>
     </p>
   );
 }

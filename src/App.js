@@ -19,7 +19,6 @@ import { faPaperPlane, faUniversity, faSms } from '@fortawesome/free-solid-svg-i
 import { faLinkedin, faInstagram, faFacebook, faTwitter} from '@fortawesome/free-brands-svg-icons';
 
 // constants
-import idos from "./constants/idos";
 import projects from "./constants/projects";
 import skills from "./constants/skills";
 import certificates from "./constants/certificates";
@@ -35,9 +34,15 @@ const App = () => {
 
       <Head>
         <meta charSet="UTF-8" />
-        <title>Peter Fortier</title>
+        <title>Peter Fortier - Web Portfolio</title>
         <meta name="description" content="Peter Fortier's personal portfolio webpage" />
-        <link rel="icon" href="./favicon.ico" />
+        <meta name="keywords" content="Peter Fortier, portfolio, web designer" />
+        <meta name="page-topic" content="Peter Fortier" />
+        <meta name="page-type" content="Portfolio" />
+        <meta name="audience" content="Everyone" /> {/* No inapropriate content */}
+        <meta name="copyright" content="Peter Fortier" />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" href="./favicon.ico?" type="image/x-icon" />
       </Head>
       
       <TopNavbar />
@@ -47,7 +52,7 @@ const App = () => {
         {/* HERO SECTION */}
         <section id="hero">
           <h1 className="hero-header">Hey!<br />I'm Peter.</h1>
-          <IDos idos={idos} />
+          <IDos />
         </section>
 
 

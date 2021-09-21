@@ -160,7 +160,7 @@ const skills = {
     },
     {
       name: "C++",
-      description: "JavaScript runtime environment",
+      description: "OOP language",
       proficiency: 0.6,
       subSkillList: []
     },
@@ -188,7 +188,7 @@ const skills = {
           proficiency: 0.8
         },
         {
-          name: "Extensions, config.json's, and customization",
+          name: "Extensions, .json's, customization",
           proficiency: 1
         },
       ]

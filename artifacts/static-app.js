@@ -123,16 +123,22 @@ module.exports = __webpack_require__.p + "static/author.fb64dfe1.jpg";
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = require("@fortawesome/react-fontawesome");
+module.exports = require("@babel/runtime/helpers/slicedToArray");
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/react-fontawesome");
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/project-thumb.8f10ca46.jpg";
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -153,12 +159,6 @@ var requireById = function requireById(id) {
 };
 
 exports["default"] = requireById;
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/slicedToArray");
 
 /***/ }),
 /* 6 */
@@ -241,17 +241,17 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(14);
+var _propTypes = __webpack_require__(15);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(16);
+var _hoistNonReactStatics = __webpack_require__(17);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _context = __webpack_require__(15);
+var _context = __webpack_require__(16);
 
 var _context2 = _interopRequireDefault(_context);
 
@@ -705,61 +705,143 @@ function TopNavbar() {
   }, "Contact")))));
 }
 // EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
-var slicedToArray_ = __webpack_require__(5);
+var slicedToArray_ = __webpack_require__(2);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
+
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/idos.css
+var idos = __webpack_require__(43);
 
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/IDos.js
 
 
-var presentIndex = 0; // = first text
 
-var futureIndex = 1; // = upcoming text
+var IDos_idos = ["Web Design", "JavaScript", "React", "Graphics", "Python", "SVGs", "Prototyping"];
+var idosLength = IDos_idos.length;
+var index = 3;
+var transIndex = 1; // value from 0-2 over var life
 
-var iDo = "";
-var futureIDo = "";
-
-var IDos_IDos = function IDos(_ref) {
-  var idos = _ref.idos;
-
-  var _useState = Object(external_react_["useState"])(idos[0]),
+var IDos_IDos = function IDos() {
+  var _useState = Object(external_react_["useState"])(true),
       _useState2 = slicedToArray_default()(_useState, 2),
-      currentIDo = _useState2[0],
-      setCurrentIDo = _useState2[1];
+      animCatch = _useState2[0],
+      setAnimCatch = _useState2[1];
 
-  var _useState3 = Object(external_react_["useState"])(idos[1]),
+  var _useState3 = Object(external_react_["useState"])("JavaScript"),
       _useState4 = slicedToArray_default()(_useState3, 2),
-      nextIDo = _useState4[0],
-      setNextIDo = _useState4[1];
+      iDo1 = _useState4[0],
+      setIDo1 = _useState4[1]; // correspond with position 0
 
+
+  var _useState5 = Object(external_react_["useState"])("Web Design"),
+      _useState6 = slicedToArray_default()(_useState5, 2),
+      iDo2 = _useState6[0],
+      setIDo2 = _useState6[1]; // correspond with position 1
+
+
+  var _useState7 = Object(external_react_["useState"])("React"),
+      _useState8 = slicedToArray_default()(_useState7, 2),
+      iDo3 = _useState8[0],
+      setIDo3 = _useState8[1]; // correspond with last position
+
+
+  var _useState9 = Object(external_react_["useState"])("down"),
+      _useState10 = slicedToArray_default()(_useState9, 2),
+      prepDir = _useState10[0],
+      setPrepDir = _useState10[1];
+
+  var _useState11 = Object(external_react_["useState"])("left"),
+      _useState12 = slicedToArray_default()(_useState11, 2),
+      activeDir = _useState12[0],
+      setActiveDir = _useState12[1];
+
+  var elemIDo1 = Object(external_react_["useRef"])(null);
+  var elemIDo2 = Object(external_react_["useRef"])(null);
+  var elemIDo3 = Object(external_react_["useRef"])(null);
   Object(external_react_["useEffect"])(function () {
     var repeat = setInterval(function () {
-      if (presentIndex === idos.length) {
-        presentIndex = 0;
+      setActiveDir(prepDir);
+      setPrepDir(function () {
+        var rand = Math.floor(Math.random() * 4 + 1);
+        var result = "";
+
+        switch (rand) {
+          case 1:
+            result = "down";
+            break;
+
+          case 2:
+            result = "up";
+            break;
+
+          case 3:
+            result = "right";
+            break;
+
+          default:
+            result = "left";
+            break;
+        }
+
+        return result;
+      });
+
+      if (index === idosLength) {
+        index = 0;
       }
 
-      if (futureIndex === idos.length) {
-        futureIndex = 0;
+      switch (transIndex) {
+        case 0:
+          elemIDo1.current.style.animationName = "".concat(activeDir, "-1");
+          elemIDo2.current.style.animationName = "".concat(activeDir, "-2");
+          elemIDo3.current.style.animationName = "".concat(prepDir, "-prep");
+          setIDo3(IDos_idos[index++]);
+          transIndex++;
+          break;
+
+        case 1:
+          elemIDo1.current.style.animationName = "".concat(activeDir, "-2");
+          elemIDo2.current.style.animationName = "".concat(prepDir, "-prep");
+          elemIDo3.current.style.animationName = "".concat(activeDir, "-1");
+          setIDo2(IDos_idos[index++]);
+          transIndex++;
+          break;
+
+        case 2:
+          elemIDo1.current.style.animationName = "".concat(prepDir, "-prep");
+          elemIDo2.current.style.animationName = "".concat(activeDir, "-1");
+          elemIDo3.current.style.animationName = "".concat(activeDir, "-2");
+          setIDo1(IDos_idos[index++]);
+          transIndex = 0;
+          break;
       }
 
-      iDo = idos[presentIndex];
-      futureIDo = idos[futureIndex];
-      presentIndex++;
-      futureIndex++;
-      setCurrentIDo(iDo);
-      setNextIDo(futureIDo);
-    }, 3000); // every 1 second
-
+      setAnimCatch(!animCatch);
+    }, 3000);
     return function () {
       return clearInterval(repeat);
     };
-  }, [currentIDo]);
+  }, [animCatch]);
   return /*#__PURE__*/external_react_default.a.createElement("p", {
     className: "subheader"
-  }, /*#__PURE__*/external_react_default.a.createElement("span", null, "I do "), /*#__PURE__*/external_react_default.a.createElement("span", {
-    className: "current-ido"
-  }, currentIDo), /*#__PURE__*/external_react_default.a.createElement("span", {
-    className: "next-ido"
-  }, nextIDo));
+  }, /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "subheader-text"
+  }, "I do "), /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "subheader-text idobox"
+  }, /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "screen-readable-label"
+  }, IDos_idos.join(", ")), " ", /*#__PURE__*/external_react_default.a.createElement("span", {
+    ref: elemIDo1,
+    className: "ido1 ido",
+    "aria-hidden": "true"
+  }, iDo1), /*#__PURE__*/external_react_default.a.createElement("span", {
+    ref: elemIDo2,
+    className: "ido2 ido",
+    "aria-hidden": "true"
+  }, iDo2), /*#__PURE__*/external_react_default.a.createElement("span", {
+    ref: elemIDo3,
+    className: "ido3 ido",
+    "aria-hidden": "true"
+  }, iDo3)));
 };
 
 /* harmony default export */ var components_IDos = (IDos_IDos);
@@ -1040,13 +1122,13 @@ var CertificateList_CertificateList = function CertificateList(_ref) {
 
 /* harmony default export */ var components_CertificateList = (CertificateList_CertificateList);
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/global.css
-var global = __webpack_require__(43);
+var global = __webpack_require__(44);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/app.css
-var app = __webpack_require__(44);
+var app = __webpack_require__(45);
 
 // EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
-var react_fontawesome_ = __webpack_require__(2);
+var react_fontawesome_ = __webpack_require__(3);
 
 // EXTERNAL MODULE: external "@fortawesome/free-solid-svg-icons"
 var free_solid_svg_icons_ = __webpack_require__(8);
@@ -1054,11 +1136,8 @@ var free_solid_svg_icons_ = __webpack_require__(8);
 // EXTERNAL MODULE: external "@fortawesome/free-brands-svg-icons"
 var free_brands_svg_icons_ = __webpack_require__(6);
 
-// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/constants/idos.js
-var idos_idos = ["Web Design", "JavaScript", "React", "Graphics", "Image Editing"];
-/* harmony default export */ var constants_idos = (idos_idos);
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/project-thumb.jpg
-var project_thumb = __webpack_require__(3);
+var project_thumb = __webpack_require__(4);
 var project_thumb_default = /*#__PURE__*/__webpack_require__.n(project_thumb);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/author.jpg
@@ -1099,6 +1178,13 @@ var projects_projects = {
   }],
   "Python": [{
     title: "Project 5",
+    date: "Sep 17, 2021",
+    thumb: project_thumb_default.a,
+    authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+  }],
+  "Vector Graphics": [{
+    title: "Project 6",
     date: "Sep 17, 2021",
     thumb: project_thumb_default.a,
     authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
@@ -1229,7 +1315,7 @@ var skills_skills = {
     }]
   }, {
     name: "C++",
-    description: "JavaScript runtime environment",
+    description: "OOP language",
     proficiency: 0.6,
     subSkillList: []
   }],
@@ -1250,7 +1336,7 @@ var skills_skills = {
       name: "Source control with Git",
       proficiency: 0.8
     }, {
-      name: "Extensions, config.json's, and customization",
+      name: "Extensions, .json's, customization",
       proficiency: 1
     }]
   }, {
@@ -1388,7 +1474,6 @@ var certificates_certificates = [{
 
 
 
-
 var App_App = function App() {
   var projectGroupKeys = Object.keys(constants_projects);
   var skillGroupKeys = Object.keys(constants_skills);
@@ -1396,19 +1481,36 @@ var App_App = function App() {
     className: "App"
   }, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Head"], null, /*#__PURE__*/external_react_default.a.createElement("meta", {
     charSet: "UTF-8"
-  }), /*#__PURE__*/external_react_default.a.createElement("title", null, "Peter Fortier"), /*#__PURE__*/external_react_default.a.createElement("meta", {
+  }), /*#__PURE__*/external_react_default.a.createElement("title", null, "Peter Fortier - Web Portfolio"), /*#__PURE__*/external_react_default.a.createElement("meta", {
     name: "description",
     content: "Peter Fortier's personal portfolio webpage"
+  }), /*#__PURE__*/external_react_default.a.createElement("meta", {
+    name: "keywords",
+    content: "Peter Fortier, portfolio, web designer"
+  }), /*#__PURE__*/external_react_default.a.createElement("meta", {
+    name: "page-topic",
+    content: "Peter Fortier"
+  }), /*#__PURE__*/external_react_default.a.createElement("meta", {
+    name: "page-type",
+    content: "Portfolio"
+  }), /*#__PURE__*/external_react_default.a.createElement("meta", {
+    name: "audience",
+    content: "Everyone"
+  }), " ", /*#__PURE__*/external_react_default.a.createElement("meta", {
+    name: "copyright",
+    content: "Peter Fortier"
+  }), /*#__PURE__*/external_react_default.a.createElement("meta", {
+    name: "robots",
+    content: "index, follow"
   }), /*#__PURE__*/external_react_default.a.createElement("link", {
     rel: "icon",
-    href: "./favicon.ico"
+    href: "./favicon.ico?",
+    type: "image/x-icon"
   })), /*#__PURE__*/external_react_default.a.createElement(TopNavbar, null), /*#__PURE__*/external_react_default.a.createElement("main", null, /*#__PURE__*/external_react_default.a.createElement("section", {
     id: "hero"
   }, /*#__PURE__*/external_react_default.a.createElement("h1", {
     className: "hero-header"
-  }, "Hey!", /*#__PURE__*/external_react_default.a.createElement("br", null), "I'm Peter."), /*#__PURE__*/external_react_default.a.createElement(components_IDos, {
-    idos: constants_idos
-  })), /*#__PURE__*/external_react_default.a.createElement("section", {
+  }, "Hey!", /*#__PURE__*/external_react_default.a.createElement("br", null), "I'm Peter."), /*#__PURE__*/external_react_default.a.createElement(components_IDos, null)), /*#__PURE__*/external_react_default.a.createElement("section", {
     id: "projects"
   }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Projects"), /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "projects-container"
@@ -1550,7 +1652,7 @@ var _react = __webpack_require__(0);
 
 var React = _interopRequireWildcard(_react);
 
-var _requireById = __webpack_require__(4);
+var _requireById = __webpack_require__(5);
 
 var _requireById2 = _interopRequireDefault(_requireById);
 
@@ -1680,69 +1782,6 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 
 /***/ }),
 /* 12 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-dom");
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\node_modules\\react-static\\lib\\browser");
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = require("prop-types");
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-
-var ReportContext = _react2["default"].createContext({
-  report: function report() {}
-});
-
-exports["default"] = ReportContext;
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
-module.exports = require("hoist-non-react-statics");
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/interopRequireDefault");
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
-
-/***/ }),
-/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1833,6 +1872,69 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-dom");
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\node_modules\\react-static\\lib\\browser");
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+var ReportContext = _react2["default"].createContext({
+  report: function report() {}
+});
+
+exports["default"] = ReportContext;
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports) {
+
+module.exports = require("hoist-non-react-statics");
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/interopRequireDefault");
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
+
+/***/ }),
 /* 20 */
 /***/ (function(module, exports) {
 
@@ -1866,7 +1968,7 @@ module.exports = require("react-static");
 /* 25 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMyAxMzgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyI+CiAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLC03MzUuODg0LC0xMzEwLjYxKSI+CiAgICAgICAgPHBhdGggaWQ9ImZvcnRpZXJwbUxvZ28iIGQ9Ik03NjAuNjMzLDEzMTAuNjFMODM4LjQxNCwxMzg4LjM5TDc3OC4zMSwxNDQ4LjQ5TDc3MS4yMzksMTQ0MS40Mkw3ODcuNjMxLDE0MjUuMDNMNzg2LjA1NCwxNDI0Ljk0Qzc3OS42ODEsMTQyNC4zNSA3NzMuODYsMTQyMS40MSA3NjguNTg5LDE0MTYuMTRDNzYzLjI4MiwxNDEwLjg0IDc2MC4zMTIsMTQwNS4wNSA3NTkuNjgsMTM5OC43OUw3NTkuNTUyLDEzOTYuNTRMNzQyLjk1NSwxNDEzLjE0TDczNS44ODQsMTQwNi4wN0w3NzQuNzc1LDEzNjcuMTdMNzM5LjQxOSwxMzMxLjgyTDc0Ni40OSwxMzI0Ljc1TDc4MS44NDYsMTM2MC4xTDc4OC45MTcsMTM1My4wM0w3NTMuNTYyLDEzMTcuNjhMNzYwLjYzMywxMzEwLjYxWk03ODEuODQ2LDEzNzQuMjVMNzc3Ljk2NSwxMzc4LjEzQzc3NS4wMSwxMzgxLjQ2IDc3My4wMTMsMTM4NC4zNiA3NzEuOTUxLDEzODYuNzlDNzcwLjQxNCwxMzkwLjMxIDc3MC4zMzYsMTM5My44NSA3NzAuODA0LDEzOTcuNTZDNzcxLjI2MiwxNDAxLjE5IDc3Mi43ODUsMTQwNC43OSA3NzYuMzQsMTQwOC4zNEM3NzkuNTc3LDE0MTEuNTcgNzgyLjk0NywxNDEzLjAxIDc4Ni43MjgsMTQxMy42NkM3OTAuNDE1LDE0MTQuMyA3OTMuODY5LDE0MTQuMTEgNzk3LjE3MSwxNDEyLjY4QzgwMC40NiwxNDExLjI2IDgxMC4xMywxNDAyLjUzIDgxMC4xMywxNDAyLjUzTDc4MS44NDYsMTM3NC4yNVpNNzk1Ljk4OCwxMzYwLjFMNzg4LjkxNywxMzY3LjE3TDgxNy4yMDEsMTM5NS40Nkw4MjQuMjcyLDEzODguMzlDODI0LjI3MiwxMzg4LjM5IDc5NS45ODgsMTM2MC4xIDc5NS45ODgsMTM2MC4xWiIvPgogICAgPC9nPgo8L3N2Zz4K"
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMyAxMzgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGw6d2hpdGU7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij4KICAgIDxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTczNS44ODQsLTEzMTAuNjEpIj4KICAgICAgICA8cGF0aCBpZD0iZm9ydGllcnBtTG9nbyIgZD0iTTc2MC42MzMsMTMxMC42MUw4MzguNDE0LDEzODguMzlMNzc4LjMxLDE0NDguNDlMNzcxLjIzOSwxNDQxLjQyTDc4Ny42MzEsMTQyNS4wM0w3ODYuMDU0LDE0MjQuOTRDNzc5LjY4MSwxNDI0LjM1IDc3My44NiwxNDIxLjQxIDc2OC41ODksMTQxNi4xNEM3NjMuMjgyLDE0MTAuODQgNzYwLjMxMiwxNDA1LjA1IDc1OS42OCwxMzk4Ljc5TDc1OS41NTIsMTM5Ni41NEw3NDIuOTU1LDE0MTMuMTRMNzM1Ljg4NCwxNDA2LjA3TDc3NC43NzUsMTM2Ny4xN0w3MzkuNDE5LDEzMzEuODJMNzQ2LjQ5LDEzMjQuNzVMNzgxLjg0NiwxMzYwLjFMNzg4LjkxNywxMzUzLjAzTDc1My41NjIsMTMxNy42OEw3NjAuNjMzLDEzMTAuNjFaTTc4MS44NDYsMTM3NC4yNUw3NzcuOTY1LDEzNzguMTNDNzc1LjAxLDEzODEuNDYgNzczLjAxMywxMzg0LjM2IDc3MS45NTEsMTM4Ni43OUM3NzAuNDE0LDEzOTAuMzEgNzcwLjMzNiwxMzkzLjg1IDc3MC44MDQsMTM5Ny41NkM3NzEuMjYyLDE0MDEuMTkgNzcyLjc4NSwxNDA0Ljc5IDc3Ni4zNCwxNDA4LjM0Qzc3OS41NzcsMTQxMS41NyA3ODIuOTQ3LDE0MTMuMDEgNzg2LjcyOCwxNDEzLjY2Qzc5MC40MTUsMTQxNC4zIDc5My44NjksMTQxNC4xMSA3OTcuMTcxLDE0MTIuNjhDODAwLjQ2LDE0MTEuMjYgODEwLjEzLDE0MDIuNTMgODEwLjEzLDE0MDIuNTNMNzgxLjg0NiwxMzc0LjI1Wk03OTUuOTg4LDEzNjAuMUw3ODguOTE3LDEzNjcuMTdMODE3LjIwMSwxMzk1LjQ2TDgyNC4yNzIsMTM4OC4zOUM4MjQuMjcyLDEzODguMzkgNzk1Ljk4OCwxMzYwLjEgNzk1Ljk4OCwxMzYwLjFaIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
 
 /***/ }),
 /* 26 */
@@ -1887,7 +1989,7 @@ module.exports = __webpack_require__(36);
 
 var plugins = __webpack_require__(28)["default"];
 
-var _require = __webpack_require__(13),
+var _require = __webpack_require__(14),
     registerPlugins = _require.registerPlugins;
 
 registerPlugins(plugins);
@@ -1918,7 +2020,7 @@ var plugins = [{
 
 /* eslint-disable import/no-dynamic-require */
 
-var _require = __webpack_require__(13),
+var _require = __webpack_require__(14),
     registerTemplates = _require.registerTemplates;
 
 var _require2 = __webpack_require__(30),
@@ -2230,10 +2332,10 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	".": 4,
-	"./": 4,
-	"./index": 4,
-	"./index.js": 4
+	".": 5,
+	"./": 5,
+	"./index": 5,
+	"./index.js": 5
 };
 
 
@@ -2291,11 +2393,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(14);
+var _propTypes = __webpack_require__(15);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _context = __webpack_require__(15);
+var _context = __webpack_require__(16);
 
 var _context2 = _interopRequireDefault(_context);
 
@@ -2378,7 +2480,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.__handleAfter = exports.__update = undefined;
 
-var _hoistNonReactStatics = __webpack_require__(16);
+var _hoistNonReactStatics = __webpack_require__(17);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -2440,9 +2542,9 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(17);
+var _interopRequireDefault = __webpack_require__(18);
 
-var _interopRequireWildcard = __webpack_require__(18);
+var _interopRequireWildcard = __webpack_require__(19);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2489,9 +2591,9 @@ module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.j
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(18);
+var _interopRequireWildcard = __webpack_require__(19);
 
-var _interopRequireDefault = __webpack_require__(17);
+var _interopRequireDefault = __webpack_require__(18);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -2540,7 +2642,7 @@ module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
@@ -2606,13 +2708,9 @@ module.exports = function (originalModule) {
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(19)(false);
-// Imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);", ""]);
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);", ""]);
-
+exports = module.exports = __webpack_require__(12)(false);
 // Module
-exports.push([module.i, "*, *::before, *::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\", \"Open Sans\", \"Helvetica Neue\", sans-serif;\n}\n\nbody {\n  width: 100%;\n  overflow-x: hidden;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\na, button, input[type=\"submit\"] {\n  cursor: pointer;\n}\n\na {\n  text-decoration: none;\n}\n\nli {\n  list-style-type: none;\n}\n\naddress {\n  font-style: normal;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;\n}\n\n", ""]);
+exports.push([module.i, ".subheader {\n  display: block;\n}\n\n.subheader-text {\n  display: block;\n}\n\n.idobox {\n  position: relative;\n  overflow: hidden;\n  display: block;\n}\n\n.screen-readable-label {\n  color: #0000;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  display: block;\n}\n\n.ido {\n  opacity: 0;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: block;\n}\n\n.ido1 {\n  -webkit-animation: down-1 3s ease 1 forwards;\n          animation: down-1 3s ease 1 forwards;\n}\n\n.ido2 {\n  -webkit-animation: down-2 3s ease 1 forwards;\n          animation: down-2 3s ease 1 forwards;\n}\n\n.ido3 {\n  -webkit-animation: 3s ease 1 forwards;\n          animation: 3s ease 1 forwards;\n}\n\n@-webkit-keyframes down-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes down-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes down-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n}\n\n@keyframes down-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n}\n\n@-webkit-keyframes down-prep {\n  to {\n    transform: translate(0%, 100%);\n  }\n}\n\n@keyframes down-prep {\n  to {\n    transform: translate(0%, 100%);\n  }\n}\n\n@-webkit-keyframes up-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes up-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes up-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n}\n\n@keyframes up-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n}\n\n@-webkit-keyframes up-prep {\n  to {\n    transform: translate(0%, -100%);\n  }\n}\n\n@keyframes up-prep {\n  to {\n    transform: translate(0%, -100%);\n  }\n}\n\n@-webkit-keyframes right-1 {\n  from {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes right-1 {\n  from {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes right-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n}\n\n@keyframes right-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n}\n\n@-webkit-keyframes right-prep {\n  to {\n    transform: translate(-100%, 0%);\n  }\n}\n\n@keyframes right-prep {\n  to {\n    transform: translate(-100%, 0%);\n  }\n}\n\n@-webkit-keyframes left-1 {\n  from {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes left-1 {\n  from {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes left-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n}\n\n@keyframes left-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n}\n\n@-webkit-keyframes left-prep {\n  to {\n    transform: translate(100%, 0%);\n  }\n}\n\n@keyframes left-prep {\n  to {\n    transform: translate(100%, 0%);\n  }\n}", ""]);
 
 
 
@@ -2620,7 +2718,21 @@ exports.push([module.i, "*, *::before, *::after {\n  margin: 0;\n  padding: 0;\n
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(19)(false);
+exports = module.exports = __webpack_require__(12)(false);
+// Imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);", ""]);
+
+// Module
+exports.push([module.i, "*, *::before, *::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\", \"Open Sans\", \"Helvetica Neue\", sans-serif;\n}\n\nbody {\n  width: 100%;\n  overflow-x: hidden;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  color: #e2e2e2;\n  background: rgb(23, 22, 34);\n}\n\na, button, input[type=\"submit\"] {\n  cursor: pointer;\n}\n\na {\n  text-decoration: none;\n  color: #bcb6dd;\n}\n\nli {\n  list-style-type: none;\n}\n\naddress {\n  font-style: normal;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;\n}\n\n", ""]);
+
+
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(12)(false);
 // Module
 exports.push([module.i, ".App {\r\n  min-height: 100vh;\r\n  padding: 0 0.5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n.skill-clickable {\r\n  cursor: pointer;\r\n}\r\n.skill-desc{\r\n  text-transform: uppercase;\r\n  font-size: 0.8rem;\r\n}\r\n.subskill-name {\r\n  font-size: 0.8rem;\r\n  font-weight: bold;\r\n}\r\n.prof-guage-prim {\r\n  width: 16rem;\r\n}\r\n.prof-guage-sec {\r\n  width: 12rem;\r\n}", ""]);
 
