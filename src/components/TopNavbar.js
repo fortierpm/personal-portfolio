@@ -9,6 +9,7 @@ export default function TopNavbar() {
             <div className="header-logo">
                 <img className="logo-image" src={logoImage} alt="Logo" />
             </div>
+            <div className="header-title">Peter Fortier</div>
             <nav className="navbar">
                 <ul className="nav-list">
                     <li className="nav-item">

@@ -56,6 +56,10 @@ const skills = {
           proficiency: 0.9,
         },
         {
+          name: "Regex",
+          proficiency: 0.6
+        },
+        {
           name: "TypeScript",
           proficiency: 0.7,
         },
@@ -116,14 +120,20 @@ const skills = {
     },
     {
       name: "Three.js",
-      description: "JavaScript library",
+      description: "JavaScript library for 3D visuals",
       proficiency: 0.6,
       subSkillList: []
     },
     {
       name: "GSAP",
-      description: "JavaScript library",
-      proficiency: 0.6,
+      description: "JavaScript library for animations",
+      proficiency: 0.5,
+      subSkillList: []
+    },
+    {
+      name: "D3.js",
+      description: "JavaScript library for interative data graphics",
+      proficiency: 0.4,
       subSkillList: []
     }
   ],
@@ -164,6 +174,12 @@ const skills = {
       proficiency: 0.6,
       subSkillList: []
     },
+    {
+      name: "Firebase",
+      description: "Google-backed application development software",
+      proficiency: 0.3,
+      subSkillList: []
+    },
   ],
   "Integrated Development Environments": [
     {
@@ -202,9 +218,15 @@ const skills = {
   ],
   "Version Control": [
     {
-      name: "Github",
-      description: "internet hosted version control using Git",
+      name: "GitHub",
+      description: "web-hosted Git repository manager",
       proficiency: 0.8,
+      subSkillList: []
+    },
+    {
+      name: "GitLab",
+      description: "web-hosted Git repository manager",
+      proficiency: 0.3,
       subSkillList: []
     },
     {
@@ -217,14 +239,14 @@ const skills = {
   "Web Hosting": [
     {
       name: "Github Pages",
-      description: "version control software",
-      proficiency: 0.9,
+      description: "static site hosting service for GitHub repos",
+      proficiency: 0.8,
       subSkillList: []
     },
     {
       name: "Netlify",
-      description: "version control software",
-      proficiency: 0.9,
+      description: "hosting and serverless backend services for web applications",
+      proficiency: 0.8,
       subSkillList: []
     }
   ],

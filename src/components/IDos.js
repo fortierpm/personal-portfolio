@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../styles/idos.css";
 
 
-const idos = ["Web Design", "JavaScript", "React", "Graphics", "Python", "SVGs", "Prototyping"];
+const idos = ["Web Design", "JavaScript", "React", "Software Development", "Python", "Graphics", "SVGs", "Prototyping"];
 const idosLength = idos.length;
 let index = 3;
 let transIndex = 1; // value from 0-2 over var life
@@ -89,6 +89,7 @@ const IDos = () => {
       <span className="subheader-text">I do </span>
       <span className="subheader-text idobox">
         <span className="screen-readable-label">{idos.join(", ")}</span> {/* also necessesary for correct animated display */}
+        <span className="ido-placeholder" aria-hidden="true">Web Design</span>
         <span ref={elemIDo1} className="ido1 ido" aria-hidden="true">{iDo1}</span>
         <span ref={elemIDo2} className="ido2 ido" aria-hidden="true">{iDo2}</span>
         <span ref={elemIDo3} className="ido3 ido" aria-hidden="true">{iDo3}</span>

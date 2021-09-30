@@ -1,49 +1,16 @@
-.subheader {
-  display: block;
-}
-
-.subheader-text {
-  display: block;
-}
-
-.idobox {
-  position: relative;
-  overflow: hidden;
-  display: block;
-}
-
-.screen-readable-label {
-  color: #0000;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  display: block;
-}
-
-.ido {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
 .ido1 {
-  -webkit-animation: down-1 3s ease 1 forwards;
-          animation: down-1 3s ease 1 forwards;
+  -webkit-animation: down-1 3s ease-in-out 1 forwards;
+          animation: down-1 3s ease-in-out 1 forwards;
 }
 
 .ido2 {
-  -webkit-animation: down-2 3s ease 1 forwards;
-          animation: down-2 3s ease 1 forwards;
+  -webkit-animation: down-2 3s ease-in-out 1 forwards;
+          animation: down-2 3s ease-in-out 1 forwards;
 }
 
 .ido3 {
-  -webkit-animation: 3s ease 1 forwards;
-          animation: 3s ease 1 forwards;
+  -webkit-animation: 3s ease-in-out 1 forwards;
+          animation: 3s ease-in-out 1 forwards;
 }
 
 @-webkit-keyframes down-1 {

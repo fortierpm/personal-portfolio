@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 *, *::before, *::after {
   margin: 0;
@@ -12,7 +10,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Mono", "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -20,8 +18,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #e2e2e2;
-  background: rgb(23, 22, 34);
 }
 
 a, button, input[type="submit"] {
@@ -29,8 +25,8 @@ a, button, input[type="submit"] {
 }
 
 a {
-  text-decoration: none;
-  color: #bcb6dd;
+  /* text-decoration: none; */
+  color: inherit;
 }
 
 li {

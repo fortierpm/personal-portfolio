@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import { Head } from "react-static";
 
 // components
 import TopNavbar from "./components/TopNavbar";
 import IDos from "./components/IDos";
+import CategorySelector from "./components/CategorySelector";
 import ProjectCardStack from "./components/ProjectCardStack";
 import SkillList from "./components/SkillList";
 import CertificateList from "./components/CertificateList";
@@ -25,9 +26,12 @@ import certificates from "./constants/certificates";
 
 
 const App = () => {
-
+  
   const projectGroupKeys = Object.keys(projects);
   const skillGroupKeys = Object.keys(skills);
+
+  const [category, setCategory] = useState("Featured");
+
 
   return (
     <div className="App">
@@ -42,7 +46,12 @@ const App = () => {
         <meta name="audience" content="Everyone" /> {/* No inapropriate content */}
         <meta name="copyright" content="Peter Fortier" />
         <meta name="robots" content="index, follow" />
-        <link rel="icon" href="./favicon.ico?" type="image/x-icon" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
       
       <TopNavbar />
@@ -57,26 +66,18 @@ const App = () => {
 
 
         {/* PROJECTS SECTION */}
-        <section id="projects">
+        <section id="projects" className="main-section">
           <h2>Projects</h2>
-          <div className="projects-container">
-
-            {/* map project groups */}
-            {projectGroupKeys.map((projectGroup) => {
-              return (
-                <section className="project-group" key={projectGroup}>
-                  <h3>{projectGroup}</h3>
-                  <ProjectCardStack projects={projects} projectGroup={projectGroup} />
-                </section>
-              );
-            })}
-
+          <CategorySelector projectGroupKeys={projectGroupKeys} setCategory={setCategory} category={category} />
+          <div className="project-stack-container">
+            {/* <h3>{category}</h3> */}
+            <ProjectCardStack projects={projects} projectGroup={category} />
           </div>
         </section>
 
 
         {/* SKILLS SECTION */}
-        <section id="skills">
+        <section id="skills" className="main-section">
           <h2>Skills</h2>
           <div className="skills-container">
 
@@ -95,7 +96,7 @@ const App = () => {
 
 
         {/* CERTIFICATES SECTION */}
-        <section id="certificates">
+        <section id="certificates" className="main-section">
           <h2>Certificates</h2>
           <div className="certificates-container">
             <CertificateList certificates={certificates} />
@@ -104,7 +105,7 @@ const App = () => {
 
 
         {/* CONTACT SECTION */}
-        <section id="contact">
+        <section id="contact" className="main-section">
           <h2>Contact</h2>
           <section className="contact-info">
             <h3>Info</h3>

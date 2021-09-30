@@ -1,71 +1,13 @@
-.subheader {
-  display: block;
-}
-.subheader-text {
-  display: block;
-}
-.idobox {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  //user-select: none;
-}
-.screen-readable-label {
-  color: #0000;
-  user-select: none;
-  display: block;
-}
-.ido {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
+
 .ido1 {
-  animation: down-1 3s ease 1 forwards;
+  animation: down-1 3s ease-in-out 1 forwards;
 }
 .ido2 {
-  animation: down-2 3s ease 1 forwards;
+  animation: down-2 3s ease-in-out 1 forwards;
 }
 .ido3 {
-  animation: 3s ease 1 forwards;
+  animation: 3s ease-in-out 1 forwards;
 }
-
-// .from-above {
-//   &::before {
-//     transform: translate(0%, calc(-1 * var(--text-before-pos)));
-//   }
-//   &::after {
-//     transform: translate(0%, var(--text-after-pos));
-//   }
-// }
-// .from-below {
-//   &::before {
-//     transform: translate(0%, var(--text-before-pos));
-//   }
-//   &::after {
-//     transform: translate(0%, calc(-1 * var(--text-before-pos)));
-//   }
-// }
-// .from-left {
-//   &::before {
-//     transform: translate(calc(-1 * var(--text-before-pos)), 0%);
-//   }
-//   &::after {
-//     transform: translate(var(--text-after-pos), 0%);
-//   }
-// }
-// .from-right {
-//   &::before {
-//     transform: translate(var(--text-after-pos), 0%);
-//   }
-//   &::after {
-//     transform: translate(calc(-1 * var(--text-before-pos)), 0%);
-//   }
-// }
 
 @keyframes down-1 {
   from {
