@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 26);
+/******/ 	return __webpack_require__(__webpack_require__.s = 28);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -115,15 +115,15 @@ module.exports = require("react");
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/author.fb64dfe1.jpg";
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/slicedToArray");
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/author.fb64dfe1.jpg";
 
 /***/ }),
 /* 3 */
@@ -152,7 +152,7 @@ var _utils = __webpack_require__(11);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(33)("" + id);
+    return __webpack_require__(35)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -212,7 +212,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(32);
+var _requireUniversalModule = __webpack_require__(34);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -227,7 +227,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(34);
+var _reportChunks = __webpack_require__(36);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -257,7 +257,7 @@ var _context2 = _interopRequireDefault(_context);
 
 var _utils = __webpack_require__(11);
 
-var _helpers = __webpack_require__(35);
+var _helpers = __webpack_require__(37);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -641,7 +641,7 @@ function universal(asyncModule) {
     return UniversalComponent;
   }(_react2["default"].Component), _class.contextType = _context2["default"], _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(31)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(33)(module)))
 
 /***/ }),
 /* 8 */
@@ -654,6 +654,10 @@ module.exports = require("@fortawesome/free-solid-svg-icons");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
+var slicedToArray_ = __webpack_require__(1);
+var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
 
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(0);
@@ -678,7 +682,9 @@ function TopNavbar() {
     className: "logo-image",
     src: fortierpm_logo_default.a,
     alt: "Logo"
-  })), /*#__PURE__*/external_react_default.a.createElement("nav", {
+  })), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "header-title"
+  }, "Peter Fortier"), /*#__PURE__*/external_react_default.a.createElement("nav", {
     className: "navbar"
   }, /*#__PURE__*/external_react_default.a.createElement("ul", {
     className: "nav-list"
@@ -704,18 +710,14 @@ function TopNavbar() {
     className: "nav-link"
   }, "Contact")))));
 }
-// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
-var slicedToArray_ = __webpack_require__(2);
-var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
-
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/idos.css
-var idos = __webpack_require__(43);
+var idos = __webpack_require__(45);
 
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/IDos.js
 
 
 
-var IDos_idos = ["Web Design", "JavaScript", "React", "Graphics", "Python", "SVGs", "Prototyping"];
+var IDos_idos = ["Web Design", "JavaScript", "React", "Software Development", "Python", "Graphics", "SVGs", "Prototyping"];
 var idosLength = IDos_idos.length;
 var index = 3;
 var transIndex = 1; // value from 0-2 over var life
@@ -830,6 +832,9 @@ var IDos_IDos = function IDos() {
   }, /*#__PURE__*/external_react_default.a.createElement("span", {
     className: "screen-readable-label"
   }, IDos_idos.join(", ")), " ", /*#__PURE__*/external_react_default.a.createElement("span", {
+    className: "ido-placeholder",
+    "aria-hidden": "true"
+  }, "Web Design"), /*#__PURE__*/external_react_default.a.createElement("span", {
     ref: elemIDo1,
     className: "ido1 ido",
     "aria-hidden": "true"
@@ -845,6 +850,68 @@ var IDos_IDos = function IDos() {
 };
 
 /* harmony default export */ var components_IDos = (IDos_IDos);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/triangle.svg
+var triangle = __webpack_require__(26);
+var triangle_default = /*#__PURE__*/__webpack_require__.n(triangle);
+
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/CategorySelector.js
+
+
+
+
+var CategorySelector_CategorySelector = function CategorySelector(_ref) {
+  var projectGroupKeys = _ref.projectGroupKeys,
+      setCategory = _ref.setCategory,
+      category = _ref.category;
+
+  var _useState = Object(external_react_["useState"])(false),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      dropdownOpen = _useState2[0],
+      setDropdownOpen = _useState2[1];
+
+  var handleCategoryDropdown = function handleCategoryDropdown(e) {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  var handleCategoryChange = function handleCategoryChange(projectGroup) {
+    setCategory("".concat(projectGroup));
+    setDropdownOpen(false);
+  };
+
+  return /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "project-category-select"
+  }, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "category-desc"
+  }, "Category:"), /*#__PURE__*/external_react_default.a.createElement("div", {
+    onClick: handleCategoryDropdown,
+    className: "category-select"
+  }, /*#__PURE__*/external_react_default.a.createElement("h3", {
+    className: "active-category"
+  }, category), /*#__PURE__*/external_react_default.a.createElement("img", {
+    className: dropdownOpen ? "rotate-90" : "",
+    src: triangle_default.a,
+    alt: ""
+  }), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "category-dropdown ".concat(dropdownOpen ? "dropdown-open" : "")
+  }, projectGroupKeys.map(function (projectGroup) {
+    if (projectGroup === category) {
+      return /*#__PURE__*/external_react_default.a.createElement("div", {
+        className: "category-option category-option-active",
+        key: projectGroup
+      }, projectGroup);
+    }
+
+    return /*#__PURE__*/external_react_default.a.createElement("div", {
+      onClick: function onClick() {
+        return handleCategoryChange(projectGroup);
+      },
+      className: "category-option",
+      key: projectGroup
+    }, projectGroup);
+  }))));
+};
+
+/* harmony default export */ var components_CategorySelector = (CategorySelector_CategorySelector);
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProjectCard.js
 
 
@@ -853,6 +920,7 @@ var ProjectCard_ProjectCard = function ProjectCard(_ref) {
       year = _ref.year,
       month = _ref.month,
       day = _ref.day;
+  var singleAuthor = project.authors.length === 1;
   return /*#__PURE__*/external_react_default.a.createElement("article", {
     className: "project-card"
   }, /*#__PURE__*/external_react_default.a.createElement("div", {
@@ -866,11 +934,9 @@ var ProjectCard_ProjectCard = function ProjectCard(_ref) {
   }, project.title))), /*#__PURE__*/external_react_default.a.createElement("img", {
     className: "card-thumb",
     src: project.thumb,
-    alt: "Project thumbnail",
-    width: 50,
-    height: 50
+    alt: "Project thumbnail"
   }), /*#__PURE__*/external_react_default.a.createElement("address", {
-    className: "card-authorship"
+    className: "card-authorship ".concat(singleAuthor ? "single" : "")
   }, /*#__PURE__*/external_react_default.a.createElement("a", {
     className: "author1-avatar",
     rel: "author",
@@ -878,14 +944,12 @@ var ProjectCard_ProjectCard = function ProjectCard(_ref) {
   }, /*#__PURE__*/external_react_default.a.createElement("img", {
     className: "avatar-img",
     src: project.authors[0][1],
-    alt: "",
-    width: 50,
-    height: 50
+    alt: ""
   })), /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "author-list"
   }, /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "author-prefix"
-  }, project.authors.length < 2 ? "Author" : "Authors"), project.authors.map(function (author) {
+  }, singleAuthor ? "Designer" : "Designers"), project.authors.map(function (author) {
     return /*#__PURE__*/external_react_default.a.createElement("a", {
       className: "author-link",
       rel: "author",
@@ -1047,13 +1111,20 @@ var SkillList_SkillList = function SkillList(_ref) {
         openState = _useState2[0],
         setOpenState = _useState2[1];
 
-    var handleClick = function handleClick(e) {
-      setOpenState(!openState);
+    var handleFocus = function handleFocus(e) {
+      setOpenState(true);
     };
 
+    var handleBlur = function handleBlur(e) {
+      setOpenState(false);
+    };
+
+    var clickability = skill.subSkillList.length > 0;
     return /*#__PURE__*/external_react_default.a.createElement("div", {
-      onClick: handleClick,
-      className: "skill ".concat(skill.subSkillList.length > 0 ? "skill-clickable" : ""),
+      onFocus: handleFocus,
+      onBlur: handleBlur,
+      tabindex: "".concat(clickability ? "0" : ""),
+      className: "skill ".concat(clickability ? "skill-clickable" : ""),
       key: skill.name
     }, /*#__PURE__*/external_react_default.a.createElement("div", {
       className: "skill-main"
@@ -1122,10 +1193,10 @@ var CertificateList_CertificateList = function CertificateList(_ref) {
 
 /* harmony default export */ var components_CertificateList = (CertificateList_CertificateList);
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/global.css
-var global = __webpack_require__(44);
+var global = __webpack_require__(46);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/app.css
-var app = __webpack_require__(45);
+var app = __webpack_require__(47);
 
 // EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
 var react_fontawesome_ = __webpack_require__(3);
@@ -1136,61 +1207,99 @@ var free_solid_svg_icons_ = __webpack_require__(8);
 // EXTERNAL MODULE: external "@fortawesome/free-brands-svg-icons"
 var free_brands_svg_icons_ = __webpack_require__(6);
 
+// EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
+var defineProperty_ = __webpack_require__(27);
+var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
+
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/project-thumb.jpg
 var project_thumb = __webpack_require__(4);
 var project_thumb_default = /*#__PURE__*/__webpack_require__.n(project_thumb);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/author.jpg
-var img_author = __webpack_require__(1);
+var img_author = __webpack_require__(2);
 var author_default = /*#__PURE__*/__webpack_require__.n(img_author);
 
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/constants/projects.js
 
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
-var projects_projects = {
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+var projectsArrange = {
+  "Featured": [],
   "React": [{
     title: "Project 1",
     date: "Sep 17, 2021",
     thumb: project_thumb_default.a,
-    authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
-    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+    authors: [["Peter Fortier", author_default.a, "https://google.com"]],
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]],
+    featured: 2
   }, {
     title: "Project 2",
     date: "Sep 17, 2021",
     thumb: project_thumb_default.a,
     authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
-    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]],
+    featured: 1
   }],
   "Javascript": [{
     title: "Project 3",
     date: "Sep 17, 2021",
     thumb: project_thumb_default.a,
     authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
-    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]],
+    featured: 4
   }],
   "CSS": [{
     title: "Project 4",
     date: "Sep 17, 2021",
     thumb: project_thumb_default.a,
     authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
-    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]],
+    featured: 3
   }],
   "Python": [{
     title: "Project 5",
     date: "Sep 17, 2021",
     thumb: project_thumb_default.a,
     authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
-    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]],
+    featured: 5
   }],
   "Vector Graphics": [{
     title: "Project 6",
     date: "Sep 17, 2021",
     thumb: project_thumb_default.a,
     authors: [["Peter Fortier", author_default.a, "https://google.com"], ["Jacob Merrick", author_default.a, "https://google.com"]],
-    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]]
+    tags: [["HTML", "#skills"], ["CSS", "#skills"], ["JavaScript", "#skills"]],
+    featured: 6
   }]
+}; //const projectGroupKeys = Object.keys(projectsArrange);
+
+var handleProjects = function handleProjects(projectsObject) {
+  var projectGroupKeys = Object.keys(projectsObject);
+
+  for (var i = 0; i < projectGroupKeys.length; i++) {
+    var projectGroup = projectGroupKeys[i];
+
+    for (var j = 0; j < projectsObject[projectGroup].length; j++) {
+      var project = projectsObject[projectGroup][j]; // console.log("project:", project);
+
+      if (project.featured) {
+        projectsObject["Featured"].splice(project.featured - 1, 0, _objectSpread({}, project));
+      }
+    }
+  } // console.log("projects:", projectsObject);
+
+
+  return projectsObject;
 };
+
+var projects_projects = handleProjects(projectsArrange);
 /* harmony default export */ var constants_projects = (projects_projects);
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/constants/skills.js
 var skills_skills = {
@@ -1238,6 +1347,9 @@ var skills_skills = {
       name: "DOM",
       proficiency: 0.9
     }, {
+      name: "Regex",
+      proficiency: 0.6
+    }, {
       name: "TypeScript",
       proficiency: 0.7
     }, {
@@ -1282,13 +1394,18 @@ var skills_skills = {
     }]
   }, {
     name: "Three.js",
-    description: "JavaScript library",
+    description: "JavaScript library for 3D visuals",
     proficiency: 0.6,
     subSkillList: []
   }, {
     name: "GSAP",
-    description: "JavaScript library",
-    proficiency: 0.6,
+    description: "JavaScript library for animations",
+    proficiency: 0.5,
+    subSkillList: []
+  }, {
+    name: "D3.js",
+    description: "JavaScript library for interative data graphics",
+    proficiency: 0.4,
     subSkillList: []
   }],
   "Backend": [{
@@ -1318,6 +1435,11 @@ var skills_skills = {
     description: "OOP language",
     proficiency: 0.6,
     subSkillList: []
+  }, {
+    name: "Firebase",
+    description: "Google-backed application development software",
+    proficiency: 0.3,
+    subSkillList: []
   }],
   "Integrated Development Environments": [{
     name: "Visual Studio Code",
@@ -1346,9 +1468,14 @@ var skills_skills = {
     subSkillList: []
   }],
   "Version Control": [{
-    name: "Github",
-    description: "internet hosted version control using Git",
+    name: "GitHub",
+    description: "web-hosted Git repository manager",
     proficiency: 0.8,
+    subSkillList: []
+  }, {
+    name: "GitLab",
+    description: "web-hosted Git repository manager",
+    proficiency: 0.3,
     subSkillList: []
   }, {
     name: "Git",
@@ -1358,13 +1485,13 @@ var skills_skills = {
   }],
   "Web Hosting": [{
     name: "Github Pages",
-    description: "version control software",
-    proficiency: 0.9,
+    description: "static site hosting service for GitHub repos",
+    proficiency: 0.8,
     subSkillList: []
   }, {
     name: "Netlify",
-    description: "version control software",
-    proficiency: 0.9,
+    description: "hosting and serverless backend services for web applications",
+    proficiency: 0.8,
     subSkillList: []
   }],
   "Prototyping": [{
@@ -1455,7 +1582,9 @@ var certificates_certificates = [{
 /* harmony default export */ var constants_certificates = (certificates_certificates);
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/App.js
 
+
  // components
+
 
 
 
@@ -1477,6 +1606,12 @@ var certificates_certificates = [{
 var App_App = function App() {
   var projectGroupKeys = Object.keys(constants_projects);
   var skillGroupKeys = Object.keys(constants_skills);
+
+  var _useState = Object(external_react_["useState"])("Featured"),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      category = _useState2[0],
+      setCategory = _useState2[1];
+
   return /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "App"
   }, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Head"], null, /*#__PURE__*/external_react_default.a.createElement("meta", {
@@ -1504,26 +1639,43 @@ var App_App = function App() {
     content: "index, follow"
   }), /*#__PURE__*/external_react_default.a.createElement("link", {
     rel: "icon",
-    href: "./favicon.ico?",
+    href: "favicon.ico",
     type: "image/x-icon"
+  }), /*#__PURE__*/external_react_default.a.createElement("link", {
+    rel: "preconnect",
+    href: "https://fonts.googleapis.com"
+  }), /*#__PURE__*/external_react_default.a.createElement("link", {
+    rel: "preconnect",
+    href: "https://fonts.gstatic.com",
+    crossorigin: true
+  }), /*#__PURE__*/external_react_default.a.createElement("link", {
+    href: "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap",
+    rel: "stylesheet"
+  }), /*#__PURE__*/external_react_default.a.createElement("link", {
+    href: "https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap",
+    rel: "stylesheet"
+  }), /*#__PURE__*/external_react_default.a.createElement("link", {
+    href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700&display=swap",
+    rel: "stylesheet"
   })), /*#__PURE__*/external_react_default.a.createElement(TopNavbar, null), /*#__PURE__*/external_react_default.a.createElement("main", null, /*#__PURE__*/external_react_default.a.createElement("section", {
     id: "hero"
   }, /*#__PURE__*/external_react_default.a.createElement("h1", {
     className: "hero-header"
   }, "Hey!", /*#__PURE__*/external_react_default.a.createElement("br", null), "I'm Peter."), /*#__PURE__*/external_react_default.a.createElement(components_IDos, null)), /*#__PURE__*/external_react_default.a.createElement("section", {
-    id: "projects"
-  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Projects"), /*#__PURE__*/external_react_default.a.createElement("div", {
-    className: "projects-container"
-  }, projectGroupKeys.map(function (projectGroup) {
-    return /*#__PURE__*/external_react_default.a.createElement("section", {
-      className: "project-group",
-      key: projectGroup
-    }, /*#__PURE__*/external_react_default.a.createElement("h3", null, projectGroup), /*#__PURE__*/external_react_default.a.createElement(components_ProjectCardStack, {
-      projects: constants_projects,
-      projectGroup: projectGroup
-    }));
+    id: "projects",
+    className: "main-section"
+  }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Projects"), /*#__PURE__*/external_react_default.a.createElement(components_CategorySelector, {
+    projectGroupKeys: projectGroupKeys,
+    setCategory: setCategory,
+    category: category
+  }), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "project-stack-container"
+  }, /*#__PURE__*/external_react_default.a.createElement(components_ProjectCardStack, {
+    projects: constants_projects,
+    projectGroup: category
   }))), /*#__PURE__*/external_react_default.a.createElement("section", {
-    id: "skills"
+    id: "skills",
+    className: "main-section"
   }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Skills"), /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "skills-container"
   }, skillGroupKeys.map(function (skillGroup) {
@@ -1535,13 +1687,15 @@ var App_App = function App() {
       skillGroup: skillGroup
     }));
   }))), /*#__PURE__*/external_react_default.a.createElement("section", {
-    id: "certificates"
+    id: "certificates",
+    className: "main-section"
   }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Certificates"), /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "certificates-container"
   }, /*#__PURE__*/external_react_default.a.createElement(components_CertificateList, {
     certificates: constants_certificates
   }))), /*#__PURE__*/external_react_default.a.createElement("section", {
-    id: "contact"
+    id: "contact",
+    className: "main-section"
   }, /*#__PURE__*/external_react_default.a.createElement("h2", null, "Contact"), /*#__PURE__*/external_react_default.a.createElement("section", {
     className: "contact-info"
   }, /*#__PURE__*/external_react_default.a.createElement("h3", null, "Info"), /*#__PURE__*/external_react_default.a.createElement("ul", {
@@ -1968,26 +2122,38 @@ module.exports = require("react-static");
 /* 25 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMyAxMzgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGw6d2hpdGU7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij4KICAgIDxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTczNS44ODQsLTEzMTAuNjEpIj4KICAgICAgICA8cGF0aCBpZD0iZm9ydGllcnBtTG9nbyIgZD0iTTc2MC42MzMsMTMxMC42MUw4MzguNDE0LDEzODguMzlMNzc4LjMxLDE0NDguNDlMNzcxLjIzOSwxNDQxLjQyTDc4Ny42MzEsMTQyNS4wM0w3ODYuMDU0LDE0MjQuOTRDNzc5LjY4MSwxNDI0LjM1IDc3My44NiwxNDIxLjQxIDc2OC41ODksMTQxNi4xNEM3NjMuMjgyLDE0MTAuODQgNzYwLjMxMiwxNDA1LjA1IDc1OS42OCwxMzk4Ljc5TDc1OS41NTIsMTM5Ni41NEw3NDIuOTU1LDE0MTMuMTRMNzM1Ljg4NCwxNDA2LjA3TDc3NC43NzUsMTM2Ny4xN0w3MzkuNDE5LDEzMzEuODJMNzQ2LjQ5LDEzMjQuNzVMNzgxLjg0NiwxMzYwLjFMNzg4LjkxNywxMzUzLjAzTDc1My41NjIsMTMxNy42OEw3NjAuNjMzLDEzMTAuNjFaTTc4MS44NDYsMTM3NC4yNUw3NzcuOTY1LDEzNzguMTNDNzc1LjAxLDEzODEuNDYgNzczLjAxMywxMzg0LjM2IDc3MS45NTEsMTM4Ni43OUM3NzAuNDE0LDEzOTAuMzEgNzcwLjMzNiwxMzkzLjg1IDc3MC44MDQsMTM5Ny41NkM3NzEuMjYyLDE0MDEuMTkgNzcyLjc4NSwxNDA0Ljc5IDc3Ni4zNCwxNDA4LjM0Qzc3OS41NzcsMTQxMS41NyA3ODIuOTQ3LDE0MTMuMDEgNzg2LjcyOCwxNDEzLjY2Qzc5MC40MTUsMTQxNC4zIDc5My44NjksMTQxNC4xMSA3OTcuMTcxLDE0MTIuNjhDODAwLjQ2LDE0MTEuMjYgODEwLjEzLDE0MDIuNTMgODEwLjEzLDE0MDIuNTNMNzgxLjg0NiwxMzc0LjI1Wk03OTUuOTg4LDEzNjAuMUw3ODguOTE3LDEzNjcuMTdMODE3LjIwMSwxMzk1LjQ2TDgyNC4yNzIsMTM4OC4zOUM4MjQuMjcyLDEzODguMzkgNzk1Ljk4OCwxMzYwLjEgNzk1Ljk4OCwxMzYwLjFaIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMyAxMzgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGw6I2VlZWVlZjtmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MjsiPgogICAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwtNzM1Ljg4NCwtMTMxMC42MSkiPgogICAgICAgIDxwYXRoIGlkPSJmb3J0aWVycG1Mb2dvIiBkPSJNNzYwLjYzMywxMzEwLjYxTDgzOC40MTQsMTM4OC4zOUw3NzguMzEsMTQ0OC40OUw3NzEuMjM5LDE0NDEuNDJMNzg3LjYzMSwxNDI1LjAzTDc4Ni4wNTQsMTQyNC45NEM3NzkuNjgxLDE0MjQuMzUgNzczLjg2LDE0MjEuNDEgNzY4LjU4OSwxNDE2LjE0Qzc2My4yODIsMTQxMC44NCA3NjAuMzEyLDE0MDUuMDUgNzU5LjY4LDEzOTguNzlMNzU5LjU1MiwxMzk2LjU0TDc0Mi45NTUsMTQxMy4xNEw3MzUuODg0LDE0MDYuMDdMNzc0Ljc3NSwxMzY3LjE3TDczOS40MTksMTMzMS44Mkw3NDYuNDksMTMyNC43NUw3ODEuODQ2LDEzNjAuMUw3ODguOTE3LDEzNTMuMDNMNzUzLjU2MiwxMzE3LjY4TDc2MC42MzMsMTMxMC42MVpNNzgxLjg0NiwxMzc0LjI1TDc3Ny45NjUsMTM3OC4xM0M3NzUuMDEsMTM4MS40NiA3NzMuMDEzLDEzODQuMzYgNzcxLjk1MSwxMzg2Ljc5Qzc3MC40MTQsMTM5MC4zMSA3NzAuMzM2LDEzOTMuODUgNzcwLjgwNCwxMzk3LjU2Qzc3MS4yNjIsMTQwMS4xOSA3NzIuNzg1LDE0MDQuNzkgNzc2LjM0LDE0MDguMzRDNzc5LjU3NywxNDExLjU3IDc4Mi45NDcsMTQxMy4wMSA3ODYuNzI4LDE0MTMuNjZDNzkwLjQxNSwxNDE0LjMgNzkzLjg2OSwxNDE0LjExIDc5Ny4xNzEsMTQxMi42OEM4MDAuNDYsMTQxMS4yNiA4MTAuMTMsMTQwMi41MyA4MTAuMTMsMTQwMi41M0w3ODEuODQ2LDEzNzQuMjVaTTc5NS45ODgsMTM2MC4xTDc4OC45MTcsMTM2Ny4xN0w4MTcuMjAxLDEzOTUuNDZMODI0LjI3MiwxMzg4LjM5QzgyNC4yNzIsMTM4OC4zOSA3OTUuOTg4LDEzNjAuMSA3OTUuOTg4LDEzNjAuMVoiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
 
 /***/ }),
 /* 26 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-__webpack_require__(27);
-__webpack_require__(29);
-module.exports = __webpack_require__(36);
-
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9IiNlZWVlZWYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDEwMFYwSDEwMFYxNi42NjY3SDE2LjY2NjdWMTAwSDBaIiAvPgo8L3N2Zz4K"
 
 /***/ }),
 /* 27 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/defineProperty");
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(29);
+__webpack_require__(31);
+module.exports = __webpack_require__(38);
+
+
+/***/ }),
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(28)["default"];
+var plugins = __webpack_require__(30)["default"];
 
 var _require = __webpack_require__(14),
     registerPlugins = _require.registerPlugins;
@@ -1997,7 +2163,7 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2013,7 +2179,7 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 29 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2023,7 +2189,7 @@ var plugins = [{
 var _require = __webpack_require__(14),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(30),
+var _require2 = __webpack_require__(32),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -2032,7 +2198,7 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 30 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2088,7 +2254,7 @@ var notFoundTemplate = "__react_static_root__/node_modules/react-static/lib/brow
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 31 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -2117,7 +2283,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2328,7 +2494,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -2356,10 +2522,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 33;
+webpackContext.id = 35;
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2469,7 +2635,7 @@ ReportChunks.propTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2536,7 +2702,7 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 36 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2553,9 +2719,9 @@ exports["default"] = void 0;
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(37);
+var _useStaticInfo = __webpack_require__(39);
 
-var _Suspense = _interopRequireDefault(__webpack_require__(38));
+var _Suspense = _interopRequireDefault(__webpack_require__(40));
 /* eslint-disable import/no-dynamic-require */
 // Override the suspense module to be our own
 // This is expected to break when using preact
@@ -2566,7 +2732,7 @@ var _Suspense = _interopRequireDefault(__webpack_require__(38));
 React.Suspense = _Suspense["default"];
 React["default"].Suspense = _Suspense["default"];
 
-var App = __webpack_require__(41)["default"];
+var App = __webpack_require__(43)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -2579,13 +2745,13 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\node_modules\\react-static\\lib\\browser\\hooks\\useStaticInfo");
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2600,9 +2766,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(39));
+var _extends2 = _interopRequireDefault(__webpack_require__(41));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(40));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(42));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
@@ -2623,19 +2789,19 @@ var _default = Suspense;
 exports["default"] = _default;
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 40 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 41 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2672,10 +2838,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(42)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(44)(module)))
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -2705,36 +2871,32 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(12)(false);
-// Module
-exports.push([module.i, ".subheader {\n  display: block;\n}\n\n.subheader-text {\n  display: block;\n}\n\n.idobox {\n  position: relative;\n  overflow: hidden;\n  display: block;\n}\n\n.screen-readable-label {\n  color: #0000;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  display: block;\n}\n\n.ido {\n  opacity: 0;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: block;\n}\n\n.ido1 {\n  -webkit-animation: down-1 3s ease 1 forwards;\n          animation: down-1 3s ease 1 forwards;\n}\n\n.ido2 {\n  -webkit-animation: down-2 3s ease 1 forwards;\n          animation: down-2 3s ease 1 forwards;\n}\n\n.ido3 {\n  -webkit-animation: 3s ease 1 forwards;\n          animation: 3s ease 1 forwards;\n}\n\n@-webkit-keyframes down-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes down-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes down-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n}\n\n@keyframes down-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n}\n\n@-webkit-keyframes down-prep {\n  to {\n    transform: translate(0%, 100%);\n  }\n}\n\n@keyframes down-prep {\n  to {\n    transform: translate(0%, 100%);\n  }\n}\n\n@-webkit-keyframes up-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes up-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes up-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n}\n\n@keyframes up-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n}\n\n@-webkit-keyframes up-prep {\n  to {\n    transform: translate(0%, -100%);\n  }\n}\n\n@keyframes up-prep {\n  to {\n    transform: translate(0%, -100%);\n  }\n}\n\n@-webkit-keyframes right-1 {\n  from {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes right-1 {\n  from {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes right-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n}\n\n@keyframes right-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n}\n\n@-webkit-keyframes right-prep {\n  to {\n    transform: translate(-100%, 0%);\n  }\n}\n\n@keyframes right-prep {\n  to {\n    transform: translate(-100%, 0%);\n  }\n}\n\n@-webkit-keyframes left-1 {\n  from {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes left-1 {\n  from {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes left-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n}\n\n@keyframes left-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n}\n\n@-webkit-keyframes left-prep {\n  to {\n    transform: translate(100%, 0%);\n  }\n}\n\n@keyframes left-prep {\n  to {\n    transform: translate(100%, 0%);\n  }\n}", ""]);
-
-
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(12)(false);
-// Imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);", ""]);
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);", ""]);
-
-// Module
-exports.push([module.i, "*, *::before, *::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\", \"Open Sans\", \"Helvetica Neue\", sans-serif;\n}\n\nbody {\n  width: 100%;\n  overflow-x: hidden;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  color: #e2e2e2;\n  background: rgb(23, 22, 34);\n}\n\na, button, input[type=\"submit\"] {\n  cursor: pointer;\n}\n\na {\n  text-decoration: none;\n  color: #bcb6dd;\n}\n\nli {\n  list-style-type: none;\n}\n\naddress {\n  font-style: normal;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;\n}\n\n", ""]);
-
-
-
-/***/ }),
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(12)(false);
 // Module
-exports.push([module.i, ".App {\r\n  min-height: 100vh;\r\n  padding: 0 0.5rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n.skill-clickable {\r\n  cursor: pointer;\r\n}\r\n.skill-desc{\r\n  text-transform: uppercase;\r\n  font-size: 0.8rem;\r\n}\r\n.subskill-name {\r\n  font-size: 0.8rem;\r\n  font-weight: bold;\r\n}\r\n.prof-guage-prim {\r\n  width: 16rem;\r\n}\r\n.prof-guage-sec {\r\n  width: 12rem;\r\n}", ""]);
+exports.push([module.i, ".ido1 {\n  -webkit-animation: down-1 3s ease-in-out 1 forwards;\n          animation: down-1 3s ease-in-out 1 forwards;\n}\n\n.ido2 {\n  -webkit-animation: down-2 3s ease-in-out 1 forwards;\n          animation: down-2 3s ease-in-out 1 forwards;\n}\n\n.ido3 {\n  -webkit-animation: 3s ease-in-out 1 forwards;\n          animation: 3s ease-in-out 1 forwards;\n}\n\n@-webkit-keyframes down-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes down-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes down-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n}\n\n@keyframes down-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n}\n\n@-webkit-keyframes down-prep {\n  to {\n    transform: translate(0%, 100%);\n  }\n}\n\n@keyframes down-prep {\n  to {\n    transform: translate(0%, 100%);\n  }\n}\n\n@-webkit-keyframes up-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes up-1 {\n  from {\n    opacity: 0;\n    transform: translate(0%, -100%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes up-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n}\n\n@keyframes up-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(0%, 100%);\n  }\n}\n\n@-webkit-keyframes up-prep {\n  to {\n    transform: translate(0%, -100%);\n  }\n}\n\n@keyframes up-prep {\n  to {\n    transform: translate(0%, -100%);\n  }\n}\n\n@-webkit-keyframes right-1 {\n  from {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes right-1 {\n  from {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes right-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n}\n\n@keyframes right-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n}\n\n@-webkit-keyframes right-prep {\n  to {\n    transform: translate(-100%, 0%);\n  }\n}\n\n@keyframes right-prep {\n  to {\n    transform: translate(-100%, 0%);\n  }\n}\n\n@-webkit-keyframes left-1 {\n  from {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@keyframes left-1 {\n  from {\n    opacity: 0;\n    transform: translate(100%, 0%);\n  }\n  to {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n}\n\n@-webkit-keyframes left-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n}\n\n@keyframes left-2 {\n  from {\n    opacity: 1;\n    transform: translate(0%, 0%);\n  }\n  to {\n    opacity: 0;\n    transform: translate(-100%, 0%);\n  }\n}\n\n@-webkit-keyframes left-prep {\n  to {\n    transform: translate(100%, 0%);\n  }\n}\n\n@keyframes left-prep {\n  to {\n    transform: translate(100%, 0%);\n  }\n}", ""]);
+
+
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(12)(false);
+// Module
+exports.push([module.i, "\n*, *::before, *::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto Mono\", \"Roboto\", \"Open Sans\", \"Helvetica Neue\", sans-serif;\n}\n\nbody {\n  width: 100%;\n  overflow-x: hidden;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\na, button, input[type=\"submit\"] {\n  cursor: pointer;\n}\n\na {\n  /* text-decoration: none; */\n  color: inherit;\n}\n\nli {\n  list-style-type: none;\n}\n\naddress {\n  font-style: normal;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;\n}\n\n", ""]);
+
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(12)(false);
+// Module
+exports.push([module.i, ":root {\n  --bg-prim: #17141d;\n  --col-text-titles: #eeeeef;\n  --col-text-gen: #eeeeee;\n  --col-text-sup: #7a7a8c;\n  --col-detail-light: #646374;\n  --col-detail-mid: #4d4b5b;\n  --col-detail-dark: #373442;\n  --col-detail-distant: #201c29;\n  --fontsize-normal: 1rem;\n  --fontsize-title: 3rem;\n  --fontsize-secondary: 1.5rem;\n  --fontsize-detail: 0.8rem;\n  --border-prim1: 0.05rem solid var(--col-text-sup);\n  --border-sec1: 0.1rem solid var(--col-detail-distant);\n  --border-sec2: 0.2rem solid var(--col-detail-distant);\n  --border-invis: 0.1rem solid #0000;\n  --shadow-nodir:\r\n    0px 2.8px 2.2px rgba(0, 0, 0, 0.034),\r\n    0px 6.7px 5.3px rgba(0, 0, 0, 0.049),\r\n    0px 12.5px 10px rgba(0, 0, 0, 0.057),\r\n    0px 22.3px 17.9px rgba(0, 0, 0, 0.062),\r\n    0px 41.8px 33.4px rgba(0, 0, 0, 0.066),\r\n    0px 100px 80px rgba(0, 0, 0, 0.07);\n  --shadow-dir:\r\n    1.4px 2.8px 2.2px rgba(0, 0, 0, 0.034),\r\n    3.3px 6.7px 5.3px rgba(0, 0, 0, 0.049),\r\n    6.3px 12.5px 10px rgba(0, 0, 0, 0.057),\r\n    11.2px 22.3px 17.9px rgba(0, 0, 0, 0.062),\r\n    20.9px 41.8px 33.4px rgba(0, 0, 0, 0.066),\r\n    50px 100px 80px rgba(0, 0, 0, 0.07);\n  --shadow-card:\r\n    -0.5px 0.8px 4.4px rgba(0, 0, 0, 0.129),\r\n    -1.1px 2px 10.6px rgba(0, 0, 0, 0.186),\r\n    -2.1px 3.8px 20px rgba(0, 0, 0, 0.23),\r\n    -3.8px 6.7px 35.7px rgba(0, 0, 0, 0.274),\r\n    -7.1px 12.5px 66.8px rgba(0, 0, 0, 0.331),\r\n    -17px 30px 160px rgba(0, 0, 0, 0.46);\n  --logo-width: 4rem;\n  --logo-pad-left: 3rem;\n  --logo-pad-right: 2rem;\n  --logo-pad-total: calc(var(--logo-pad-left) + var(--logo-pad-right));\n  --add-margin-left: 2rem;\n  --main-margin-left: calc(var(--logo-pad-total) + var(--logo-width) + var(--add-margin-left));\n  --main-margin-right: 5rem;\n}\n\nbody {\n  background-color: var(--bg-prim);\n  color: var(--col-text-gen);\n}\n\n.App {\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n/* ------------ NAV STYLES ------------- */\nheader.top-navbar {\n  position: sticky;\n  top: 0;\n  left: 0;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  background-color: var(--bg-prim);\n  box-shadow: var(--shadow-nodir);\n  z-index: 10;\n  /* should be highest element */\n}\n\n.header-logo {\n  position: absolute;\n  top: 0;\n  left: 0;\n  padding: 1rem 2rem 1rem 3rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: var(--bg-prim);\n  border-bottom-right-radius: 2rem;\n  box-shadow: var(--shadow-dir);\n}\n\n.logo-image {\n  width: var(--logo-width);\n  height: auto;\n}\n\n.header-title {\n  margin-left: var(--main-margin-left);\n  font-family: \"Roboto Mono\";\n  font-size: 2rem;\n  font-weight: 100;\n  color: var(--col-text-sup);\n}\n\n.navbar {\n  display: flex;\n  min-width: 14rem;\n  width: 40%;\n  margin: 1.5ch 0;\n  margin-right: 5%;\n  font-weight: 200;\n}\n\n.nav-list {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.nav-link {\n  text-decoration: none;\n  color: var(--col-text-gen);\n  transition: all 0.1s ease;\n}\n\n.nav-link:hover {\n  color: var(--col-text-sup);\n}\n\n@media screen and (max-width: 600px) {\n  :root {\n    --logo-pad-left: 1.5rem;\n    --logo-pad-right: 1rem;\n    --logo-width: 3rem;\n    --add-margin-left: 0.5rem;\n  }\n  header.top-navbar {\n    flex-direction: column;\n  }\n  .header-logo {\n    padding-left: var(--logo-pad-left);\n    padding-right: var(--logo-pad-right);\n    border-bottom-right-radius: 1.5rem;\n  }\n  .logo-image {\n    width: var(--logo-width);\n  }\n  .header-title {\n    margin-left: calc(var(--logo-width) + var(--logo-pad-total));\n  }\n  .navbar {\n    margin-left: calc(var(--logo-width) + var(--logo-pad-total));\n  }\n}\n\n/* ------ GENERAL MAIN STYLES ------- */\nmain {\n  margin-left: var(--main-margin-left);\n  margin-right: var(--main-margin-right);\n  width: calc(100% - var(--main-margin-left) - var(--main-margin-right));\n}\n\n.main-section {\n  margin-bottom: 3rem;\n}\n\n.main-section h2 {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  position: relative;\n  display: block;\n  font-size: var(--fontsize-title);\n  margin-bottom: 0.5rem;\n}\n\n.main-section h2::before {\n  content: \"<\";\n  position: absolute;\n  top: 0;\n  left: -1em;\n  color: var(--col-detail-distant);\n}\n\n.main-section h2::after {\n  content: \" />\";\n  position: absolute;\n  top: 0;\n  right: -2em;\n  color: var(--col-detail-distant);\n}\n\n/* --------- HERO STYLES ---------- */\n#hero {\n  min-height: 90vh;\n}\n\n.subheader {\n  display: block;\n}\n\n.subheader-text {\n  display: block;\n}\n\n.idobox {\n  position: relative;\n  overflow: hidden;\n  display: block;\n}\n\n.screen-readable-label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  color: #0000;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  display: block;\n  font-size: 1px;\n}\n\n.ido-placeholder {\n  color: #0000;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  display: block;\n}\n\n.ido {\n  opacity: 0;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: block;\n}\n\n.ido::before {\n  content: \"/\";\n  color: var(--col-detail-mid);\n}\n\n.ido::after {\n  content: \"/\";\n  color: var(--col-detail-mid);\n}\n\n/* --------- PROJECTS STYLES --------- */\n.project-category-select {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  display: flex;\n  align-items: center;\n  margin-bottom: 0.5rem;\n}\n\n.category-desc {\n  margin-right: 1rem;\n}\n\n.category-select {\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  border: var(--border-prim1);\n  border-radius: 0.75rem;\n  background: var(--bg-prim);\n  position: relative;\n}\n\n.category-select img {\n  margin: 0 0.8rem;\n  width: 0.6rem;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  transition: all 0.5s ease;\n}\n\n.category-select img.rotate-90 {\n  transform: rotate(-90deg);\n}\n\n.active-category {\n  padding: 0.3rem 0.8rem;\n  position: relative;\n}\n\n.active-category::after {\n  content: \"\";\n  position: absolute;\n  top: -1%;\n  right: 0;\n  width: 0.05rem;\n  height: 102%;\n  transform: translateX(-50%);\n  background: var(--col-text-sup);\n}\n\n.category-dropdown {\n  position: absolute;\n  top: 110%;\n  left: 0;\n  opacity: 0;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  pointer-events: none;\n  background: var(--bg-prim);\n  transition: all 0.2s ease;\n  z-index: 1;\n  border: var(--border-prim1);\n  border-radius: 0.75rem;\n  overflow: hidden;\n}\n\n.category-dropdown.dropdown-open {\n  opacity: 1;\n  -webkit-user-select: auto;\n     -moz-user-select: auto;\n      -ms-user-select: auto;\n          user-select: auto;\n  pointer-events: auto;\n  cursor: pointer;\n}\n\n.category-option {\n  padding: 0.3rem 0.8rem;\n  transition: all 0.2s ease;\n  white-space: nowrap;\n}\n\n.category-option:hover {\n  background: var(--col-detail-mid);\n}\n\n.category-option-active {\n  color: var(--col-text-sup);\n  cursor: default;\n}\n\n.category-option-active:hover {\n  background: var(--bg-prim);\n}\n\n.project-stack-container {\n  margin-left: calc(0rem - var(--main-margin-left));\n  width: calc(100% + var(--main-margin-left) + var(--main-margin-right));\n}\n\n.card-stack {\n  display: flex;\n  align-items: center;\n  padding: 2rem var(--main-margin-right) 2rem var(--main-margin-left);\n  overflow-x: scroll;\n}\n\n.card-stack::-webkit-scrollbar {\n  width: 0.625rem;\n  height: 0.625rem;\n}\n\n.card-stack::-webkit-scrollbar-thumb {\n  background: var(--col-detail-distant);\n  border-radius: 0.625rem;\n}\n\n.card-stack::-webkit-scrollbar-track {\n  background: var(--bg-prim);\n}\n\n.project-card {\n  height: 22rem;\n  width: 25rem;\n  min-width: 16rem;\n  margin: 0;\n  padding: 1.5rem;\n  border-radius: 1rem;\n  background: var(--bg-prim);\n  box-shadow: var(--shadow-card);\n  display: flex;\n  flex-direction: column;\n  transition: all .2s ease;\n  scroll-snap-align: start;\n  clear: both;\n  position: relative;\n}\n\n/* ~ is used to select all sibling .cards after the focused or hovered .card */\n.project-card:focus-within ~ .project-card, .project-card:hover ~ .project-card {\n  transform: translateX(4rem);\n}\n\n.project-card:hover {\n  transform: translateY(-1rem);\n}\n\n/* set stacked spacing style for all .cards (excluding the first .card) */\n.project-card:not(:first-child) {\n  margin-left: -4rem;\n}\n\n.card-title {\n  margin-bottom: 0.4rem;\n}\n\n.card-title h3 a {\n  text-decoration: none;\n}\n\n.card-date {\n  font-size: var(--fontsize-detail);\n  color: var(--col-text-sup);\n}\n\n.card-thumb {\n  width: 100%;\n  height: 3.125rem;\n  -o-object-fit: cover;\n     object-fit: cover;\n  flex-grow: 1;\n  border-radius: 0.2rem;\n}\n\n.card-authorship {\n  display: flex;\n  margin: 1rem 0;\n}\n\n.card-authorship.single {\n  align-items: center;\n}\n\n.author1-avatar {\n  border-radius: 50%;\n  overflow: hidden;\n  height: 3.125rem;\n  width: 3.125rem;\n}\n\n.avatar-img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n.author-list {\n  margin-left: 1rem;\n}\n\n.author-prefix {\n  color: var(--col-text-sup);\n  font-size: var(--fontsize-detail);\n  text-transform: uppercase;\n  font-weight: 700;\n}\n\n.author-link {\n  text-decoration: none;\n}\n\n.card-tags {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n}\n\n.tag-link {\n  font-size: var(--fontsize-detail);\n  text-decoration: none;\n  padding: 0.1rem 0.4rem;\n  margin-right: 0.4rem;\n  border-radius: 1rem;\n  border: var(--border-prim1);\n}\n\n/* -------- SKILLS STYLES --------- */\n.skills-container {\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n  height: 100rem;\n}\n\n.skills-container:focus-within {\n  height: 110rem;\n}\n\n@media screen and (max-width: 900px) {\n  .skills-container {\n    height: 180rem;\n  }\n  .skills-container:focus-within {\n    height: 195rem;\n  }\n}\n\n.skill-group {\n  width: 20rem;\n  margin-right: 2rem;\n}\n\n.skill-group h3 {\n  margin: 0.5rem 0;\n  font-size: var(--fontsize-secondary);\n  position: relative;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n\n.skill-group h3::before {\n  content: \"{\";\n  color: var(--col-detail-distant);\n  position: absolute;\n  right: calc(100% + 0.2rem);\n}\n\n.skill-group h3::after {\n  content: \".map}\";\n  color: var(--col-detail-distant);\n}\n\n.skill {\n  width: 100%;\n  padding: 0.5rem 1rem;\n  border-radius: 0.5rem;\n}\n\n.skill-clickable {\n  cursor: pointer;\n  transition: all 0.3s ease;\n  border: var(--border-invis);\n}\n\n.skill-clickable:hover {\n  border: var(--border-sec1);\n  background-color: var(--col-detail-distant);\n}\n\n.skill-clickable:focus {\n  pointer-events: none;\n}\n\n.skill-name {\n  font-weight: normal;\n}\n\n.skill-desc {\n  text-transform: uppercase;\n  font-size: var(--fontsize-detail);\n  color: var(--col-text-sup);\n}\n\n.subskill-list {\n  margin-top: 0.75rem;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.subskill {\n  width: 60%;\n}\n\n.subskill-name {\n  font-size: 0.8rem;\n  font-weight: bold;\n}\n\n.prof-guage-prim {\n  width: 100%;\n}\n\n.prof-guage-sec {\n  width: 100%;\n  margin-bottom: 0.5rem;\n}", ""]);
 
 
 
