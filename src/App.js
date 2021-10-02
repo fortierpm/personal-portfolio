@@ -46,7 +46,7 @@ const App = () => {
         <meta name="audience" content="Everyone" /> {/* No inapropriate content */}
         <meta name="copyright" content="Peter Fortier" />
         <meta name="robots" content="index, follow" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="favicon.ico"/>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -107,37 +107,39 @@ const App = () => {
         {/* CONTACT SECTION */}
         <section id="contact" className="main-section">
           <h2>Contact</h2>
-          <section className="contact-info">
-            <h3>Info</h3>
-            <ul className="info-list">
-              <li className="info-item">
-                <a href="mailto:fortierpm@gmail.com"><FontAwesomeIcon className="icon" icon={faPaperPlane} />fortierpm@gmail.com</a>
-              </li>
-              <li className="info-item">
-                <a href="mailto:fortie1@stolaf.edu"><FontAwesomeIcon className="icon" icon={faUniversity} />fortie1@stolaf.edu</a>
-              </li>
-              <li className="info-item">
-                <a href="sms:+16128038780&body=Hi%20I%27m%20Peter!%20Send%20me%20a%20message."><FontAwesomeIcon className="icon" icon={faSms} />(612) 803-8780</a>
-              </li>
-              <li className="info-item">
-                <a href="https://www.linkedin.com/in/peter-fortier-71359221a/" rel="external noopener"><FontAwesomeIcon className="icon" icon={faLinkedin} />LinkedIn</a>
-              </li>
-            </ul>
-          </section>
-          <section className="contact-socials">
-            <h3>Socials</h3>
-            <ul>
-              <li className="info-item">
-                <a href="https://www.instagram.com/petrfortier/" rel="external noopener"><FontAwesomeIcon className="icon" icon={faInstagram} />Instagram</a>
-              </li>
-              <li className="info-item">
-                <a href="https://www.facebook.com/profile.php?id=100010683600528" rel="external noopener"><FontAwesomeIcon className="icon" icon={faFacebook} />Facebook</a>
-              </li>
-              <li className="info-item">
-                <a href="https://twitter.com/fortier_pm" rel="external noopener"><FontAwesomeIcon className="icon" icon={faTwitter} />Twitter</a>
-              </li>
-            </ul>
-          </section>
+          <div className="contact-container">
+            <section className="contact-info">
+              <h3>Info</h3>
+              <ul className="info-list">
+                <li className="info-item">
+                  <a href="mailto:fortierpm@gmail.com"><FontAwesomeIcon className="contact-icon" icon={faPaperPlane} />fortierpm@gmail.com</a>
+                </li>
+                <li className="info-item">
+                  <a href="mailto:fortie1@stolaf.edu"><FontAwesomeIcon className="contact-icon" icon={faUniversity} />fortie1@stolaf.edu</a>
+                </li>
+                <li className="info-item">
+                  <a href="sms:+16128038780&body=Hi%20I%27m%20Peter!%20Send%20me%20a%20message."><FontAwesomeIcon className="contact-icon" icon={faSms} />(612) 803-8780</a>
+                </li>
+                <li className="info-item">
+                  <a href="https://www.linkedin.com/in/peter-fortier-71359221a/" rel="external noopener"><FontAwesomeIcon className="contact-icon" icon={faLinkedin} />LinkedIn</a>
+                </li>
+              </ul>
+            </section>
+            <section className="contact-socials">
+              <h3>Socials</h3>
+              <ul className="socials-list">
+                <li className="socials-item">
+                  <a href="https://www.instagram.com/petrfortier/" rel="external noopener"><FontAwesomeIcon className="contact-icon" icon={faInstagram} />Instagram</a>
+                </li>
+                <li className="socials-item">
+                  <a href="https://www.facebook.com/profile.php?id=100010683600528" rel="external noopener"><FontAwesomeIcon className="contact-icon" icon={faFacebook} />Facebook</a>
+                </li>
+                <li className="socials-item">
+                  <a href="https://twitter.com/fortier_pm" rel="external noopener"><FontAwesomeIcon className="contact-icon" icon={faTwitter} />Twitter</a>
+                </li>
+              </ul>
+            </section>
+          </div>
         </section>
 
       </main>

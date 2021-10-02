@@ -36,6 +36,13 @@
     -3.8px 6.7px 35.7px rgba(0, 0, 0, 0.274),
     -7.1px 12.5px 66.8px rgba(0, 0, 0, 0.331),
     -17px 30px 160px rgba(0, 0, 0, 0.46);
+  --shadow-certificate:
+    0px 0px 2.8px rgba(0, 0, 0, 0.051),
+    0px 0px 6.7px rgba(0, 0, 0, 0.073),
+    0px 0px 12.5px rgba(0, 0, 0, 0.09),
+    0px 0px 22.3px rgba(0, 0, 0, 0.107),
+    0px 0px 41.8px rgba(0, 0, 0, 0.129),
+    0px 0px 100px rgba(0, 0, 0, 0.18);
   --logo-width: 4rem;
   --logo-pad-left: 3rem;
   --logo-pad-right: 2rem;
@@ -48,6 +55,10 @@
 body {
   background-color: var(--bg-prim);
   color: var(--col-text-gen);
+}
+
+h1, h2, h3, h4 {
+  color: var(--col-text-titles);
 }
 
 .App {
@@ -286,6 +297,10 @@ main {
 }
 
 /* --------- PROJECTS STYLES --------- */
+#projects {
+  margin-bottom: 5rem;
+}
+
 .project-category-select {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -557,6 +572,11 @@ main {
 
 /* -------- SKILLS STYLES --------- */
 .skills-container {
+  margin-top: 2rem;
+}
+
+.skill-group {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,27 +584,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 100rem;
-}
-
-.skills-container:focus-within {
-  height: 110rem;
-}
-
-@media screen and (max-width: 900px) {
-  .skills-container {
-    height: 180rem;
-  }
-  .skills-container:focus-within {
-    height: 195rem;
-  }
-}
-
-.skill-group {
-  width: 20rem;
-  margin-right: 2rem;
+  margin-top: 1rem;
 }
 
 .skill-group h3 {
@@ -608,10 +608,24 @@ main {
   color: var(--col-detail-distant);
 }
 
+.skill-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20rem)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 20rem);
+  grid-gap: 0 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .skill {
-  width: 100%;
+  width: 20rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .skill-clickable {
@@ -671,5 +685,183 @@ main {
 .prof-guage-sec {
   width: 100%;
   margin-bottom: 0.5rem;
+}
+
+/* ------ CERTIFICATES STYLES ------ */
+.certificates-container {
+  margin-top: 2rem;
+}
+
+.certificate-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.certificate {
+  padding: 1rem 2rem 1.5rem 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: var(--shadow-certificate);
+          box-shadow: var(--shadow-certificate);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.certificate-title {
+  font-size: var(--fontsize-secondary);
+}
+
+.certificate-issuer {
+  color: var(--col-text-gen);
+  margin: 0.5rem 0;
+}
+
+.certificate-issuer a {
+  text-decoration: none;
+}
+
+.certificate-dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.certificate-dateissued {
+  color: var(--col-text-sup);
+  font-size: var(--fontsize-detail);
+  text-transform: uppercase;
+}
+
+.certificate-dateissued::after {
+  content: "\00a0-\00a0";
+}
+
+.certificate-dateexpires {
+  color: var(--col-text-sup);
+  font-size: var(--fontsize-detail);
+  text-transform: uppercase;
+}
+
+.certificate-id {
+  color: var(--col-text-sup);
+  font-size: var(--fontsize-detail);
+  text-transform: uppercase;
+}
+
+.certificate-id span {
+  text-transform: none;
+}
+
+.certificate-link {
+  margin-top: 0.5rem;
+  font-size: var(--fontsize-detail);
+}
+
+/* ------ CONTACT STYLES -------- */
+.contact-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (15rem)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 15rem);
+  grid-gap: 0 1rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.contact-container h3 {
+  font-size: var(--fontsize-secondary);
+  margin-bottom: 1rem;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.contact-container h3::before {
+  content: "/*";
+  position: absolute;
+  top: 0;
+  right: calc(100% + 0.5em);
+  color: var(--col-detail-distant);
+}
+
+.contact-container h3::after {
+  content: "*/";
+  position: absolute;
+  top: 0;
+  left: calc(100% + 0.5em);
+  color: var(--col-detail-distant);
+}
+
+.contact-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.contact-container li {
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+.contact-container a {
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.contact-container a:hover {
+  color: var(--col-text-sup);
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+  width: 1rem;
+}
+
+.contact-socials {
+  margin-bottom: 2rem;
+}
+
+/* ------- FOOTER STYLES -------- */
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: var(--col-text-sup);
+}
+
+.copyright {
+  padding: 1rem 2rem;
 }
 /*# sourceMappingURL=app.css.map */

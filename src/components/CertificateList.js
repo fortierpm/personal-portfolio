@@ -20,13 +20,15 @@ const CertificateList = ({ certificates }) => {
           <article className="certificate" key={certificate.title}>
             <h3 className="certificate-title">{certificate.title}</h3>
             <p className="certificate-issuer"><a href={certificate.orgLink} target="_blank">{certificate.issuingOrg}</a></p>
-            <p className="certificate-dateissued"><time dateTime={`${issuedYear}-${issuedMonth}`}>{certificate.dateIssued}</time></p>
-            <p className="certificate-dateexpires">{certificate.expires
-              ? <time dateTime={`${issuedYear}-${issuedMonth}`}>{certificate.expires}</time>
-              : "No Expiration Date"}
-            </p>
-            <p className="certificate-id">{certificate.credentialID ? `Credential ID ${certificate.credentialID}` : ""}</p>
-            <p className="certificate-url"><a href={certificate.credentialURL} target="_blank">See certificate</a></p>
+            <div className="certificate-dates">
+              <p className="certificate-dateissued"><time dateTime={`${issuedYear}-${issuedMonth}`}>Issued {certificate.dateIssued}</time></p>
+              <p className="certificate-dateexpires">{certificate.expires
+                ? <time dateTime={`${issuedYear}-${issuedMonth}`}>Expires {certificate.expires}</time>
+                : "No Expiration Date"}
+              </p>
+            </div>
+            {certificate.credentialID ? <p className="certificate-id">Credential ID: <span aria-label="Case-sensitive certificate ID.">{certificate.credentialID}</span></p> : ""}
+            <p className="certificate-link"><a href={certificate.credentialURL} target="_blank">See certificate</a></p>
           </article>
         );
 

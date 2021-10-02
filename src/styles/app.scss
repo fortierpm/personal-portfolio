@@ -39,6 +39,13 @@
     -3.8px 6.7px 35.7px rgba(0, 0, 0, 0.274),
     -7.1px 12.5px 66.8px rgba(0, 0, 0, 0.331),
     -17px 30px 160px rgba(0, 0, 0, 0.46);
+  --shadow-certificate:
+    0px 0px 2.8px rgba(0, 0, 0, 0.051),
+    0px 0px 6.7px rgba(0, 0, 0, 0.073),
+    0px 0px 12.5px rgba(0, 0, 0, 0.09),
+    0px 0px 22.3px rgba(0, 0, 0, 0.107),
+    0px 0px 41.8px rgba(0, 0, 0, 0.129),
+    0px 0px 100px rgba(0, 0, 0, 0.18);
 
   --logo-width: 4rem;
   --logo-pad-left: 3rem;
@@ -51,6 +58,9 @@
 body {
   background-color: var(--bg-prim);
   color: var(--col-text-gen);
+}
+h1, h2, h3, h4 {
+  color: var(--col-text-titles);
 }
 
 
@@ -246,6 +256,9 @@ main {
 
 
 /* --------- PROJECTS STYLES --------- */
+#projects {
+  margin-bottom: 5rem;
+}
 .project-category-select {
   width: fit-content;
   display: flex;
@@ -462,31 +475,34 @@ main {
   // grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   // //grid-template-rows: repeat(20, 6rem);
   // gap: 1rem;
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  // height: 100rem;
+  // &:focus-within {
+  //   height: 110rem;
+  // }
+    margin-top: 2rem;
+}
+// @media screen and (max-width: 900px) {
+//   .skills-container {
+//     height: 180rem;
+//     &:focus-within {
+//       height: 195rem;
+//     }
+//   }
+// }
+.skill-group {
+  // width: 20rem; // 40%
+  // margin-right: 2rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 100rem;
-  &:focus-within {
-    height: 110rem;
-  }
-}
-@media screen and (max-width: 900px) {
-  .skills-container {
-    height: 180rem;
-    &:focus-within {
-      height: 195rem;
-    }
-  }
-}
-.skill-group {
-  width: 20rem; // 40%
-  margin-right: 2rem;
-
+  margin-top: 1rem;
+  
   h3 {
     margin: 0.5rem 0;
-    // color: var(--col-text-sup);
     font-size: var(--fontsize-secondary);
-    // font-weight: 300;
     position: relative;
     width: fit-content;
 
@@ -505,12 +521,16 @@ main {
   }
 }
 .skill-list {
-
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  grid-gap: 0 1rem;
+  justify-content: space-evenly;
 }
 .skill {
-  width: 100%;
+  width: 20rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  height: fit-content;
 }
 .skill-clickable {
   cursor: pointer;
@@ -555,4 +575,153 @@ main {
 .prof-guage-sec {
   width: 100%;
   margin-bottom: 0.5rem;
+}
+
+/* ------ CERTIFICATES STYLES ------ */
+
+#certificates {
+
+}
+.certificates-container {
+  margin-top: 2rem;
+}
+.certificate-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.certificate {
+  padding: 1rem 2rem 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-certificate);
+  width: fit-content;
+}
+@mixin small-upper {
+  color: var(--col-text-sup);
+  font-size: var(--fontsize-detail);
+  text-transform: uppercase;
+}
+.certificate-title {
+  font-size: var(--fontsize-secondary);
+}
+.certificate-issuer {
+  color: var(--col-text-gen);
+  margin: 0.5rem 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+.certificate-dates {
+  display: flex;
+  align-items: center;
+}
+.certificate-dateissued {
+  @include small-upper;
+
+  &::after {
+    content: "\00a0-\00a0";
+  }
+}
+.certificate-dateexpires {
+  @include small-upper;
+}
+.certificate-id {
+  @include small-upper;
+
+  span {
+    text-transform: none;
+  }
+}
+.certificate-link {
+  margin-top: 0.5rem;
+  font-size: var(--fontsize-detail);
+}
+
+
+/* ------ CONTACT STYLES -------- */
+#contact {
+
+}
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15rem);
+  grid-gap: 0 1rem;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+  h3 {
+    font-size: var(--fontsize-secondary);
+    margin-bottom: 1rem;
+    position: relative;
+    width: fit-content;
+
+    &::before {
+      content: "/*";
+      position: absolute;
+      top: 0;
+      right: calc(100% + 0.5em);
+      color: var(--col-detail-distant);
+    }
+    &::after {
+      content: "*/";
+      position: absolute;
+      top: 0;
+      left: calc(100% + 0.5em);
+      color: var(--col-detail-distant);
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  li {
+    line-height: 1.8rem;
+    font-weight: 300;
+  }
+  a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: var(--col-text-sup);
+    }
+  }
+}
+.contact-info {
+  margin-bottom: 2rem;
+}
+.contact-icon {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+  width: 1rem;
+}
+.info-list {
+
+}
+.info-item {
+
+}
+.contact-socials {
+  margin-bottom: 2rem;
+}
+.socials-list {
+
+}
+.socials-item {
+
+}
+
+
+/* ------- FOOTER STYLES -------- */
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--col-text-sup);
+}
+.copyright {
+  padding: 1rem 2rem;
 }
