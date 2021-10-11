@@ -154,6 +154,29 @@ const skills = {
       ]
     },
     {
+      name: "C++",
+      description: "OOP language",
+      proficiency: 0.7,
+      subSkillList: [
+        {
+          name: "Dynamic memory allocation",
+          proficiency: 0.7
+        },
+        {
+          name: "Pointers",
+          proficiency: 0.8
+        },
+        {
+          name: "Structs",
+          proficiency: 0.6
+        },
+        {
+          name: "Handling char arrays",
+          proficiency: 0.9
+        }
+      ]
+    },
+    {
       name: "Node.js",
       description: "JavaScript runtime environment",
       proficiency: 0.7,
@@ -169,10 +192,27 @@ const skills = {
       ]
     },
     {
-      name: "C++",
-      description: "OOP language",
-      proficiency: 0.6,
-      subSkillList: []
+      name: "Bash",
+      description: "Linux shell and command language",
+      proficiency: 0.7,
+      subSkillList: [
+        {
+          name: "Git commands",
+          proficiency: 0.9
+        },
+        {
+          name: "Bash with C++",
+          proficiency: 0.8
+        },
+        {
+          name: "Directory & file creation & navigation",
+          proficiency: 0.9
+        },
+        {
+          name: "Directory/file permission control",
+          proficiency: 0.6
+        },
+      ]
     },
     {
       name: "Firebase",

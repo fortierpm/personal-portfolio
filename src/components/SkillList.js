@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ProfBar from "./ProfBar";
 import SubSkillList from "./SubSkillList";
 
-const SkillList = ({ skills, skillGroup }) => {
+const SkillList = ({ skills, skillGroup, lightMode }) => {
   return (
     <ul className="skill-list">
 
@@ -25,9 +25,9 @@ const SkillList = ({ skills, skillGroup }) => {
             <div className="skill-main">
               <h4 className="skill-name">{skill.name}</h4>
               <p className="skill-desc">{skill.description}</p>
-              <ProfBar proficiency={skill.proficiency} />
+              <ProfBar proficiency={skill.proficiency} lightMode={lightMode} />
             </div>
-            <SubSkillList open={openState} skill={skill} />
+            <SubSkillList open={openState} skill={skill} lightMode={lightMode} />
           </div>
         );
       })}

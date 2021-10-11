@@ -10,73 +10,91 @@
 }
 
 @keyframes down-1 {
-  from {
+  0% {
     opacity: 0;
-    transform: translate(0%, 100%);
+    transform: translate(0%, 200%);
   }
-  to {
+  20% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
     transform: translate(0%, 0%);
   }
 }
 @keyframes down-2 {
-  from {
+  0% {
     opacity: 1;
     transform: translate(0%, 0%);
   }
-  to {
+  60% {
     opacity: 0;
-    transform: translate(0%, -100%)
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0%, -200%)
   }
 }
 @keyframes down-prep {
   to {
-    transform: translate(0%, 100%);
+    transform: translate(0%, 200%);
   }
 }
 
 @keyframes up-1 {
-  from {
+  0% {
     opacity: 0;
-    transform: translate(0%, -100%);
+    transform: translate(0%, -200%);
   }
-  to {
+  30% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
     transform: translate(0%, 0%);
   }
 }
 @keyframes up-2 {
-  from {
+  0% {
     opacity: 1;
     transform: translate(0%, 0%);
   }
-  to {
+  60% {
     opacity: 0;
-    transform: translate(0%, 100%)
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0%, 200%)
   }
 }
 @keyframes up-prep {
   to {
-    transform: translate(0%, -100%);
+    transform: translate(0%, -200%);
   }
 }
 
 @keyframes right-1 {
-  from {
+  0% {
     opacity: 0;
     transform: translate(-100%, 0%);
   }
-  to {
+  20% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
     transform: translate(0%, 0%);
   }
 }
 @keyframes right-2 {
-  from {
+  0% {
     opacity: 1;
     transform: translate(0%, 0%);
   }
-  to {
+  60% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
     transform: translate(100%, 0%)
   }
@@ -88,21 +106,27 @@
 }
 
 @keyframes left-1 {
-  from {
+  0% {
     opacity: 0;
     transform: translate(100%, 0%);
   }
-  to {
+  20% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
     transform: translate(0%, 0%);
   }
 }
 @keyframes left-2 {
-  from {
+  0% {
     opacity: 1;
     transform: translate(0%, 0%);
   }
-  to {
+  60% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
     transform: translate(-100%, 0%)
   }

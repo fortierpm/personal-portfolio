@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProfBar = ({ tier = "primary", proficiency }) => {
+const ProfBar = ({ tier = "primary", proficiency, lightMode }) => {
   let level = "";
   if (proficiency === 1) {
     level = "Expert";
@@ -22,17 +22,17 @@ const ProfBar = ({ tier = "primary", proficiency }) => {
 
   return (
     <svg className={`prof-guage ${(tier === "secondary") ? "prof-guage-sec" : "prof-guage-prim"}`} viewBox="0 0 1000 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label={`Skill Level: ${level}`}>
-      <rect width="1000" height="20" rx="10" fill="black" />
+      <rect width="1000" height="20" rx="10" fill={lightMode ? "#F2E8CF" : "black"} />
       <mask id={proficiency /* required for creating unique stop ids */} style={{ maskType: "alpha" }} maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="20">
-        <rect width={1000 * proficiency} height="20" fill="#C994C4" />
+        <rect width={1000 * proficiency} height="20" fill="black" />
       </mask>
       <g mask={`url(#${proficiency})`}>
         <rect width="1000" height="20" rx="10" fill="url(#paint0_linear)" />
       </g>
       <defs>
         <linearGradient id="paint0_linear" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#FF1F1F" />
-          <stop offset="1" stopColor="#760AFF" />
+          <stop stopColor={lightMode ? "#6a994e" : "#7a7a8c"} />
+          <stop offset="0.7" stopColor={lightMode ? "#386641" : "#dedede"} />
         </linearGradient>
       </defs>
     </svg>

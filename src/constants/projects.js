@@ -1,6 +1,6 @@
 import thumb1 from "../img/project-thumb.jpg";
 
-import peterFortier from "../img/author.jpg";
+import peterFortier from "../img/peterfortier-small.jpg";
 import jacobMerrick from "../img/author.jpg";
 
 
