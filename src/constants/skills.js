@@ -182,11 +182,7 @@ const skills = {
       proficiency: 0.7,
       subSkillList: [
         {
-          name: "npm - Node package manager",
-          proficiency: 0.7,
-        },
-        {
-          name: "npx - npm package runner",
+          name: "npm package manager - npm and npx",
           proficiency: 0.7,
         }
       ]
@@ -205,7 +201,7 @@ const skills = {
           proficiency: 0.8
         },
         {
-          name: "Directory & file creation & navigation",
+          name: "Directory/file creation & navigation",
           proficiency: 0.9
         },
         {
