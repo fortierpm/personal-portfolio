@@ -145,12 +145,18 @@ module.exports = require("@fortawesome/free-solid-svg-icons");
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-brands-svg-icons");
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/author.fb64dfe1.jpg";
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -171,12 +177,6 @@ var requireById = function requireById(id) {
 };
 
 exports["default"] = requireById;
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = require("@fortawesome/free-brands-svg-icons");
 
 /***/ }),
 /* 9 */
@@ -676,19 +676,23 @@ var external_react_static_ = __webpack_require__(25);
 var fortierpm_logo = __webpack_require__(26);
 var fortierpm_logo_default = /*#__PURE__*/__webpack_require__.n(fortierpm_logo);
 
-// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/TopNavbar.js
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/TopNavbar.jsx
 
 
 function TopNavbar() {
   return /*#__PURE__*/external_react_default.a.createElement("header", {
     className: "top-navbar"
   }, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "top-nav-thick"
+  }, /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "header-logo"
   }, /*#__PURE__*/external_react_default.a.createElement("img", {
     className: "logo-image",
     src: fortierpm_logo_default.a,
     alt: "Logo"
-  })), /*#__PURE__*/external_react_default.a.createElement("div", {
+  }))), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "top-nav-thin"
+  }, /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "header-title"
   }, "Peter Fortier"), /*#__PURE__*/external_react_default.a.createElement("nav", {
     className: "navbar"
@@ -714,12 +718,12 @@ function TopNavbar() {
   }, /*#__PURE__*/external_react_default.a.createElement("a", {
     href: "#contact",
     className: "nav-link"
-  }, "Contact")))));
+  }, "Contact"))))));
 }
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/idos.css
 var idos = __webpack_require__(46);
 
-// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/IDos.js
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/IDos.jsx
 
 
 
@@ -856,7 +860,7 @@ var IDos_IDos = function IDos() {
 };
 
 /* harmony default export */ var components_IDos = (IDos_IDos);
-// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/CategorySelector.js
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/CategorySelector.jsx
 
  //import triangle from "../img/triangle.svg";
 
@@ -919,7 +923,7 @@ var CategorySelector_CategorySelector = function CategorySelector(_ref) {
 };
 
 /* harmony default export */ var components_CategorySelector = (CategorySelector_CategorySelector);
-// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProjectCard.js
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProjectCard.jsx
 
 
 var ProjectCard_ProjectCard = function ProjectCard(_ref) {
@@ -975,7 +979,7 @@ var ProjectCard_ProjectCard = function ProjectCard(_ref) {
 };
 
 /* harmony default export */ var components_ProjectCard = (ProjectCard_ProjectCard);
-// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProjectCardStack.js
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProjectCardStack.jsx
 
 
 
@@ -1001,7 +1005,7 @@ var ProjectCardStack_ProjectCardStack = function ProjectCardStack(_ref) {
 };
 
 /* harmony default export */ var components_ProjectCardStack = (ProjectCardStack_ProjectCardStack);
-// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProfBar.js
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/ProfBar.jsx
 
 
 var ProfBar_ProfBar = function ProfBar(_ref) {
@@ -1079,7 +1083,7 @@ var ProfBar_ProfBar = function ProfBar(_ref) {
 };
 
 /* harmony default export */ var components_ProfBar = (ProfBar_ProfBar);
-// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/SubSkillList.js
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/SubSkillList.jsx
 
 
 
@@ -1104,7 +1108,7 @@ var SubSkillList_SubSkillList = function SubSkillList(_ref) {
 };
 
 /* harmony default export */ var components_SubSkillList = (SubSkillList_SubSkillList);
-// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/SkillList.js
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/SkillList.jsx
 
 
 
@@ -1155,7 +1159,7 @@ var SkillList_SkillList = function SkillList(_ref) {
 };
 
 /* harmony default export */ var components_SkillList = (SkillList_SkillList);
-// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/CertificateList.js
+// CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/CertificateList.jsx
 
 
 var CertificateList_CertificateList = function CertificateList(_ref) {
@@ -1203,6 +1207,7 @@ var CertificateList_CertificateList = function CertificateList(_ref) {
       className: "certificate-link"
     }, /*#__PURE__*/external_react_default.a.createElement("a", {
       href: certificate.credentialURL,
+      rel: "external noopener",
       target: "_blank"
     }, "See certificate")));
   }));
@@ -1222,7 +1227,7 @@ var react_fontawesome_ = __webpack_require__(2);
 var free_solid_svg_icons_ = __webpack_require__(5);
 
 // EXTERNAL MODULE: external "@fortawesome/free-brands-svg-icons"
-var free_brands_svg_icons_ = __webpack_require__(8);
+var free_brands_svg_icons_ = __webpack_require__(6);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
 var defineProperty_ = __webpack_require__(27);
@@ -1237,7 +1242,7 @@ var peterfortier_small = __webpack_require__(4);
 var peterfortier_small_default = /*#__PURE__*/__webpack_require__.n(peterfortier_small);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/author.jpg
-var img_author = __webpack_require__(6);
+var img_author = __webpack_require__(7);
 var author_default = /*#__PURE__*/__webpack_require__.n(img_author);
 
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/constants/projects.js
@@ -1441,21 +1446,47 @@ var skills_skills = {
       proficiency: 0.8
     }]
   }, {
+    name: "C++",
+    description: "OOP language",
+    proficiency: 0.7,
+    subSkillList: [{
+      name: "Dynamic memory allocation",
+      proficiency: 0.7
+    }, {
+      name: "Pointers",
+      proficiency: 0.8
+    }, {
+      name: "Structs",
+      proficiency: 0.6
+    }, {
+      name: "Handling char arrays",
+      proficiency: 0.9
+    }]
+  }, {
     name: "Node.js",
     description: "JavaScript runtime environment",
     proficiency: 0.7,
     subSkillList: [{
-      name: "npm - Node package manager",
-      proficiency: 0.7
-    }, {
-      name: "npx - npm package runner",
+      name: "npm package manager - npm and npx",
       proficiency: 0.7
     }]
   }, {
-    name: "C++",
-    description: "OOP language",
-    proficiency: 0.6,
-    subSkillList: []
+    name: "Bash",
+    description: "Linux shell and command language",
+    proficiency: 0.7,
+    subSkillList: [{
+      name: "Git commands",
+      proficiency: 0.9
+    }, {
+      name: "Bash with C++",
+      proficiency: 0.8
+    }, {
+      name: "Directory/file creation & navigation",
+      proficiency: 0.9
+    }, {
+      name: "Directory/file permission control",
+      proficiency: 0.6
+    }]
   }, {
     name: "Firebase",
     description: "Google-backed application development software",
@@ -1649,13 +1680,10 @@ var App_App = function App() {
     // Note that useEffect does not run for SSR
     setLightMode(JSON.parse(localStorage.getItem("theme")) !== null ? JSON.parse(localStorage.getItem("theme")) : true);
     var theme = JSON.parse(localStorage.getItem("theme")) ? "lightmode" : "darkmode";
-    console.log(theme);
 
     if (JSON.parse(localStorage.getItem("theme")) !== null) {
-      console.log("ifed");
       document.body.classList.add(theme);
     } else {
-      console.log("elsed");
       localStorage.setItem("theme", lightMode);
       document.body.classList.add("lightmode");
     }
@@ -1683,6 +1711,8 @@ var App_App = function App() {
 
   return /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "App"
+  }, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "App-full"
   }, /*#__PURE__*/external_react_default.a.createElement(external_react_static_["Head"], null, /*#__PURE__*/external_react_default.a.createElement("meta", {
     charSet: "UTF-8"
   }), /*#__PURE__*/external_react_default.a.createElement("title", null, "Peter Fortier - Web Portfolio"), /*#__PURE__*/external_react_default.a.createElement("meta", {
@@ -1779,6 +1809,38 @@ var App_App = function App() {
     strokeWidth: "10",
     strokeLinejoin: "round",
     strokeDasharray: "120 170 120 20 420 170"
+  })))), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "mountains-background"
+  }, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "mountains-container"
+  }, /*#__PURE__*/external_react_default.a.createElement("svg", {
+    className: "mountains",
+    width: "1440",
+    height: "1024",
+    viewBox: "0 0 1440 1024",
+    preserveAspectRatio: "xMinYMin slice",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/external_react_default.a.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1440 1024V509.821L1351.61 450L1238.46 526.58L1138.61 459L1098.63 486.059L962.613 394L786.599 513.127L641.613 415L414.071 569.001L279.613 478L229.178 512.135L88.613 417L0 476.974V1024H1440Z",
+    fill: lightMode ? "#FBF7EF" : "#1C1823"
+  }))), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "water-container"
+  }, /*#__PURE__*/external_react_default.a.createElement("svg", {
+    className: "water",
+    width: "1440",
+    height: "97",
+    viewBox: "0 0 1440 97",
+    preserveAspectRatio: "xMinYMin slice",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/external_react_default.a.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1440 97V63.0727C1424.22 62.7058 1407.26 62.5 1389 62.5C1296.01 62.5 1274.52 68.5474 1249.67 75.5414C1215.6 85.1309 1175.21 96.5 935.5 96.5C596.394 96.5 704.296 59.6687 798.963 42.5021C912.963 26.5021 994.463 -4.29793 408.463 0.502058C203.156 2.18376 75.3233 9.11082 0 18.3977V97H1440Z",
+    fill: lightMode ? "#FFF" : "#17141d"
   })))))), /*#__PURE__*/external_react_default.a.createElement("main", null, /*#__PURE__*/external_react_default.a.createElement("section", {
     id: "projects",
     className: "main-section"
@@ -1851,7 +1913,15 @@ var App_App = function App() {
   }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
     className: "contact-icon",
     icon: free_brands_svg_icons_["faLinkedin"]
-  }), "LinkedIn")))), /*#__PURE__*/external_react_default.a.createElement("section", {
+  }), "LinkedIn")), /*#__PURE__*/external_react_default.a.createElement("li", {
+    className: "info-item"
+  }, /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "https://github.com/fortierpm",
+    rel: "external noopener"
+  }, /*#__PURE__*/external_react_default.a.createElement(react_fontawesome_["FontAwesomeIcon"], {
+    className: "contact-icon",
+    icon: free_brands_svg_icons_["faGithub"]
+  }), "Github")))), /*#__PURE__*/external_react_default.a.createElement("section", {
     className: "contact-socials"
   }, /*#__PURE__*/external_react_default.a.createElement("h3", null, "Socials"), /*#__PURE__*/external_react_default.a.createElement("ul", {
     className: "socials-list"
@@ -1880,8 +1950,19 @@ var App_App = function App() {
     className: "contact-icon",
     icon: free_brands_svg_icons_["faTwitter"]
   }), "Twitter"))))))), /*#__PURE__*/external_react_default.a.createElement("footer", null, /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "source-code"
+  }, "Check out this site's development ", /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "https://github.com/fortierpm/personal-portfolio",
+    rel: "external noopener",
+    target: "_blank"
+  }, "source code"), "."), /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "copyright"
-  }, "\xA9 2021 Peter Fortier. All Rights Reserved.")));
+  }, "\xA9 2021 Peter Fortier. All Rights Reserved."))), /*#__PURE__*/external_react_default.a.createElement("div", {
+    className: "App-mobile"
+  }, /*#__PURE__*/external_react_default.a.createElement("p", null, "I apologize but unfortunately this webpage is not yet optimized for mobile devices. Check my ", /*#__PURE__*/external_react_default.a.createElement("a", {
+    href: "https://github.com/fortierpm/personal-portfolio",
+    rel: "external noopener"
+  }, "Github repository"), " for this site's source code.")));
 };
 
 /* harmony default export */ var src_App = __webpack_exports__["a"] = (App_App);
@@ -1930,7 +2011,7 @@ var _react = __webpack_require__(0);
 
 var React = _interopRequireWildcard(_react);
 
-var _requireById = __webpack_require__(7);
+var _requireById = __webpack_require__(8);
 
 var _requireById2 = _interopRequireDefault(_requireById);
 
@@ -2622,10 +2703,10 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	".": 7,
-	"./": 7,
-	"./index": 7,
-	"./index.js": 7
+	".": 8,
+	"./": 8,
+	"./index": 8,
+	"./index.js": 8
 };
 
 
@@ -3020,7 +3101,7 @@ exports.push([module.i, "\n*, *::before, *::after {\n  margin: 0;\n  padding: 0;
 
 exports = module.exports = __webpack_require__(13)(false);
 // Module
-exports.push([module.i, ":root {\n  --fontsize-normal: 1rem;\n  --fontsize-title: 3rem;\n  --fontsize-secondary: 1.5rem;\n  --fontsize-detail: 0.8rem;\n  --logo-width: 4rem;\n  --logo-pad-left: 3rem;\n  --logo-pad-right: 2rem;\n  --logo-pad-total: calc(var(--logo-pad-left) + var(--logo-pad-right));\n  --add-margin-left: 2rem;\n  --main-margin-left: calc(var(--logo-pad-total) + var(--logo-width) + var(--add-margin-left));\n  --main-margin-right: 5rem;\n}\n\n.lightmode {\n  --bg-prim: white;\n  --bg-nav: #386641;\n  --bg-navlogo: #518048;\n  --bg-card: linear-gradient(20deg, #386641, #6A994E);\n  --col-text-titles: #000000;\n  --col-text-gen: #000000;\n  --col-text-sup: #8CAD6F;\n  --col-detail-1: #6A994E;\n  --col-detail-2: #386641;\n  --col-detail-3: #F2E8CF;\n  --col-detail-4: orange;\n  --col-detail-5: #BC4749;\n  --col-detail-6: #FBF7EF;\n  --col-lightdark: #6A994E;\n  --col-lightdark-hover: #F2E8CF;\n  --col-hover-1: #518048;\n  --col-hover-2: ;\n  --grad-decor-1: #FBF7EF;\n  --grad-decor-2: #a7c957;\n  --col-navtext: white;\n  --col-nav-hover: #AEC18F;\n  --col-navtitle: rgba(255, 255, 255, 0.8);\n  --col-card-title: white;\n  --col-card-textprim: white;\n  --col-card-textsup: #fff7;\n  --col-card-thinborder: #0000;\n  --col-card-tagbg: #386641;\n  --col-card-tagtext: #fffd;\n  --col-cardscroll: #6a994e;\n  --color-choices:\r\n    #255809, // prim accent + grad long\r\n    #b4fa04, // second accent\r\n    #dfff2d, // highlight/select\r\n    #3b4925, // shadow\r\n    #549a01, // cta\r\n    #529600, // grad long\r\n    #337e0a, // grad both\r\n    #72af00, // grad both\r\n    #E85F9A;\n  --shadow-nodir:\r\n    0px 2.8px 2.2px rgba(0, 0, 0, 0.034),\r\n    0px 6.7px 5.3px rgba(0, 0, 0, 0.049),\r\n    0px 12.5px 10px rgba(0, 0, 0, 0.057),\r\n    0px 22.3px 17.9px rgba(0, 0, 0, 0.062),\r\n    0px 41.8px 33.4px rgba(0, 0, 0, 0.066),\r\n    0px 100px 80px rgba(0, 0, 0, 0.07);\n  --shadow-dir: 2px 2px 20px #0003;\n  --shadow-card:\r\n  0px 0.8px 2.2px rgba(0, 0, 0, 0.112),\r\n  0px 2px 5.3px rgba(0, 0, 0, 0.162),\r\n  0px 3.8px 10px rgba(0, 0, 0, 0.2),\r\n  0px 6.7px 17.9px rgba(0, 0, 0, 0.238),\r\n  0px 12.5px 33.4px rgba(0, 0, 0, 0.288),\r\n  0px 30px 80px rgba(0, 0, 0, 0.4)\r\n;\n  --shadow-certificate:\r\n  0px 0.6px 1px rgba(0, 0, 0, 0.056),\r\n  0px 1.3px 2.5px rgba(0, 0, 0, 0.081),\r\n  0px 2.5px 4.6px rgba(0, 0, 0, 0.1),\r\n  0px 4.5px 8.3px rgba(0, 0, 0, 0.119),\r\n  0px 8.4px 15.5px rgba(0, 0, 0, 0.144),\r\n  0px 20px 37px rgba(0, 0, 0, 0.2)\r\n;\n}\n\n.darkmode {\n  --bg-prim: #17141d;\n  --bg-nav: #17141d;\n  --bg-navlogo: #17141d;\n  --bg-card: #17141d;\n  --col-text-titles: #eeeeef;\n  --col-text-gen: #eeeeee;\n  --col-text-sup: #7a7a8c;\n  --col-detail-1: #7a7a8c;\n  --col-detail-2: #646374;\n  --col-detail-3: #4d4b5b;\n  --col-detail-4: #373442;\n  --col-detail-5: #2c2836;\n  --col-detail-6: #201c29;\n  --col-lightdark: #373442;\n  --col-lightdark-hover: #eeeeee;\n  --col-hover-1: #7a7a8c;\n  --col-hover-2: ;\n  --grad-decor-1: var(--col-detail-6);\n  --grad-fallback-1: var(--col-detail-6);\n  --grad-decor-2: var(--col-detail-3);\n  --grad-fallback-2: var(--col-detail-3);\n  --col-navtext: #eeeeee;\n  --col-nav-hover: #7a7a8c;\n  --col-navtitle: #7a7a8c;\n  --col-card-title: #eeeeef;\n  --col-card-textprim: #eeeeee;\n  --col-card-textsup: #7a7a8c;\n  --col-card-thinborder: #7a7a8c;\n  --col-card-tagbg: #0000;\n  --col-card-tagtext: #eeeeee;\n  --col-cardscroll: #201c29;\n  --shadow-nodir:\r\n    0px 2.8px 2.2px rgba(0, 0, 0, 0.034),\r\n    0px 6.7px 5.3px rgba(0, 0, 0, 0.049),\r\n    0px 12.5px 10px rgba(0, 0, 0, 0.057),\r\n    0px 22.3px 17.9px rgba(0, 0, 0, 0.062),\r\n    0px 41.8px 33.4px rgba(0, 0, 0, 0.066),\r\n    0px 100px 80px rgba(0, 0, 0, 0.07);\n  --shadow-dir:\r\n    1.4px 2.8px 2.2px rgba(0, 0, 0, 0.034),\r\n    3.3px 6.7px 5.3px rgba(0, 0, 0, 0.049),\r\n    6.3px 12.5px 10px rgba(0, 0, 0, 0.057),\r\n    11.2px 22.3px 17.9px rgba(0, 0, 0, 0.062),\r\n    20.9px 41.8px 33.4px rgba(0, 0, 0, 0.066),\r\n    50px 100px 80px rgba(0, 0, 0, 0.07);\n  --shadow-card:\r\n    -0.5px 0.8px 4.4px rgba(0, 0, 0, 0.129),\r\n    -1.1px 2px 10.6px rgba(0, 0, 0, 0.186),\r\n    -2.1px 3.8px 20px rgba(0, 0, 0, 0.23),\r\n    -3.8px 6.7px 35.7px rgba(0, 0, 0, 0.274),\r\n    -7.1px 12.5px 66.8px rgba(0, 0, 0, 0.331),\r\n    -17px 30px 160px rgba(0, 0, 0, 0.46);\n  --shadow-certificate:\r\n    0px 0px 2.8px rgba(0, 0, 0, 0.051),\r\n    0px 0px 6.7px rgba(0, 0, 0, 0.073),\r\n    0px 0px 12.5px rgba(0, 0, 0, 0.09),\r\n    0px 0px 22.3px rgba(0, 0, 0, 0.107),\r\n    0px 0px 41.8px rgba(0, 0, 0, 0.129),\r\n    0px 0px 100px rgba(0, 0, 0, 0.18);\n}\n\nbody {\n  background-color: var(--bg-prim);\n  color: var(--col-text-gen);\n  width: 100%;\n  --border-prim1: 0.05rem solid var(--col-detail-1);\n  --border-sec1: 0.1rem solid var(--col-detail-6);\n  --border-sec2: 0.2rem solid var(--col-detail-6);\n  --border-carddetails: 0.05rem solid var(--col-card-thinborder);\n  --border-invis: 0.1rem solid #0000;\n}\n\nh1, h2, h3, h4 {\n  color: var(--col-text-titles);\n}\n\n.App {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n/* ------------ NAV STYLES ------------- */\nheader.top-navbar {\n  position: sticky;\n  top: 0;\n  left: 0;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  color: var(--col-navtext);\n  background: var(--bg-nav);\n  box-shadow: var(--shadow-nodir);\n  z-index: 10;\n  /* should be highest element */\n}\n\n.header-logo {\n  position: absolute;\n  top: 0;\n  left: 0;\n  padding: 1rem 2rem 1rem 3rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--bg-navlogo);\n  border-bottom-right-radius: 2rem;\n  box-shadow: var(--shadow-dir);\n}\n\n.logo-image {\n  width: var(--logo-width);\n  height: auto;\n}\n\n.header-title {\n  margin-left: var(--main-margin-left);\n  font-family: \"Roboto Mono\";\n  font-size: 2rem;\n  font-weight: 100;\n  color: var(--col-navtitle);\n}\n\n.navbar {\n  display: flex;\n  min-width: 14rem;\n  width: 40%;\n  margin: 1.5ch 0;\n  margin-right: 5%;\n  font-weight: 200;\n}\n\n.nav-list {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.nav-link {\n  text-decoration: none;\n  transition: all 0.1s ease;\n}\n\n.nav-link:hover {\n  color: var(--col-nav-hover);\n}\n\n@media screen and (max-width: 600px) {\n  :root {\n    --logo-pad-left: 1.5rem;\n    --logo-pad-right: 1rem;\n    --logo-width: 3rem;\n    --add-margin-left: 0.5rem;\n  }\n  header.top-navbar {\n    flex-direction: column;\n  }\n  .header-logo {\n    padding-left: var(--logo-pad-left);\n    padding-right: var(--logo-pad-right);\n    border-bottom-right-radius: 1.5rem;\n  }\n  .logo-image {\n    width: var(--logo-width);\n  }\n  .header-title {\n    margin-left: calc(var(--logo-width) + var(--logo-pad-total));\n  }\n  .navbar {\n    margin-left: calc(var(--logo-width) + var(--logo-pad-total));\n  }\n}\n\n/* --------- HERO STYLES ---------- */\n#hero {\n  min-height: 90vh;\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n\n.hero-catch {\n  position: relative;\n  margin-left: var(--main-margin-left);\n  margin-top: -1rem;\n}\n\n.hero-header {\n  margin-bottom: 2rem;\n  font-size: 3rem;\n}\n\n.hero-icon {\n  position: absolute;\n  top: 2.5rem;\n  left: -3.5rem;\n  cursor: pointer;\n  transform: rotate(-10deg);\n  transform-origin: center;\n  font-size: 2rem;\n  color: var(--col-lightdark);\n  transition: all 0.2s ease;\n}\n\n.hero-icon:hover {\n  color: var(--col-lightdark-hover);\n  transform: scale(1.4);\n}\n\n.subheader {\n  display: block;\n  font-size: var(--fontsize-secondary);\n}\n\n.subheader-text {\n  display: block;\n}\n\n.idobox {\n  position: relative;\n  display: block;\n  width: 20rem;\n  margin: 3rem 2rem;\n}\n\n.screen-readable-label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  color: #0000;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  display: block;\n  font-size: 1px;\n}\n\n.ido-placeholder {\n  color: #0000;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  display: block;\n}\n\n.ido {\n  opacity: 0;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: block;\n  will-change: transform, opacity;\n}\n\n.ido::before {\n  content: \"/\";\n  color: #0000;\n  background: var(--grad-decor-2);\n  -webkit-background-clip: text;\n          background-clip: text;\n}\n\n.ido::after {\n  content: \"/\";\n  color: #0000;\n  background: var(--grad-decor-2);\n  -webkit-background-clip: text;\n          background-clip: text;\n}\n\n.hero-background {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: -1;\n}\n\n.hero-face {\n  position: absolute;\n  top: 50%;\n  right: -1rem;\n  transform: translate(0, -50%);\n  width: 45%;\n  max-width: 90vh;\n}\n\n.hero-face-img img {\n  width: 100%;\n  height: auto;\n  border-radius: 50%;\n}\n\n.hero-face-decoration {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 150%;\n  z-index: -1;\n}\n\n.hero-face-decoration svg {\n  width: 100%;\n  height: 100%;\n}\n\n.hero-face-decoration svg circle {\n  transform-origin: center;\n  will-change: transform;\n}\n\n.hero-face-decoration svg .wide {\n  -webkit-animation: rotate-wide 40s linear infinite forwards;\n          animation: rotate-wide 40s linear infinite forwards;\n}\n\n.hero-face-decoration svg .thin {\n  -webkit-animation: rotate-thin 50s linear infinite forwards;\n          animation: rotate-thin 50s linear infinite forwards;\n}\n\n.hero-face-decoration svg .thick {\n  -webkit-animation: rotate-thick 70s linear infinite forwards;\n          animation: rotate-thick 70s linear infinite forwards;\n}\n\n@-webkit-keyframes rotate-wide {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes rotate-wide {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes rotate-thin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(-360deg);\n  }\n}\n\n@keyframes rotate-thin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(-360deg);\n  }\n}\n\n@-webkit-keyframes rotate-thick {\n  from {\n    transform: rotate(45deg);\n  }\n  to {\n    transform: rotate(405deg);\n  }\n}\n\n@keyframes rotate-thick {\n  from {\n    transform: rotate(45deg);\n  }\n  to {\n    transform: rotate(405deg);\n  }\n}\n\n/* ------ GENERAL MAIN STYLES ------- */\nmain {\n  margin-left: var(--main-margin-left);\n  margin-right: var(--main-margin-right);\n  width: calc(100% - var(--main-margin-left) - var(--main-margin-right));\n}\n\n.main-section {\n  margin-bottom: 3rem;\n}\n\n.main-section h2 {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  position: relative;\n  display: block;\n  font-size: var(--fontsize-title);\n  margin-bottom: 0.5rem;\n}\n\n.main-section h2::before {\n  content: \"<\";\n  position: absolute;\n  top: 0;\n  left: -1em;\n  color: #0000;\n  background: var(--grad-decor-1);\n  -webkit-background-clip: text;\n          background-clip: text;\n}\n\n.main-section h2::after {\n  content: \" />\";\n  position: absolute;\n  top: 0;\n  right: -2em;\n  color: #0000;\n  background: var(--grad-decor-1);\n  -webkit-background-clip: text;\n          background-clip: text;\n}\n\n/* --------- PROJECTS STYLES --------- */\n#projects {\n  margin-bottom: 5rem;\n}\n\n.project-category-select {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  display: flex;\n  align-items: center;\n  margin-bottom: 0.5rem;\n}\n\n.category-desc {\n  margin-right: 1rem;\n}\n\n.category-select {\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  border: var(--border-prim1);\n  border-radius: 0.75rem;\n  background: var(--bg-prim);\n  position: relative;\n}\n\n.category-select .triangle {\n  margin: 0 0.8rem;\n  width: 0.6rem;\n  height: auto;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  transition: all 0.5s ease;\n}\n\n.category-select .triangle.rotate-90 {\n  transform: rotate(-90deg);\n}\n\n.active-category {\n  padding: 0.3rem 0.8rem;\n  position: relative;\n}\n\n.active-category::after {\n  content: \"\";\n  position: absolute;\n  top: -1%;\n  right: 0;\n  width: 0.05rem;\n  height: 102%;\n  transform: translateX(-50%);\n  background: var(--col-text-sup);\n}\n\n.category-dropdown {\n  position: absolute;\n  top: 110%;\n  left: 0;\n  opacity: 0;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  pointer-events: none;\n  background: var(--bg-prim);\n  transition: all 0.2s ease;\n  z-index: 1;\n  border: var(--border-prim1);\n  border-radius: 0.75rem;\n  overflow: hidden;\n}\n\n.category-dropdown.dropdown-open {\n  opacity: 1;\n  -webkit-user-select: auto;\n     -moz-user-select: auto;\n      -ms-user-select: auto;\n          user-select: auto;\n  pointer-events: auto;\n  cursor: pointer;\n}\n\n.category-option {\n  padding: 0.3rem 0.8rem;\n  transition: all 0.2s ease;\n  white-space: nowrap;\n}\n\n.category-option:hover {\n  background: var(--col-detail-3);\n}\n\n.category-option-active {\n  color: var(--col-text-sup);\n  cursor: default;\n}\n\n.category-option-active:hover {\n  background: var(--bg-prim);\n}\n\n.project-stack-container {\n  margin-left: calc(0rem - var(--main-margin-left));\n  width: calc(100% + var(--main-margin-left) + var(--main-margin-right));\n}\n\n.card-stack {\n  display: flex;\n  align-items: center;\n  padding: 2rem var(--main-margin-right) 2rem var(--main-margin-left);\n  overflow-x: scroll;\n}\n\n.card-stack::-webkit-scrollbar {\n  width: 0.625rem;\n  height: 0.625rem;\n}\n\n.card-stack::-webkit-scrollbar-thumb {\n  background: var(--col-cardscroll);\n  border-radius: 0.625rem;\n}\n\n.card-stack::-webkit-scrollbar-track {\n  background: var(--bg-prim);\n}\n\n.project-card {\n  height: 22rem;\n  width: 25rem;\n  min-width: 16rem;\n  margin: 0;\n  padding: 1.5rem;\n  border-radius: 1rem;\n  background: var(--bg-card);\n  box-shadow: var(--shadow-card);\n  display: flex;\n  flex-direction: column;\n  transition: all .2s ease;\n  scroll-snap-align: start;\n  clear: both;\n  position: relative;\n}\n\n/* ~ is used to select all sibling .cards after the focused or hovered .card */\n.project-card:focus-within ~ .project-card, .project-card:hover ~ .project-card {\n  transform: translateX(4rem);\n}\n\n.project-card:hover {\n  transform: translateY(-1rem);\n}\n\n/* set stacked spacing style for all .cards (excluding the first .card) */\n.project-card:not(:first-child) {\n  margin-left: -4rem;\n}\n\n.card-title {\n  margin-bottom: 0.4rem;\n}\n\n.card-title h3 {\n  color: var(--col-card-title);\n}\n\n.card-title h3 a {\n  text-decoration: none;\n}\n\n.card-date {\n  font-size: var(--fontsize-detail);\n  color: var(--col-card-textsup);\n}\n\n.card-thumb {\n  width: 100%;\n  height: 3.125rem;\n  -o-object-fit: cover;\n     object-fit: cover;\n  flex-grow: 1;\n  border-radius: 0.2rem;\n  box-shadow: 0px 0.6px 1.7px rgba(0, 0, 0, 0.037), 0px 1.3px 4.1px rgba(0, 0, 0, 0.053), 0px 2.5px 7.6px rgba(0, 0, 0, 0.065), 0px 4.5px 13.6px rgba(0, 0, 0, 0.077), 0px 8.4px 25.5px rgba(0, 0, 0, 0.093), 0px 20px 61px rgba(0, 0, 0, 0.13);\n}\n\n.card-authorship {\n  display: flex;\n  margin: 1rem 0;\n  color: var(--col-card-textprim);\n}\n\n.card-authorship.single {\n  align-items: center;\n}\n\n.author1-avatar {\n  border-radius: 50%;\n  overflow: hidden;\n  height: 3.125rem;\n  width: 3.125rem;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.377);\n}\n\n.avatar-img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n.author-list {\n  margin-left: 1rem;\n  color: var(--col-card-textprim);\n}\n\n.author-prefix {\n  color: var(--col-card-textsup);\n  font-size: var(--fontsize-detail);\n  text-transform: uppercase;\n  font-weight: 700;\n}\n\n.author-link {\n  text-decoration: none;\n}\n\n.card-tags {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  color: var(--col-card-tagtext);\n}\n\n.tag-link {\n  font-size: var(--fontsize-detail);\n  text-decoration: none;\n  padding: 0.1rem 0.4rem;\n  margin-right: 0.4rem;\n  border-radius: 1rem;\n  background: var(--col-card-tagbg);\n  border: var(--border-carddetails);\n}\n\n/* -------- SKILLS STYLES --------- */\n.skills-container {\n  margin-top: 2rem;\n}\n\n.skill-group {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  margin-top: 1rem;\n}\n\n.skill-group h3 {\n  margin: 0.5rem 0;\n  font-size: var(--fontsize-secondary);\n  position: relative;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n\n.skill-group h3::before {\n  content: \"{\";\n  position: absolute;\n  right: calc(100% + 0.2rem);\n  color: #0000;\n  background: var(--grad-decor-1);\n  -webkit-background-clip: text;\n          background-clip: text;\n}\n\n.skill-group h3::after {\n  content: \".map}\";\n  color: #0000;\n  background: var(--grad-decor-1);\n  -webkit-background-clip: text;\n          background-clip: text;\n}\n\n.skill-list {\n  display: -ms-grid;\n  display: grid;\n  -ms-grid-columns: (20rem)[auto-fill];\n      grid-template-columns: repeat(auto-fill, 20rem);\n  grid-gap: 0 1rem;\n  justify-content: space-evenly;\n}\n\n.skill {\n  width: 20rem;\n  padding: 0.5rem 1rem;\n  border-radius: 0.5rem;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n\n.skill-clickable {\n  cursor: pointer;\n  transition: all 0.3s ease;\n  border: var(--border-invis);\n}\n\n.skill-clickable:hover {\n  border: var(--border-sec1);\n  background-color: var(--col-detail-6);\n}\n\n.skill-clickable:focus {\n  pointer-events: none;\n}\n\n.skill-desc {\n  text-transform: uppercase;\n  font-size: var(--fontsize-detail);\n  color: var(--col-text-sup);\n}\n\n.subskill-list {\n  margin-top: 0.75rem;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.subskill {\n  width: 60%;\n}\n\n.subskill-name {\n  font-size: 0.8rem;\n  font-weight: bold;\n}\n\n.prof-guage-prim {\n  width: 100%;\n}\n\n.prof-guage-sec {\n  width: 100%;\n  margin-bottom: 0.5rem;\n}\n\n/* ------ CERTIFICATES STYLES ------ */\n.certificates-container {\n  margin-top: 2rem;\n}\n\n.certificate-list {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n}\n\n.certificate {\n  padding: 1rem 2rem 1.5rem 2rem;\n  border-radius: 1rem;\n  color: var(--col-card-textprim);\n  background: var(--bg-card);\n  box-shadow: var(--shadow-certificate);\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n\n.certificate-title {\n  font-size: var(--fontsize-secondary);\n  color: var(--col-card-title);\n}\n\n.certificate-issuer {\n  color: var(--col-card-textprim);\n  margin: 0.5rem 0;\n}\n\n.certificate-issuer a {\n  text-decoration: none;\n}\n\n.certificate-dates {\n  display: flex;\n  align-items: center;\n}\n\n.certificate-dateissued {\n  color: var(--col-card-textsup);\n  font-size: var(--fontsize-detail);\n  text-transform: uppercase;\n}\n\n.certificate-dateissued::after {\n  content: \"\\00a0-\\00a0\";\n}\n\n.certificate-dateexpires {\n  color: var(--col-card-textsup);\n  font-size: var(--fontsize-detail);\n  text-transform: uppercase;\n}\n\n.certificate-id {\n  color: var(--col-card-textsup);\n  font-size: var(--fontsize-detail);\n  text-transform: uppercase;\n}\n\n.certificate-id span {\n  text-transform: none;\n}\n\n.certificate-link {\n  margin-top: 0.5rem;\n  font-size: var(--fontsize-detail);\n}\n\n/* ------ CONTACT STYLES -------- */\n.contact-container {\n  display: -ms-grid;\n  display: grid;\n  -ms-grid-columns: (15rem)[auto-fit];\n      grid-template-columns: repeat(auto-fit, 15rem);\n  grid-gap: 0 1rem;\n  justify-content: space-around;\n  margin-top: 2rem;\n}\n\n.contact-container h3 {\n  font-size: var(--fontsize-secondary);\n  margin-bottom: 1rem;\n  position: relative;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n\n.contact-container h3::before {\n  content: \"/*\";\n  position: absolute;\n  top: 0;\n  right: calc(100% + 0.5em);\n  color: #0000;\n  background: var(--grad-decor-1);\n  -webkit-background-clip: text;\n          background-clip: text;\n}\n\n.contact-container h3::after {\n  content: \"*/\";\n  position: absolute;\n  top: 0;\n  left: calc(100% + 0.5em);\n  color: #0000;\n  background: var(--grad-decor-1);\n  -webkit-background-clip: text;\n          background-clip: text;\n}\n\n.contact-container ul {\n  display: flex;\n  flex-direction: column;\n  align-items: baseline;\n}\n\n.contact-container li {\n  line-height: 1.8rem;\n  font-weight: 300;\n}\n\n.contact-container a {\n  text-decoration: none;\n  transition: all 0.2s ease;\n}\n\n.contact-container a:hover {\n  color: var(--col-hover-1);\n}\n\n.contact-info {\n  margin-bottom: 2rem;\n}\n\n.contact-icon {\n  margin-right: 0.8rem;\n  font-size: 1.2rem;\n  width: 1rem;\n}\n\n.contact-socials {\n  margin-bottom: 2rem;\n}\n\n/* ------- FOOTER STYLES -------- */\nfooter {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: flex-end;\n  color: var(--col-text-sup);\n}\n\n.copyright {\n  padding: 1rem 2rem;\n}", ""]);
+exports.push([module.i, ":root {\n  --fontsize-normal: 1rem;\n  --fontsize-title: 3rem;\n  --fontsize-secondary: 1.5rem;\n  --fontsize-detail: 0.8rem;\n  --logo-width: 4rem;\n  --logo-pad-left: 3rem;\n  --logo-pad-right: 2rem;\n  --logo-pad-total: calc(var(--logo-pad-left) + var(--logo-pad-right));\n  --add-margin-left: 2rem;\n  --main-margin-left: calc(var(--logo-pad-total) + var(--logo-width) + var(--add-margin-left));\n  --main-margin-right: 5rem;\n}\n\n.lightmode {\n  --bg-prim: #FFF;\n  --bg-nav: #386641;\n  --bg-navlogo: #518048;\n  --bg-footer: #386641;\n  --bg-card: linear-gradient(20deg, #386641, #6A994E);\n  --col-text-titles: #000000;\n  --col-text-gen: #000000;\n  --col-text-sup: #8CAD6F;\n  --col-detail-1: #6A994E;\n  --col-detail-2: #386641;\n  --col-detail-3: #F2E8CF;\n  --col-detail-4: orange;\n  --col-detail-5: #BC4749;\n  --col-detail-6: #FBF7EF;\n  --col-lightdark: #BC4749;\n  --col-lightdark-hover: #F2E8CF;\n  --col-hover-1: #518048;\n  --col-hover-2: ;\n  --grad-decor-1: #FBF7EF;\n  --grad-decor-2: #BC4749;\n  --col-navtext: #FFF;\n  --col-nav-hover: #AEC18F;\n  --col-navtitle: rgba(255, 255, 255, 0.8);\n  --col-card-title: #FFF;\n  --col-card-textprim: #FFF;\n  --col-card-textsup: #fff7;\n  --col-card-thinborder: #0000;\n  --col-card-tagbg: #386641;\n  --col-card-tagtext: #fffd;\n  --col-cardscroll: #6a994e;\n  --col-footertext: #FFF;\n  --color-choices:\r\n    #255809, // prim accent + grad long\r\n    #b4fa04, // second accent\r\n    #dfff2d, // highlight/select\r\n    #3b4925, // shadow\r\n    #549a01, // cta\r\n    #529600, // grad long\r\n    #337e0a, // grad both\r\n    #72af00, // grad both\r\n    #E85F9A;\n  --shadow-nodir:\r\n    0px 2.8px 2.2px rgba(0, 0, 0, 0.034),\r\n    0px 6.7px 5.3px rgba(0, 0, 0, 0.049),\r\n    0px 12.5px 10px rgba(0, 0, 0, 0.057),\r\n    0px 22.3px 17.9px rgba(0, 0, 0, 0.062),\r\n    0px 41.8px 33.4px rgba(0, 0, 0, 0.066),\r\n    0px 100px 80px rgba(0, 0, 0, 0.07);\n  --shadow-dir: \r\n    1.4px 2.8px 2.2px rgba(0, 0, 0, 0.034),\r\n    3.3px 6.7px 5.3px rgba(0, 0, 0, 0.049),\r\n    6.3px 12.5px 10px rgba(0, 0, 0, 0.057),\r\n    11.2px 22.3px 17.9px rgba(0, 0, 0, 0.062),\r\n    20.9px 41.8px 33.4px rgba(0, 0, 0, 0.066),\r\n    50px 100px 80px rgba(0, 0, 0, 0.07);\n  --shadow-card:\r\n    0px 0.8px 2.2px rgba(0, 0, 0, 0.112),\r\n    0px 2px 5.3px rgba(0, 0, 0, 0.162),\r\n    0px 3.8px 10px rgba(0, 0, 0, 0.2),\r\n    0px 6.7px 17.9px rgba(0, 0, 0, 0.238),\r\n    0px 12.5px 33.4px rgba(0, 0, 0, 0.288),\r\n    0px 30px 80px rgba(0, 0, 0, 0.4);\n  --shadow-certificate:\r\n    0px 0.6px 1px rgba(0, 0, 0, 0.056),\r\n    0px 1.3px 2.5px rgba(0, 0, 0, 0.081),\r\n    0px 2.5px 4.6px rgba(0, 0, 0, 0.1),\r\n    0px 4.5px 8.3px rgba(0, 0, 0, 0.119),\r\n    0px 8.4px 15.5px rgba(0, 0, 0, 0.144),\r\n    0px 20px 37px rgba(0, 0, 0, 0.2);\n}\n\n.darkmode {\n  --bg-prim: #17141d;\n  --bg-nav: #17141d;\n  --bg-navlogo: #17141d;\n  --bg-card: #17141d;\n  --bg-footer: #17141d;\n  --col-text-titles: #eeeeef;\n  --col-text-gen: #eeeeee;\n  --col-text-sup: #7a7a8c;\n  --col-detail-1: #7a7a8c;\n  --col-detail-2: #646374;\n  --col-detail-3: #4d4b5b;\n  --col-detail-4: #373442;\n  --col-detail-5: #2c2836;\n  --col-detail-6: #201c29;\n  --col-lightdark: #373442;\n  --col-lightdark-hover: #eeeeee;\n  --col-hover-1: #7a7a8c;\n  --col-hover-2: ;\n  --grad-decor-1: var(--col-detail-6);\n  --grad-fallback-1: var(--col-detail-6);\n  --grad-decor-2: var(--col-detail-3);\n  --grad-fallback-2: var(--col-detail-3);\n  --col-navtext: #eeeeee;\n  --col-nav-hover: #7a7a8c;\n  --col-navtitle: #7a7a8c;\n  --col-card-title: #eeeeef;\n  --col-card-textprim: #eeeeee;\n  --col-card-textsup: #7a7a8c;\n  --col-card-thinborder: #7a7a8c;\n  --col-card-tagbg: #0000;\n  --col-card-tagtext: #eeeeee;\n  --col-cardscroll: #201c29;\n  --col-footertext: #7a7a8c;\n  --col-evendarker: #1C1823;\n  --shadow-nodir:\r\n    0px 2.8px 2.2px rgba(0, 0, 0, 0.034),\r\n    0px 6.7px 5.3px rgba(0, 0, 0, 0.049),\r\n    0px 12.5px 10px rgba(0, 0, 0, 0.057),\r\n    0px 22.3px 17.9px rgba(0, 0, 0, 0.062),\r\n    0px 41.8px 33.4px rgba(0, 0, 0, 0.066),\r\n    0px 100px 80px rgba(0, 0, 0, 0.07);\n  --shadow-dir:\r\n    1.4px 2.8px 2.2px rgba(0, 0, 0, 0.034),\r\n    3.3px 6.7px 5.3px rgba(0, 0, 0, 0.049),\r\n    6.3px 12.5px 10px rgba(0, 0, 0, 0.057),\r\n    11.2px 22.3px 17.9px rgba(0, 0, 0, 0.062),\r\n    20.9px 41.8px 33.4px rgba(0, 0, 0, 0.066),\r\n    50px 100px 80px rgba(0, 0, 0, 0.07);\n  --shadow-card:\r\n    -0.5px 0.8px 4.4px rgba(0, 0, 0, 0.129),\r\n    -1.1px 2px 10.6px rgba(0, 0, 0, 0.186),\r\n    -2.1px 3.8px 20px rgba(0, 0, 0, 0.23),\r\n    -3.8px 6.7px 35.7px rgba(0, 0, 0, 0.274),\r\n    -7.1px 12.5px 66.8px rgba(0, 0, 0, 0.331),\r\n    -17px 30px 160px rgba(0, 0, 0, 0.46);\n  --shadow-certificate:\r\n    0px 0px 2.8px rgba(0, 0, 0, 0.051),\r\n    0px 0px 6.7px rgba(0, 0, 0, 0.073),\r\n    0px 0px 12.5px rgba(0, 0, 0, 0.09),\r\n    0px 0px 22.3px rgba(0, 0, 0, 0.107),\r\n    0px 0px 41.8px rgba(0, 0, 0, 0.129),\r\n    0px 0px 100px rgba(0, 0, 0, 0.18);\n}\n\nbody {\n  background-color: var(--bg-prim);\n  color: var(--col-text-gen);\n  width: 100%;\n  --border-prim1: 0.05rem solid var(--col-detail-1);\n  --border-sec1: 0.1rem solid var(--col-detail-6);\n  --border-sec2: 0.2rem solid var(--col-detail-6);\n  --border-carddetails: 0.05rem solid var(--col-card-thinborder);\n  --border-invis: 0.1rem solid #0000;\n}\n\nh1, h2, h3, h4 {\n  color: var(--col-text-titles);\n}\n\n.App-full {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  overflow-x: hidden;\n}\n\n.App-mobile {\n  height: 100vh;\n  display: none;\n}\n\n@media screen and (max-width: 500px) {\n  .App-mobile {\n    margin: 0 2rem;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  .App-full {\n    display: none;\n  }\n}\n\n/* ------------ NAV STYLES ------------- */\n.top-navbar {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  color: var(--col-navtext);\n  background: var(--bg-nav);\n  box-shadow: var(--shadow-nodir);\n  z-index: 10;\n  /* should be highest element */\n}\n\n.top-nav-thick {\n  position: absolute;\n  top: 0;\n  left: 0;\n  padding: 1rem 2rem 1rem 3rem;\n  background: var(--bg-navlogo);\n  border-bottom-right-radius: 2rem;\n  box-shadow: var(--shadow-dir);\n}\n\n.header-logo {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.logo-image {\n  width: var(--logo-width);\n  height: auto;\n}\n\n.top-nav-thin {\n  margin-left: var(--main-margin-left);\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.header-title {\n  margin: 0.1ch 0;\n  margin-right: 2rem;\n  font-family: \"Roboto Mono\";\n  font-size: 2rem;\n  font-weight: 100;\n  color: var(--col-navtitle);\n}\n\n.navbar {\n  display: flex;\n  width: 40%;\n  min-width: 18rem;\n  margin: 1.5ch 0;\n  margin-right: 5%;\n  font-weight: 200;\n}\n\n.nav-list {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.nav-link {\n  text-decoration: none;\n  transition: all 0.1s ease;\n}\n\n.nav-link:hover {\n  color: var(--col-nav-hover);\n}\n\n@media screen and (max-width: 800px) {\n  .header-title {\n    display: none;\n  }\n  .top-nav-thin {\n    flex-direction: column;\n    align-items: flex-end;\n  }\n  .navbar {\n    margin-right: 5%;\n    width: 70%;\n  }\n}\n\n@media screen and (max-width: 700px) {\n  :root {\n    --logo-pad-left: 1.5rem;\n    --logo-pad-right: 1rem;\n    --logo-pad-total: calc(var(--logo-pad-left) + var(--logo-pad-right));\n    --logo-width: 3rem;\n    --add-margin-left: 0.5rem;\n  }\n  .top-nav-thick {\n    padding-left: var(--logo-pad-left);\n    padding-right: var(--logo-pad-right);\n    border-bottom-right-radius: 1.5rem;\n  }\n  .logo-image {\n    width: var(--logo-width);\n  }\n  .top-nav-thin {\n    flex-direction: column;\n    align-items: center;\n  }\n  .navbar {\n    margin-right: 5%;\n    width: 70%;\n  }\n}\n\n/* --------- HERO STYLES ---------- */\n#hero {\n  min-height: 90vh;\n  margin-top: 10vh;\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n\n.hero-catch {\n  position: relative;\n  margin-left: var(--main-margin-left);\n  margin-top: -1rem;\n}\n\n.hero-header {\n  margin-bottom: 2rem;\n  font-size: 3rem;\n}\n\n@media screen and (max-width: 700px) {\n  .hero-catch {\n    width: 8rem;\n    margin-top: 1rem;\n  }\n  .hero-header {\n    font-size: 2rem;\n  }\n}\n\n.hero-icon {\n  position: absolute;\n  top: 2.5rem;\n  left: -3.5rem;\n  cursor: pointer;\n  transform: rotate(-10deg);\n  transform-origin: center;\n  font-size: 2rem;\n  color: var(--col-lightdark);\n  transition: all 0.2s ease;\n}\n\n.hero-icon:hover {\n  color: var(--col-lightdark-hover);\n  transform: scale(1.4);\n}\n\n.subheader {\n  display: block;\n  font-size: var(--fontsize-secondary);\n}\n\n.subheader-text {\n  display: block;\n}\n\n.idobox {\n  position: relative;\n  display: block;\n  width: 20rem;\n  margin: 3rem 2rem;\n}\n\n@media screen and (max-width: 700px) {\n  .idobox {\n    margin: 3rem 1rem;\n  }\n}\n\n.screen-readable-label {\n  position: absolute;\n  top: 0;\n  left: 0;\n  color: #0000;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  display: block;\n  font-size: 1px;\n}\n\n.ido-placeholder {\n  color: #0000;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  display: block;\n}\n\n.ido {\n  opacity: 0;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: block;\n  will-change: transform, opacity;\n}\n\n.ido::before {\n  content: \"/\";\n  color: var(--grad-decor-2);\n}\n\n.ido::after {\n  content: \"/\";\n  color: var(--grad-decor-2);\n}\n\n.hero-background {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: -1;\n  overflow-x: clip;\n}\n\n.hero-face {\n  position: absolute;\n  top: 50%;\n  right: -1rem;\n  transform: translate(0, -50%);\n  width: 45%;\n  max-width: 90vh;\n}\n\n.hero-face-img img {\n  width: 100%;\n  height: auto;\n  border-radius: 50%;\n}\n\n.hero-face-decoration {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 150%;\n  z-index: -1;\n}\n\n.hero-face-decoration svg {\n  width: 100%;\n  height: 100%;\n  display: block;\n}\n\n.hero-face-decoration svg circle {\n  transform-origin: center;\n  will-change: transform;\n}\n\n.hero-face-decoration svg .wide {\n  -webkit-animation: rotate-wide 40s linear infinite forwards;\n          animation: rotate-wide 40s linear infinite forwards;\n}\n\n.hero-face-decoration svg .thin {\n  -webkit-animation: rotate-thin 50s linear infinite forwards;\n          animation: rotate-thin 50s linear infinite forwards;\n}\n\n.hero-face-decoration svg .thick {\n  -webkit-animation: rotate-thick 70s linear infinite forwards;\n          animation: rotate-thick 70s linear infinite forwards;\n}\n\n.mountains-background {\n  position: relative;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 100%;\n  z-index: -1;\n  overflow: hidden;\n}\n\n.mountains-container {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 100%;\n  height: 100%;\n}\n\n.mountains {\n  display: block;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -45%);\n  min-height: 100%;\n  width: 100%;\n}\n\n.water-container {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: auto;\n}\n\n.water {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n\n@-webkit-keyframes rotate-wide {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes rotate-wide {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes rotate-thin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(-360deg);\n  }\n}\n\n@keyframes rotate-thin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(-360deg);\n  }\n}\n\n@-webkit-keyframes rotate-thick {\n  from {\n    transform: rotate(45deg);\n  }\n  to {\n    transform: rotate(405deg);\n  }\n}\n\n@keyframes rotate-thick {\n  from {\n    transform: rotate(45deg);\n  }\n  to {\n    transform: rotate(405deg);\n  }\n}\n\n/* ------ GENERAL MAIN STYLES ------- */\nmain {\n  margin-left: var(--main-margin-left);\n  margin-right: var(--main-margin-right);\n  width: calc(100% - var(--main-margin-left) - var(--main-margin-right));\n}\n\n.main-section {\n  margin-bottom: 3rem;\n}\n\n.main-section h2 {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  position: relative;\n  display: block;\n  font-size: var(--fontsize-title);\n  margin-bottom: 0.5rem;\n}\n\n.main-section h2::before {\n  content: \"<\";\n  position: absolute;\n  top: 0;\n  left: -1em;\n  color: var(--grad-decor-1);\n}\n\n.main-section h2::after {\n  content: \" />\";\n  position: absolute;\n  top: 0;\n  right: -2em;\n  color: var(--grad-decor-1);\n}\n\n/* --------- PROJECTS STYLES --------- */\n#projects {\n  margin-bottom: 5rem;\n}\n\n.project-category-select {\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  display: flex;\n  align-items: center;\n  margin-bottom: 0.5rem;\n}\n\n.category-desc {\n  margin-right: 1rem;\n}\n\n.category-select {\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  border: var(--border-prim1);\n  border-radius: 0.75rem;\n  background: var(--bg-prim);\n  position: relative;\n}\n\n.category-select .triangle {\n  margin: 0 0.8rem;\n  width: 0.6rem;\n  height: auto;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  transition: all 0.5s ease;\n}\n\n.category-select .triangle.rotate-90 {\n  transform: rotate(-90deg);\n}\n\n.active-category {\n  padding: 0.3rem 0.8rem;\n  position: relative;\n}\n\n.active-category::after {\n  content: \"\";\n  position: absolute;\n  top: -1%;\n  right: 0;\n  width: 0.05rem;\n  height: 102%;\n  transform: translateX(-50%);\n  background: var(--col-text-sup);\n}\n\n.category-dropdown {\n  position: absolute;\n  top: 110%;\n  left: 0;\n  opacity: 0;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  pointer-events: none;\n  background: var(--bg-prim);\n  transition: all 0.2s ease;\n  z-index: 1;\n  border: var(--border-prim1);\n  border-radius: 0.75rem;\n  overflow: hidden;\n}\n\n.category-dropdown.dropdown-open {\n  opacity: 1;\n  -webkit-user-select: auto;\n     -moz-user-select: auto;\n      -ms-user-select: auto;\n          user-select: auto;\n  pointer-events: auto;\n  cursor: pointer;\n}\n\n.category-option {\n  padding: 0.3rem 0.8rem;\n  transition: all 0.2s ease;\n  white-space: nowrap;\n}\n\n.category-option:hover {\n  background: var(--col-detail-3);\n}\n\n.category-option-active {\n  color: var(--col-text-sup);\n  cursor: default;\n}\n\n.category-option-active:hover {\n  background: var(--bg-prim);\n}\n\n.project-stack-container {\n  margin-left: calc(0rem - var(--main-margin-left));\n  width: calc(100% + var(--main-margin-left) + var(--main-margin-right));\n}\n\n.card-stack {\n  display: flex;\n  align-items: center;\n  padding: 2rem var(--main-margin-right) 2rem var(--main-margin-left);\n  overflow-x: scroll;\n}\n\n.card-stack::-webkit-scrollbar {\n  width: 0.625rem;\n  height: 0.625rem;\n}\n\n.card-stack::-webkit-scrollbar-thumb {\n  background: var(--col-cardscroll);\n  border-radius: 0.625rem;\n}\n\n.card-stack::-webkit-scrollbar-track {\n  background: var(--bg-prim);\n}\n\n.project-card {\n  height: 22rem;\n  width: 20rem;\n  min-width: 16rem;\n  margin: 0;\n  padding: 1.5rem;\n  border-radius: 1rem;\n  background: var(--bg-card);\n  box-shadow: var(--shadow-card);\n  display: flex;\n  flex-direction: column;\n  transition: all .2s ease;\n  scroll-snap-align: start;\n  clear: both;\n  position: relative;\n}\n\n/* ~ is used to select all sibling .cards after the focused or hovered .card */\n.project-card:focus-within ~ .project-card, .project-card:hover ~ .project-card {\n  transform: translateX(4rem);\n}\n\n.project-card:hover {\n  transform: translateY(-1rem);\n}\n\n/* set stacked spacing style for all .cards (excluding the first .card) */\n.project-card:not(:first-child) {\n  margin-left: -4rem;\n}\n\n.card-title {\n  margin-bottom: 0.4rem;\n}\n\n.card-title h3 {\n  color: var(--col-card-title);\n}\n\n.card-title h3 a {\n  text-decoration: none;\n}\n\n.card-date {\n  font-size: var(--fontsize-detail);\n  color: var(--col-card-textsup);\n}\n\n.card-thumb {\n  width: 100%;\n  height: 3.125rem;\n  -o-object-fit: cover;\n     object-fit: cover;\n  flex-grow: 1;\n  border-radius: 0.2rem;\n  box-shadow: 0px 0.6px 1.7px rgba(0, 0, 0, 0.037), 0px 1.3px 4.1px rgba(0, 0, 0, 0.053), 0px 2.5px 7.6px rgba(0, 0, 0, 0.065), 0px 4.5px 13.6px rgba(0, 0, 0, 0.077), 0px 8.4px 25.5px rgba(0, 0, 0, 0.093), 0px 20px 61px rgba(0, 0, 0, 0.13);\n}\n\n.card-authorship {\n  display: flex;\n  margin: 1rem 0;\n  color: var(--col-card-textprim);\n}\n\n.card-authorship.single {\n  align-items: center;\n}\n\n.author1-avatar {\n  border-radius: 50%;\n  overflow: hidden;\n  height: 3.125rem;\n  width: 3.125rem;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.377);\n}\n\n.avatar-img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n.author-list {\n  margin-left: 1rem;\n  color: var(--col-card-textprim);\n}\n\n.author-prefix {\n  color: var(--col-card-textsup);\n  font-size: var(--fontsize-detail);\n  text-transform: uppercase;\n  font-weight: 700;\n}\n\n.author-link {\n  text-decoration: none;\n}\n\n.card-tags {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  color: var(--col-card-tagtext);\n}\n\n.tag-link {\n  font-size: var(--fontsize-detail);\n  text-decoration: none;\n  padding: 0.1rem 0.4rem;\n  margin-right: 0.4rem;\n  border-radius: 1rem;\n  background: var(--col-card-tagbg);\n  border: var(--border-carddetails);\n}\n\n/* -------- SKILLS STYLES --------- */\n.skills-container {\n  margin-top: 2rem;\n}\n\n.skill-group {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  margin-top: 1rem;\n}\n\n.skill-group h3 {\n  margin: 0.5rem 0;\n  font-size: var(--fontsize-secondary);\n  position: relative;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n\n.skill-group h3::before {\n  content: \"{\";\n  position: absolute;\n  right: calc(100% + 0.2rem);\n  color: var(--grad-decor-1);\n}\n\n.skill-group h3::after {\n  content: \".map}\";\n  color: var(--grad-decor-1);\n}\n\n.skill-list {\n  display: -ms-grid;\n  display: grid;\n  -ms-grid-columns: (20rem)[auto-fill];\n      grid-template-columns: repeat(auto-fill, 20rem);\n  grid-gap: 0 1rem;\n  justify-content: space-evenly;\n}\n\n.skill {\n  width: 20rem;\n  padding: 0.5rem 1rem;\n  border-radius: 0.5rem;\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n\n.skill-clickable {\n  cursor: pointer;\n  transition: all 0.3s ease;\n  border: var(--border-invis);\n}\n\n.skill-clickable:hover {\n  border: var(--border-sec1);\n  background-color: var(--col-detail-6);\n}\n\n.skill-clickable:focus {\n  pointer-events: none;\n}\n\n.skill-desc {\n  text-transform: uppercase;\n  font-size: var(--fontsize-detail);\n  color: var(--col-text-sup);\n}\n\n.subskill-list {\n  margin-top: 0.75rem;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.subskill {\n  width: 60%;\n}\n\n.subskill-name {\n  font-size: 0.8rem;\n  font-weight: bold;\n}\n\n.prof-guage-prim {\n  width: 100%;\n}\n\n.prof-guage-sec {\n  width: 100%;\n  margin-bottom: 0.5rem;\n}\n\n/* ------ CERTIFICATES STYLES ------ */\n.certificates-container {\n  margin-top: 2rem;\n}\n\n.certificate-list {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n}\n\n.certificate {\n  padding: 1rem 2rem 1.5rem 2rem;\n  border-radius: 1rem;\n  color: var(--col-card-textprim);\n  background: var(--bg-card);\n  box-shadow: var(--shadow-certificate);\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n\n.certificate-title {\n  font-size: var(--fontsize-secondary);\n  color: var(--col-card-title);\n}\n\n.certificate-issuer {\n  color: var(--col-card-textprim);\n  margin: 0.5rem 0;\n}\n\n.certificate-issuer a {\n  text-decoration: none;\n}\n\n.certificate-dates {\n  display: flex;\n  align-items: center;\n}\n\n.certificate-dateissued {\n  color: var(--col-card-textsup);\n  font-size: var(--fontsize-detail);\n  text-transform: uppercase;\n}\n\n.certificate-dateissued::after {\n  content: \"\\00a0-\\00a0\";\n}\n\n.certificate-dateexpires {\n  color: var(--col-card-textsup);\n  font-size: var(--fontsize-detail);\n  text-transform: uppercase;\n}\n\n.certificate-id {\n  color: var(--col-card-textsup);\n  font-size: var(--fontsize-detail);\n  text-transform: uppercase;\n}\n\n.certificate-id span {\n  text-transform: none;\n}\n\n.certificate-link {\n  margin-top: 0.5rem;\n  font-size: var(--fontsize-detail);\n}\n\n/* ------ CONTACT STYLES -------- */\n.contact-container {\n  display: -ms-grid;\n  display: grid;\n  -ms-grid-columns: (15rem)[auto-fit];\n      grid-template-columns: repeat(auto-fit, 15rem);\n  grid-gap: 0 1rem;\n  justify-content: space-around;\n  margin-top: 2rem;\n}\n\n.contact-container h3 {\n  font-size: var(--fontsize-secondary);\n  margin-bottom: 1rem;\n  position: relative;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n\n.contact-container h3::before {\n  content: \"/*\";\n  position: absolute;\n  top: 0;\n  right: calc(100% + 0.5em);\n  color: var(--grad-decor-1);\n}\n\n.contact-container h3::after {\n  content: \"*/\";\n  position: absolute;\n  top: 0;\n  left: calc(100% + 0.5em);\n  color: var(--grad-decor-1);\n}\n\n.contact-container ul {\n  display: flex;\n  flex-direction: column;\n  align-items: baseline;\n}\n\n.contact-container li {\n  line-height: 1.8rem;\n  font-weight: 300;\n}\n\n.contact-container a {\n  text-decoration: none;\n  transition: all 0.2s ease;\n}\n\n.contact-container a:hover {\n  color: var(--col-hover-1);\n}\n\n.contact-info {\n  margin-bottom: 2rem;\n}\n\n.contact-icon {\n  margin-right: 0.8rem;\n  font-size: 1.2rem;\n  width: 1rem;\n}\n\n.contact-socials {\n  margin-bottom: 2rem;\n}\n\n/* ------- FOOTER STYLES -------- */\nfooter {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  color: var(--col-footertext);\n  font-weight: 300;\n  background: var(--bg-footer);\n}\n\n.source-code {\n  padding: 1rem 2rem 0;\n}\n\n.copyright {\n  padding: 1rem 2rem;\n}", ""]);
 
 
 
