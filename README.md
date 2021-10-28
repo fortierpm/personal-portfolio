@@ -10,7 +10,7 @@ This app was created using the `blank` template of `react-static create` provide
 
 > ### React
 >
-> React is the Javascript user interface and web app development library used by [React-Static](https://github.com/react-static/react-static) for this website. [Visit React](https://reactjs.org/)
+> React is the JavaScript user interface and web app development library used by [React-Static](https://github.com/react-static/react-static) for this website. [Visit React](https://reactjs.org/)
 
 > ### Sass (SCSS)
 >

@@ -28,7 +28,7 @@ const CertificateList = ({ certificates }) => {
               </p>
             </div>
             {certificate.credentialID ? <p className="certificate-id">Credential ID: <span aria-label="Case-sensitive certificate ID.">{certificate.credentialID}</span></p> : ""}
-            <p className="certificate-link"><a href={certificate.credentialURL} target="_blank">See certificate</a></p>
+            <p className="certificate-link"><a href={certificate.credentialURL} rel="external noopener" target="_blank">See certificate</a></p>
           </article>
         );
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import ProfBar from "./ProfBar";
+import ProfBar from "./ProfBar.jsx";
 
 const SubSkillList = ({ open, skill, lightMode }) => {
   return (

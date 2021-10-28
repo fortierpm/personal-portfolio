@@ -3,12 +3,12 @@ import React, { useState, useRef, useEffect } from "react";
 import { Head } from "react-static";
 
 // components
-import TopNavbar from "./components/TopNavbar";
-import IDos from "./components/IDos";
-import CategorySelector from "./components/CategorySelector";
-import ProjectCardStack from "./components/ProjectCardStack";
-import SkillList from "./components/SkillList";
-import CertificateList from "./components/CertificateList";
+import TopNavbar from "./components/TopNavbar.jsx";
+import IDos from "./components/IDos.jsx";
+import CategorySelector from "./components/CategorySelector.jsx";
+import ProjectCardStack from "./components/ProjectCardStack.jsx";
+import SkillList from "./components/SkillList.jsx";
+import CertificateList from "./components/CertificateList.jsx";
 
 // styles
 import "./styles/global.css";
@@ -17,7 +17,7 @@ import "./styles/app.css";
 // icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLeaf, faSun, faMoon, faPaperPlane, faUniversity, faSms } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faInstagram, faFacebook, faTwitter} from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faInstagram, faFacebook, faTwitter, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 // constants
 import projects from "./constants/projects";
@@ -73,6 +73,7 @@ const App = () => {
 
   return (
     <div className="App">
+    <div className="App-full">
 
       <Head>
         <meta charSet="UTF-8" />
@@ -111,6 +112,30 @@ const App = () => {
                 <circle className="wide" cx="63" cy="63" r="57" stroke={lightMode ? "#F2E8CF" : "#201c29"} strokeWidth="12" strokeLinejoin="round" strokeDasharray="40 40 120 80"/>
                 <circle className="thin" cx="63" cy="63" r="50" stroke={lightMode ? "#6A994E" : "#7a7a8c"} strokeWidth="5" strokeLinejoin="round" strokeDasharray="0 40 300 400 40 0 20 60"/>
                 <circle className="thick" cx="63" cy="63" r="50" stroke={lightMode ? "#386641" : "#373442"} strokeWidth="10" strokeLinejoin="round" strokeDasharray="120 170 120 20 420 170"/>
+              </svg>
+            </div>
+          </div>
+          <div className="mountains-background">
+            <div className="mountains-container">
+              <svg className="mountains"
+                width="1440"
+                height="1024"
+                viewBox="0 0 1440 1024"
+                preserveAspectRatio="xMinYMin slice"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fillRule="evenodd" clipRule="evenodd" d="M1440 1024V509.821L1351.61 450L1238.46 526.58L1138.61 459L1098.63 486.059L962.613 394L786.599 513.127L641.613 415L414.071 569.001L279.613 478L229.178 512.135L88.613 417L0 476.974V1024H1440Z" fill={lightMode ? "#FBF7EF" : "#1C1823"}/>
+              </svg>
+            </div>
+            <div className="water-container">
+              <svg className="water"
+                width="1440"
+                height="97"
+                viewBox="0 0 1440 97"
+                preserveAspectRatio="xMinYMin slice"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fillRule="evenodd" clipRule="evenodd" d="M1440 97V63.0727C1424.22 62.7058 1407.26 62.5 1389 62.5C1296.01 62.5 1274.52 68.5474 1249.67 75.5414C1215.6 85.1309 1175.21 96.5 935.5 96.5C596.394 96.5 704.296 59.6687 798.963 42.5021C912.963 26.5021 994.463 -4.29793 408.463 0.502058C203.156 2.18376 75.3233 9.11082 0 18.3977V97H1440Z" fill={lightMode ? "#FFF" : "#17141d"}/>
               </svg>
             </div>
           </div>
@@ -177,6 +202,9 @@ const App = () => {
                 <li className="info-item">
                   <a href="https://www.linkedin.com/in/peter-fortier-71359221a/" rel="external noopener"><FontAwesomeIcon className="contact-icon" icon={faLinkedin} />LinkedIn</a>
                 </li>
+                <li className="info-item">
+                  <a href="https://github.com/fortierpm" rel="external noopener"><FontAwesomeIcon className="contact-icon" icon={faGithub} />Github</a>
+                </li>
               </ul>
             </section>
             <section className="contact-socials">
@@ -199,8 +227,15 @@ const App = () => {
       </main>
 
       <footer>
+        <div className="source-code">Check out this site's development <a href="https://github.com/fortierpm/personal-portfolio" rel="external noopener" target="_blank">source code</a>.</div>
         <div className="copyright">&copy; 2021 Peter Fortier. All Rights Reserved.</div>
       </footer>
+
+    </div>
+
+    <div className="App-mobile">
+      <p>I apologize but unfortunately this webpage is not yet optimized for mobile devices. Check my <a href="https://github.com/fortierpm/personal-portfolio" rel="external noopener">Github repository</a> for this site's source code.</p>
+    </div>
 
     </div>
   );

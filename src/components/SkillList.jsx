@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import ProfBar from "./ProfBar";
-import SubSkillList from "./SubSkillList";
+import ProfBar from "./ProfBar.jsx";
+import SubSkillList from "./SubSkillList.jsx";
 
 const SkillList = ({ skills, skillGroup, lightMode }) => {
   return (

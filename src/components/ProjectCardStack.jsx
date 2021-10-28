@@ -1,6 +1,6 @@
 import React from "react";
 
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./ProjectCard.jsx";
 
 const ProjectCardStack = ({ projects, projectGroup }) => {
   return (
