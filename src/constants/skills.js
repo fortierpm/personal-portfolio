@@ -3,7 +3,7 @@ const skills = {
     {
       name: "HTML",
       description: "markup language",
-      proficiency: 0.9, // scale of (0-10) / 10
+      proficiency: 1,
       subSkillList: [
         {
           name: "Semantic HTML",
@@ -26,7 +26,7 @@ const skills = {
     {
       name: "CSS",
       description: "style sheet language",
-      proficiency: 0.9,
+      proficiency: 1,
       subSkillList: [
         {
           name: "Sass",
@@ -57,7 +57,7 @@ const skills = {
         },
         {
           name: "Regex",
-          proficiency: 0.6
+          proficiency: 0.5
         },
         {
           name: "TypeScript",
@@ -91,7 +91,7 @@ const skills = {
     {
       name: "react-static",
       description: "React.js static site generator",
-      proficiency: 0.7,
+      proficiency: 0.8,
       subSkillList: [
         {
           name: "react-static <Head>",
@@ -121,7 +121,7 @@ const skills = {
     {
       name: "Three.js",
       description: "JavaScript library for 3D visuals",
-      proficiency: 0.6,
+      proficiency: 0.5,
       subSkillList: []
     },
     {
@@ -154,25 +154,25 @@ const skills = {
       ]
     },
     {
-      name: "C++",
+      name: "C/C++",
       description: "OOP language",
-      proficiency: 0.7,
+      proficiency: 0.9,
       subSkillList: [
         {
-          name: "Dynamic memory allocation",
-          proficiency: 0.7
+          name: "Dynamic memory",
+          proficiency: 0.9
         },
         {
           name: "Pointers",
-          proficiency: 0.8
+          proficiency: 1
         },
         {
-          name: "Structs",
-          proficiency: 0.6
-        },
-        {
-          name: "Handling char arrays",
+          name: "Structs and Classes",
           proficiency: 0.9
+        },
+        {
+          name: "File Reading/Writing",
+          proficiency: 0.8
         }
       ]
     },
@@ -188,6 +188,12 @@ const skills = {
       ]
     },
     {
+      name: "JSON",
+      description: "Data storage file format",
+      proficiency: 0.9,
+      subSkillList: []
+    },
+    {
       name: "Bash",
       description: "Linux shell and command language",
       proficiency: 0.7,
@@ -197,7 +203,7 @@ const skills = {
           proficiency: 0.9
         },
         {
-          name: "Bash with C++",
+          name: "Bash with C/C++",
           proficiency: 0.8
         },
         {
@@ -213,7 +219,7 @@ const skills = {
     {
       name: "Firebase",
       description: "Google-backed application development software",
-      proficiency: 0.3,
+      proficiency: 0.5,
       subSkillList: []
     },
   ],
@@ -221,7 +227,7 @@ const skills = {
     {
       name: "Visual Studio Code",
       description: "IDE",
-      proficiency: 0.8,
+      proficiency: 0.9,
       subSkillList: [
         {
           name: "Localhost",
@@ -250,6 +256,25 @@ const skills = {
       description: "IDE",
       proficiency: 0.7,
       subSkillList: []
+    },
+    {
+      name: "Replit",
+      description: "Online Collaborative IDE",
+      proficiency: 0.8,
+      subSkillList: [
+        {
+          name: "Repl Databases",
+          proficiency: 0.7
+        },
+        {
+          name: "Secrets/Environment Variables",
+          proficiency: 1
+        },
+        {
+          name: "Express Webservers",
+          proficiency: 0.6
+        }
+      ]
     }
   ],
   "Version Control": [
@@ -359,7 +384,7 @@ const skills = {
       subSkillList: []
     }
   ],
-  "Math Technologies": [
+  "Math/Data Science Technologies": [
     {
       name: "Mathematica",
       description: "mathematical computation program",
@@ -379,6 +404,35 @@ const skills = {
       name: "LaTeX",
       description: "document preparation system",
       proficiency: 0.4,
+      subSkillList: []
+    },
+    {
+      name: "R",
+      description: "language for statistical computing and graphics",
+      proficiency: 0.6,
+      subSkillList: [
+        {
+          name: "RStudio",
+          proficiency: 0.8
+        },
+        {
+          name: "tidyverse",
+          proficiency: 0.6
+        },
+        {
+          name: "deplyr",
+          proficiency: 0.6
+        },
+        {
+          name: "ggplot2",
+          proficiency: 0.8
+        }
+      ]
+    },
+    {
+      name: "Microsoft Excel",
+      description: "Spreadsheet and data handling software",
+      proficiency: 0.8,
       subSkillList: []
     },
   ]

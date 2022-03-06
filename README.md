@@ -1,6 +1,6 @@
 # Peter Fortier's Personal Portfolio
 
-**Thanks for checking out my work!** Aside from the preinstalled files that come with `react-static create`, I handtyped all the code for this website myself! I also designed all the SVGs, visuals, and my personal logo (this excludes the FontAwesome icons featured in the *Contacts* portion of the page).
+**Thanks for checking out my work!** Aside from the preinstalled packages that come with `react-static create`, I handtyped all the code for this website myself! I also designed all the SVGs, visuals, and my personal logo (this excludes the FontAwesome icons featured in the *Contacts* portion of the page).
 
 ## Made with React-Static
 

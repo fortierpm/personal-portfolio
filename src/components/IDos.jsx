@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../styles/idos.css";
 
 
-const idos = ["Web Design", "JavaScript", "React", "Software Development", "Python", "C++", "Graphics", "SVGs", "Prototyping"];
+const idos = ["Web Design", "JavaScript", "React", "Software Development", "Python", "C/C++", "Graphics", "SVGs", "Prototyping"];
 const idosLength = idos.length;
 let index = 3;
 let transIndex = 1; // value from 0-2 over var life
