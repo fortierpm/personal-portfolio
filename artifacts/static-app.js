@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 47);
+/******/ 	return __webpack_require__(__webpack_require__.s = 46);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -127,18 +127,24 @@ module.exports = require("@fortawesome/react-fontawesome");
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("@fortawesome/free-solid-svg-icons");
+module.exports = __webpack_require__.p + "static/peterfortier-logo-draw-zoom.4c5cc9be.png";
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
-module.exports = require("@fortawesome/free-brands-svg-icons");
+module.exports = require("@fortawesome/free-solid-svg-icons");
 
 /***/ }),
 /* 5 */
+/***/ (function(module, exports) {
+
+module.exports = require("@fortawesome/free-brands-svg-icons");
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -152,7 +158,7 @@ var _utils = __webpack_require__(10);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(54)("" + id);
+    return __webpack_require__(53)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -161,7 +167,7 @@ var requireById = function requireById(id) {
 exports["default"] = requireById;
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -206,7 +212,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(53);
+var _requireUniversalModule = __webpack_require__(52);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -221,7 +227,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(55);
+var _reportChunks = __webpack_require__(54);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -251,7 +257,7 @@ var _context2 = _interopRequireDefault(_context);
 
 var _utils = __webpack_require__(10);
 
-var _helpers = __webpack_require__(56);
+var _helpers = __webpack_require__(55);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -635,13 +641,7 @@ function universal(asyncModule) {
     return UniversalComponent;
   }(_react2["default"].Component), _class.contextType = _context2["default"], _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(52)(module)))
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/author.fb64dfe1.jpg";
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(51)(module)))
 
 /***/ }),
 /* 8 */
@@ -709,7 +709,7 @@ function TopNavbar() {
   }, "Contact"))))));
 }
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/idos.css
-var idos = __webpack_require__(64);
+var idos = __webpack_require__(63);
 
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/components/IDos.jsx
 
@@ -1206,109 +1206,105 @@ var CertificateList_CertificateList = function CertificateList(_ref) {
 
 /* harmony default export */ var components_CertificateList = (CertificateList_CertificateList);
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/global.css
-var global = __webpack_require__(65);
+var global = __webpack_require__(64);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/styles/app.css
-var app = __webpack_require__(66);
+var app = __webpack_require__(65);
 
 // EXTERNAL MODULE: external "@fortawesome/react-fontawesome"
 var react_fontawesome_ = __webpack_require__(2);
 
 // EXTERNAL MODULE: external "@fortawesome/free-solid-svg-icons"
-var free_solid_svg_icons_ = __webpack_require__(3);
+var free_solid_svg_icons_ = __webpack_require__(4);
 
 // EXTERNAL MODULE: external "@fortawesome/free-brands-svg-icons"
-var free_brands_svg_icons_ = __webpack_require__(4);
+var free_brands_svg_icons_ = __webpack_require__(5);
 
 // EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
 var defineProperty_ = __webpack_require__(25);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/project-thumb.jpg
-var project_thumb = __webpack_require__(67);
+var project_thumb = __webpack_require__(66);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/this-website.png
-var this_website = __webpack_require__(26);
-var this_website_default = /*#__PURE__*/__webpack_require__.n(this_website);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/this-website-small.jpg
+var this_website_small = __webpack_require__(26);
+var this_website_small_default = /*#__PURE__*/__webpack_require__.n(this_website_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/fortierpmv3-react.png
-var fortierpmv3_react = __webpack_require__(27);
-var fortierpmv3_react_default = /*#__PURE__*/__webpack_require__.n(fortierpmv3_react);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/fortierpmv3-react-small.jpg
+var fortierpmv3_react_small = __webpack_require__(27);
+var fortierpmv3_react_small_default = /*#__PURE__*/__webpack_require__.n(fortierpmv3_react_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/absorb-demo.png
-var absorb_demo = __webpack_require__(28);
-var absorb_demo_default = /*#__PURE__*/__webpack_require__.n(absorb_demo);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/absorb-demo-small.jpg
+var absorb_demo_small = __webpack_require__(28);
+var absorb_demo_small_default = /*#__PURE__*/__webpack_require__.n(absorb_demo_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/slime-card-demo.png
-var slime_card_demo = __webpack_require__(29);
-var slime_card_demo_default = /*#__PURE__*/__webpack_require__.n(slime_card_demo);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/slime-card-demo-small.jpg
+var slime_card_demo_small = __webpack_require__(29);
+var slime_card_demo_small_default = /*#__PURE__*/__webpack_require__.n(slime_card_demo_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/advanced-dropdown.png
-var advanced_dropdown = __webpack_require__(30);
-var advanced_dropdown_default = /*#__PURE__*/__webpack_require__.n(advanced_dropdown);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/advanced-dropdown-small.jpg
+var advanced_dropdown_small = __webpack_require__(30);
+var advanced_dropdown_small_default = /*#__PURE__*/__webpack_require__.n(advanced_dropdown_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/fortierpmv3.png
-var fortierpmv3 = __webpack_require__(31);
-var fortierpmv3_default = /*#__PURE__*/__webpack_require__.n(fortierpmv3);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/fortierpmv3-small.jpg
+var fortierpmv3_small = __webpack_require__(31);
+var fortierpmv3_small_default = /*#__PURE__*/__webpack_require__.n(fortierpmv3_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/dice-tower.png
-var dice_tower = __webpack_require__(32);
-var dice_tower_default = /*#__PURE__*/__webpack_require__.n(dice_tower);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/dice-tower-small.jpg
+var dice_tower_small = __webpack_require__(32);
+var dice_tower_small_default = /*#__PURE__*/__webpack_require__.n(dice_tower_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/animated-page-open.png
-var animated_page_open = __webpack_require__(33);
-var animated_page_open_default = /*#__PURE__*/__webpack_require__.n(animated_page_open);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/animated-page-open-small.jpg
+var animated_page_open_small = __webpack_require__(33);
+var animated_page_open_small_default = /*#__PURE__*/__webpack_require__.n(animated_page_open_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/before-after-slider.png
-var before_after_slider = __webpack_require__(34);
-var before_after_slider_default = /*#__PURE__*/__webpack_require__.n(before_after_slider);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/before-after-slider-small.jpg
+var before_after_slider_small = __webpack_require__(34);
+var before_after_slider_small_default = /*#__PURE__*/__webpack_require__.n(before_after_slider_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/text-particles.png
-var text_particles = __webpack_require__(35);
-var text_particles_default = /*#__PURE__*/__webpack_require__.n(text_particles);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/text-particles-small.jpg
+var text_particles_small = __webpack_require__(35);
+var text_particles_small_default = /*#__PURE__*/__webpack_require__.n(text_particles_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/constellations-demo.png
-var constellations_demo = __webpack_require__(36);
-var constellations_demo_default = /*#__PURE__*/__webpack_require__.n(constellations_demo);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/constellations-demo-small.jpg
+var constellations_demo_small = __webpack_require__(36);
+var constellations_demo_small_default = /*#__PURE__*/__webpack_require__.n(constellations_demo_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/mouse-particles.png
-var mouse_particles = __webpack_require__(37);
-var mouse_particles_default = /*#__PURE__*/__webpack_require__.n(mouse_particles);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/mouse-particles-small.jpg
+var mouse_particles_small = __webpack_require__(37);
+var mouse_particles_small_default = /*#__PURE__*/__webpack_require__.n(mouse_particles_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/fluid-image-popups.png
-var fluid_image_popups = __webpack_require__(38);
-var fluid_image_popups_default = /*#__PURE__*/__webpack_require__.n(fluid_image_popups);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/fluid-image-popups-small.jpg
+var fluid_image_popups_small = __webpack_require__(38);
+var fluid_image_popups_small_default = /*#__PURE__*/__webpack_require__.n(fluid_image_popups_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/card-tricks.png
-var card_tricks = __webpack_require__(39);
-var card_tricks_default = /*#__PURE__*/__webpack_require__.n(card_tricks);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/card-tricks-small.jpg
+var card_tricks_small = __webpack_require__(39);
+var card_tricks_small_default = /*#__PURE__*/__webpack_require__.n(card_tricks_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/animated-grid.png
-var animated_grid = __webpack_require__(40);
-var animated_grid_default = /*#__PURE__*/__webpack_require__.n(animated_grid);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/animated-grid-small.jpg
+var animated_grid_small = __webpack_require__(40);
+var animated_grid_small_default = /*#__PURE__*/__webpack_require__.n(animated_grid_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/animated-logo.png
-var animated_logo = __webpack_require__(41);
-var animated_logo_default = /*#__PURE__*/__webpack_require__.n(animated_logo);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/animated-logo-small.jpg
+var animated_logo_small = __webpack_require__(41);
+var animated_logo_small_default = /*#__PURE__*/__webpack_require__.n(animated_logo_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/nojs-carousel.png
-var nojs_carousel = __webpack_require__(42);
-var nojs_carousel_default = /*#__PURE__*/__webpack_require__.n(nojs_carousel);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/nojs-carousel-small.jpg
+var nojs_carousel_small = __webpack_require__(42);
+var nojs_carousel_small_default = /*#__PURE__*/__webpack_require__.n(nojs_carousel_small);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/london-interactive-guide.png
-var london_interactive_guide = __webpack_require__(43);
-var london_interactive_guide_default = /*#__PURE__*/__webpack_require__.n(london_interactive_guide);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/cardthumb/london-interactive-guide-small.jpg
+var london_interactive_guide_small = __webpack_require__(43);
+var london_interactive_guide_small_default = /*#__PURE__*/__webpack_require__.n(london_interactive_guide_small);
 
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/peterfortier-logo-draw-zoom.png
-var peterfortier_logo_draw_zoom = __webpack_require__(44);
+var peterfortier_logo_draw_zoom = __webpack_require__(3);
 var peterfortier_logo_draw_zoom_default = /*#__PURE__*/__webpack_require__.n(peterfortier_logo_draw_zoom);
 
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/author.jpg
-var img_author = __webpack_require__(7);
-var author_default = /*#__PURE__*/__webpack_require__.n(img_author);
-
 // EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/fireship.png
-var fireship = __webpack_require__(45);
+var fireship = __webpack_require__(44);
 var fireship_default = /*#__PURE__*/__webpack_require__.n(fireship);
 
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/constants/projects.js
@@ -1351,8 +1347,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
  // AUTHORS
 
 var authorPeter = ["Peter Fortier", peterfortier_logo_draw_zoom_default.a, "https://www.linkedin.com/in/peter-fortier-71359221a/"];
-var authorJacob = ["Jacob Merrick", author_default.a, "#"];
-var authorElle = ["Elle Miller", author_default.a, "#"];
+var authorJacob = ["Jacob Merrick", peterfortier_logo_draw_zoom_default.a, "#"];
+var authorElle = ["Elle Miller", peterfortier_logo_draw_zoom_default.a, "#"];
 var authorJeff = ["Jeff Delaney", fireship_default.a, "https://fireship.io/"]; // TAGS
 
 var tagAffDesigner = ["Affinity Designer", "#skills"];
@@ -1386,7 +1382,7 @@ var projectsArrange = {
     title: "This Website!",
     titlelink: "https://github.com/fortierpm/personal-portfolio",
     date: "Feb 23, 2022",
-    thumb: this_website_default.a,
+    thumb: this_website_small_default.a,
     thumblink: "https://github.com/fortierpm/personal-portfolio",
     authors: [authorPeter],
     tags: [tagReact, tagReactStatic, tagSCSS]
@@ -1394,7 +1390,7 @@ var projectsArrange = {
     title: "Personal Website v3 - React",
     titlelink: "https://github.com/fortierpm/fortierpmv3-react",
     date: "Apr 8, 2021",
-    thumb: fortierpmv3_react_default.a,
+    thumb: fortierpmv3_react_small_default.a,
     thumblink: "https://fortierpmv3-react.netlify.app/",
     authors: [authorPeter],
     tags: [tagReact, tagJS, tagSCSS]
@@ -1402,7 +1398,7 @@ var projectsArrange = {
     title: "Slime Card Demo",
     titlelink: "https://github.com/fortierpm/slime-card-demo",
     date: "Sep 4, 2021",
-    thumb: slime_card_demo_default.a,
+    thumb: slime_card_demo_small_default.a,
     thumblink: "https://fortierpm-slime-card.netlify.app/",
     authors: [authorPeter],
     tags: [tagReact, tagSVG, tagCSS]
@@ -1410,7 +1406,7 @@ var projectsArrange = {
     title: "Absorb Demo",
     titlelink: "https://github.com/fortierpm/absorb-demo",
     date: "Aug 12, 2021",
-    thumb: absorb_demo_default.a,
+    thumb: absorb_demo_small_default.a,
     thumblink: "https://fortierpm-absorb-demo.netlify.app/",
     authors: [authorPeter],
     tags: [tagReact, tagSVG, tagCSS]
@@ -1418,7 +1414,7 @@ var projectsArrange = {
     title: "Advanced Dropdown Menu",
     titlelink: "https://github.com/fortierpm/advanced-dropdown",
     date: "Sep 12, 2021",
-    thumb: advanced_dropdown_default.a,
+    thumb: advanced_dropdown_small_default.a,
     thumblink: "https://fortierpm.github.io/advanced-dropdown/",
     authors: [authorPeter],
     tags: [tagReact, tagJS, tagCSS]
@@ -1427,7 +1423,7 @@ var projectsArrange = {
     title: "Personal Website v3 - Vanilla JS",
     titlelink: "https://github.com/fortierpm/fortierpmv3",
     date: "Mar 22, 2021",
-    thumb: fortierpmv3_default.a,
+    thumb: fortierpmv3_small_default.a,
     thumblink: "https://fortierpm.github.io/fortierpmv3/",
     authors: [authorPeter],
     tags: [tagJS, tagSCSS, tagHTML]
@@ -1435,7 +1431,7 @@ var projectsArrange = {
     title: "Dice Tower - Discord Bot",
     titlelink: "https://github.com/fortierpm/dice-tower",
     date: "Feb 1, 2022",
-    thumb: dice_tower_default.a,
+    thumb: dice_tower_small_default.a,
     thumblink: "https://github.com/fortierpm/dice-tower",
     authors: [authorPeter],
     tags: [tagDiscordBot, tagJS, tagReplit]
@@ -1443,7 +1439,7 @@ var projectsArrange = {
     title: "Animated Page Open",
     titlelink: "https://github.com/fortierpm/animated-open",
     date: "Jan 22, 2021",
-    thumb: animated_page_open_default.a,
+    thumb: animated_page_open_small_default.a,
     thumblink: "https://fortierpm.github.io/animated-open/",
     authors: [authorPeter],
     tags: [tagJS, tagGSAP, tagCSS]
@@ -1451,7 +1447,7 @@ var projectsArrange = {
     title: "Before-After Slider",
     titlelink: "https://github.com/fortierpm/before-after-slider",
     date: "Feb 27, 2021",
-    thumb: before_after_slider_default.a,
+    thumb: before_after_slider_small_default.a,
     thumblink: "https://fortierpm.github.io/before-after-slider/",
     authors: [authorPeter],
     tags: [tagJS, tagCSS, tagHTML]
@@ -1459,7 +1455,7 @@ var projectsArrange = {
     title: "Text Particles",
     titlelink: "https://github.com/fortierpm/text-particles",
     date: "Aug 23, 2021",
-    thumb: text_particles_default.a,
+    thumb: text_particles_small_default.a,
     thumblink: "https://fortierpm.github.io/text-particles/",
     authors: [authorPeter],
     tags: [tagJS, tagCSS, tagHTMLCanvas]
@@ -1467,7 +1463,7 @@ var projectsArrange = {
     title: "Constellations Demo",
     titlelink: "https://github.com/fortierpm/constellations-demo",
     date: "Aug 23, 2021",
-    thumb: constellations_demo_default.a,
+    thumb: constellations_demo_small_default.a,
     thumblink: "https://fortierpm.github.io/constellations-demo/",
     authors: [authorPeter],
     tags: [tagJS, tagCSS, tagHTMLCanvas]
@@ -1475,7 +1471,7 @@ var projectsArrange = {
     title: "Mouse Particles Animation",
     titlelink: "https://github.com/fortierpm/mouse-particles-animation",
     date: "Aug 23, 2021",
-    thumb: mouse_particles_default.a,
+    thumb: mouse_particles_small_default.a,
     thumblink: "https://fortierpm.github.io/mouse-particles-animation/",
     authors: [authorPeter],
     tags: [tagJS, tagCSS, tagHTMLCanvas]
@@ -1483,7 +1479,7 @@ var projectsArrange = {
     title: "Fluid Image Popups",
     titlelink: "https://github.com/fortierpm/fluid-popups",
     date: "Jan 22, 2021",
-    thumb: fluid_image_popups_default.a,
+    thumb: fluid_image_popups_small_default.a,
     thumblink: "https://fortierpm.github.io/fluid-popups/",
     authors: [authorPeter],
     tags: [tagJS, tagCSS, tagHTML]
@@ -1492,7 +1488,7 @@ var projectsArrange = {
     title: "Card Tricks (Fork)",
     titlelink: "https://github.com/fortierpm/card-tricks",
     date: "Sep 28, 2021",
-    thumb: card_tricks_default.a,
+    thumb: card_tricks_small_default.a,
     thumblink: "https://fortierpm.github.io/card-tricks/",
     authors: [authorJeff, authorPeter],
     tags: [tagCSS, tagHTML, tagSVG]
@@ -1500,7 +1496,7 @@ var projectsArrange = {
     title: "Animated Grid",
     titlelink: "https://github.com/fortierpm/animated-grid",
     date: "Sep 12, 2021",
-    thumb: animated_grid_default.a,
+    thumb: animated_grid_small_default.a,
     thumblink: "https://fortierpm.github.io/animated-grid/",
     authors: [authorPeter],
     tags: [tagCSS, tagHTML]
@@ -1508,7 +1504,7 @@ var projectsArrange = {
     title: "Animated Logo",
     titlelink: "https://github.com/fortierpm/animated-logo",
     date: "Jan 18, 2021",
-    thumb: animated_logo_default.a,
+    thumb: animated_logo_small_default.a,
     thumblink: "https://fortierpm.github.io/animated-logo/",
     authors: [authorPeter],
     tags: [tagCSS, tagSVG, tagHTML]
@@ -1516,7 +1512,7 @@ var projectsArrange = {
     title: "No JS Carousel",
     titlelink: "https://github.com/fortierpm/nojs-carousel",
     date: "Jan 23, 2021",
-    thumb: nojs_carousel_default.a,
+    thumb: nojs_carousel_small_default.a,
     thumblink: "https://fortierpm.github.io/nojs-carousel/",
     authors: [authorPeter],
     tags: [tagCSS, tagHTML]
@@ -1525,7 +1521,7 @@ var projectsArrange = {
     title: "Interactive London Guide",
     titlelink: "https://github.com/fortierpm/london-interactive-guide",
     date: "May 25, 2021",
-    thumb: london_interactive_guide_default.a,
+    thumb: london_interactive_guide_small_default.a,
     thumblink: "https://github.com/fortierpm/london-interactive-guide",
     authors: [authorPeter, authorJacob, authorElle],
     tags: [tagPython, tagTkinter, tagPillow]
@@ -1971,9 +1967,9 @@ var certificates_certificates = [{
   credentialURL: "https://freecodecamp.org/certification/fortierpm/responsive-web-design"
 }];
 /* harmony default export */ var constants_certificates = (certificates_certificates);
-// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/peterfortier.jpg
-var peterfortier = __webpack_require__(46);
-var peterfortier_default = /*#__PURE__*/__webpack_require__.n(peterfortier);
+// EXTERNAL MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/img/peterfortier-medium.png
+var peterfortier_medium = __webpack_require__(45);
+var peterfortier_medium_default = /*#__PURE__*/__webpack_require__.n(peterfortier_medium);
 
 // CONCATENATED MODULE: C:/Users/forti/LocalDirectories/JavaScript-React.js/_Personal Portfolio2/personal-portfolio/src/App.js
 
@@ -2111,7 +2107,7 @@ var App_App = function App() {
   }, /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "hero-face-img"
   }, /*#__PURE__*/external_react_default.a.createElement("img", {
-    src: peterfortier_default.a,
+    src: peterfortier_medium_default.a,
     alt: "Peter Fortier's image."
   })), /*#__PURE__*/external_react_default.a.createElement("div", {
     className: "hero-face-decoration"
@@ -2350,7 +2346,7 @@ var _react = __webpack_require__(0);
 
 var React = _interopRequireWildcard(_react);
 
-var _requireById = __webpack_require__(5);
+var _requireById = __webpack_require__(6);
 
 var _requireById2 = _interopRequireDefault(_requireById);
 
@@ -2678,146 +2674,140 @@ module.exports = require("@babel/runtime/helpers/defineProperty");
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/this-website.8c1b31a2.png";
+module.exports = __webpack_require__.p + "static/this-website-small.d8bf9016.jpg";
 
 /***/ }),
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/fortierpmv3-react.3ba90766.png";
+module.exports = __webpack_require__.p + "static/fortierpmv3-react-small.1de56529.jpg";
 
 /***/ }),
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/absorb-demo.f869faef.png";
+module.exports = __webpack_require__.p + "static/absorb-demo-small.749e5b86.jpg";
 
 /***/ }),
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/slime-card-demo.ebdc5d11.png";
+module.exports = __webpack_require__.p + "static/slime-card-demo-small.46b4fefe.jpg";
 
 /***/ }),
 /* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/advanced-dropdown.d4dfb0c1.png";
+module.exports = __webpack_require__.p + "static/advanced-dropdown-small.b930ee6c.jpg";
 
 /***/ }),
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/fortierpmv3.db718118.png";
+module.exports = __webpack_require__.p + "static/fortierpmv3-small.68f78b0b.jpg";
 
 /***/ }),
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/dice-tower.955d410c.png";
+module.exports = __webpack_require__.p + "static/dice-tower-small.bee6391a.jpg";
 
 /***/ }),
 /* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/animated-page-open.610ee66c.png";
+module.exports = __webpack_require__.p + "static/animated-page-open-small.78744719.jpg";
 
 /***/ }),
 /* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/before-after-slider.19c5ec2b.png";
+module.exports = __webpack_require__.p + "static/before-after-slider-small.cef6bc24.jpg";
 
 /***/ }),
 /* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/text-particles.23b0408a.png";
+module.exports = __webpack_require__.p + "static/text-particles-small.5b10731b.jpg";
 
 /***/ }),
 /* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/constellations-demo.23619777.png";
+module.exports = __webpack_require__.p + "static/constellations-demo-small.1d543717.jpg";
 
 /***/ }),
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/mouse-particles.ecb879ff.png";
+module.exports = __webpack_require__.p + "static/mouse-particles-small.bcee2c12.jpg";
 
 /***/ }),
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/fluid-image-popups.1b36bc39.png";
+module.exports = __webpack_require__.p + "static/fluid-image-popups-small.bc3bff04.jpg";
 
 /***/ }),
 /* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/card-tricks.874648c8.png";
+module.exports = __webpack_require__.p + "static/card-tricks-small.e88e46ee.jpg";
 
 /***/ }),
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/animated-grid.685344cd.png";
+module.exports = __webpack_require__.p + "static/animated-grid-small.c4f1caef.jpg";
 
 /***/ }),
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/animated-logo.ed228ef6.png";
+module.exports = __webpack_require__.p + "static/animated-logo-small.e0c6a5e8.jpg";
 
 /***/ }),
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/nojs-carousel.d32ab0f2.png";
+module.exports = __webpack_require__.p + "static/nojs-carousel-small.8e500f5a.jpg";
 
 /***/ }),
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/london-interactive-guide.1ed804e8.png";
+module.exports = __webpack_require__.p + "static/london-interactive-guide-small.30ebcb9a.jpg";
 
 /***/ }),
 /* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/peterfortier-logo-draw-zoom.4c5cc9be.png";
-
-/***/ }),
-/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
 
 /***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/peterfortier-medium.dc060d95.png";
+
+/***/ }),
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/peterfortier.95fa052f.jpg";
+__webpack_require__(47);
+__webpack_require__(49);
+module.exports = __webpack_require__(56);
+
 
 /***/ }),
 /* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(48);
-__webpack_require__(50);
-module.exports = __webpack_require__(57);
-
-
-/***/ }),
-/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(49)["default"];
+var plugins = __webpack_require__(48)["default"];
 
 var _require = __webpack_require__(13),
     registerPlugins = _require.registerPlugins;
@@ -2827,7 +2817,7 @@ registerPlugins(plugins);
 if (false) {}
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2843,7 +2833,7 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2853,7 +2843,7 @@ var plugins = [{
 var _require = __webpack_require__(13),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(51),
+var _require2 = __webpack_require__(50),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -2862,7 +2852,7 @@ registerTemplates(templates, notFoundTemplate);
 if (false) {}
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2874,7 +2864,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
+/* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_universal_component__WEBPACK_IMPORTED_MODULE_3__);
 
 
@@ -2918,7 +2908,7 @@ var notFoundTemplate = "__react_static_root__/node_modules/react-static/lib/brow
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -2947,7 +2937,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3158,14 +3148,14 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	".": 5,
-	"./": 5,
-	"./index": 5,
-	"./index.js": 5
+	".": 6,
+	"./": 6,
+	"./index": 6,
+	"./index.js": 6
 };
 
 
@@ -3186,10 +3176,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 54;
+webpackContext.id = 53;
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3299,7 +3289,7 @@ ReportChunks.propTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3314,7 +3304,7 @@ var _hoistNonReactStatics = __webpack_require__(16);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _index = __webpack_require__(6);
+var _index = __webpack_require__(7);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -3366,7 +3356,7 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 57 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3383,9 +3373,9 @@ exports["default"] = void 0;
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(58);
+var _useStaticInfo = __webpack_require__(57);
 
-var _Suspense = _interopRequireDefault(__webpack_require__(59));
+var _Suspense = _interopRequireDefault(__webpack_require__(58));
 /* eslint-disable import/no-dynamic-require */
 // Override the suspense module to be our own
 // This is expected to break when using preact
@@ -3396,7 +3386,7 @@ var _Suspense = _interopRequireDefault(__webpack_require__(59));
 React.Suspense = _Suspense["default"];
 React["default"].Suspense = _Suspense["default"];
 
-var App = __webpack_require__(62)["default"];
+var App = __webpack_require__(61)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -3409,13 +3399,13 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 58 */
+/* 57 */
 /***/ (function(module, exports) {
 
 module.exports = require("C:\\Users\\forti\\LocalDirectories\\JavaScript-React.js\\_Personal Portfolio2\\personal-portfolio\\node_modules\\react-static\\lib\\browser\\hooks\\useStaticInfo");
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3430,9 +3420,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(60));
+var _extends2 = _interopRequireDefault(__webpack_require__(59));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(61));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(60));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
@@ -3453,19 +3443,19 @@ var _default = Suspense;
 exports["default"] = _default;
 
 /***/ }),
-/* 60 */
+/* 59 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 61 */
+/* 60 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 62 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3502,10 +3492,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(63)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(62)(module)))
 
 /***/ }),
-/* 63 */
+/* 62 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -3535,7 +3525,7 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 64 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(11)(false);
@@ -3545,7 +3535,7 @@ exports.push([module.i, ".ido1 {\n  -webkit-animation: down-1 3s ease-in-out 1 f
 
 
 /***/ }),
-/* 65 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(11)(false);
@@ -3555,7 +3545,7 @@ exports.push([module.i, "\n*, *::before, *::after {\n  margin: 0;\n  padding: 0;
 
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(11)(false);
@@ -3565,7 +3555,7 @@ exports.push([module.i, ":root {\n  --fontsize-normal: 1rem;\n  --fontsize-title
 
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/project-thumb.8f10ca46.jpg";

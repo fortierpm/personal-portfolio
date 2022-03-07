@@ -25,7 +25,7 @@ import skills from "./constants/skills";
 import certificates from "./constants/certificates";
 
 // photos
-import peterfortierBack from "./img/peterfortier.jpg";
+import peterfortierBack from "./img/peterfortier-medium.png";
 
 
 // UNUSED(no delete):

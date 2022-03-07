@@ -2,35 +2,35 @@
 // Default Thumb
 import thumb1 from "../img/cardthumb/project-thumb.jpg";
 // React Thumbs
-import thumbThisWebsite from "../img/cardthumb/this-website.png";
-import thumbFortierpmv3React from "../img/cardthumb/fortierpmv3-react.png";
-import thumbAbsorbDemo from "../img/cardthumb/absorb-demo.png";
-import thumbSlimeCardDemo from "../img/cardthumb/slime-card-demo.png";
-import thumbAdvancedDrop from "../img/cardthumb/advanced-dropdown.png";
+import thumbThisWebsite from "../img/cardthumb/this-website-small.jpg";
+import thumbFortierpmv3React from "../img/cardthumb/fortierpmv3-react-small.jpg";
+import thumbAbsorbDemo from "../img/cardthumb/absorb-demo-small.jpg";
+import thumbSlimeCardDemo from "../img/cardthumb/slime-card-demo-small.jpg";
+import thumbAdvancedDrop from "../img/cardthumb/advanced-dropdown-small.jpg";
 // Javascript Thumbs
-import thumbFortierpmv3 from "../img/cardthumb/fortierpmv3.png";
-import thumbDiceTower from "../img/cardthumb/dice-tower.png";
-import thumbAnimOpen from "../img/cardthumb/animated-page-open.png";
-import thumbBeforeAfter from "../img/cardthumb/before-after-slider.png";
-import thumbTextParts from "../img/cardthumb/text-particles.png";
-import thumbConstellations from "../img/cardthumb/constellations-demo.png";
-import thumbMouseParts from "../img/cardthumb/mouse-particles.png";
-import thumbImagePopup from "../img/cardthumb/fluid-image-popups.png";
+import thumbFortierpmv3 from "../img/cardthumb/fortierpmv3-small.jpg";
+import thumbDiceTower from "../img/cardthumb/dice-tower-small.jpg";
+import thumbAnimOpen from "../img/cardthumb/animated-page-open-small.jpg";
+import thumbBeforeAfter from "../img/cardthumb/before-after-slider-small.jpg";
+import thumbTextParts from "../img/cardthumb/text-particles-small.jpg";
+import thumbConstellations from "../img/cardthumb/constellations-demo-small.jpg";
+import thumbMouseParts from "../img/cardthumb/mouse-particles-small.jpg";
+import thumbImagePopup from "../img/cardthumb/fluid-image-popups-small.jpg";
 // CSS Thumbs
-import thumbCardTricks from "../img/cardthumb/card-tricks.png";
-import thumbAnimGrid from "../img/cardthumb/animated-grid.png";
-import thumbAnimLogo from "../img/cardthumb/animated-logo.png";
-import thumbNoJSCarousel from "../img/cardthumb/nojs-carousel.png";
+import thumbCardTricks from "../img/cardthumb/card-tricks-small.jpg";
+import thumbAnimGrid from "../img/cardthumb/animated-grid-small.jpg";
+import thumbAnimLogo from "../img/cardthumb/animated-logo-small.jpg";
+import thumbNoJSCarousel from "../img/cardthumb/nojs-carousel-small.jpg";
 // Python Thumbs
-import thumbLondon from "../img/cardthumb/london-interactive-guide.png";
+import thumbLondon from "../img/cardthumb/london-interactive-guide-small.jpg";
 // Graphics Thumbs
 // Art Thumbs
 
 
 // Author Profile Images
 import peterFortier from "../img/peterfortier-logo-draw-zoom.png";
-import jacobMerrick from "../img/author.jpg";
-import elleMiller from "../img/author.jpg";
+import jacobMerrick from "../img/peterfortier-logo-draw-zoom.png";
+import elleMiller from "../img/peterfortier-logo-draw-zoom.png";
 import jeffDelaney from "../img/fireship.png";
 
 
