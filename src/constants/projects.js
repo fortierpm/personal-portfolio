@@ -28,7 +28,7 @@ import thumbLondon from "../img/cardthumb/london-interactive-guide.png";
 
 
 // Author Profile Images
-import peterFortier from "../img/peterfortier-small.jpg";
+import peterFortier from "../img/peterfortier-logo-draw-zoom.png";
 import jacobMerrick from "../img/author.jpg";
 import elleMiller from "../img/author.jpg";
 import jeffDelaney from "../img/fireship.png";

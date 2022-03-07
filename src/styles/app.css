@@ -82,6 +82,7 @@
     0px 4.5px 8.3px rgba(0, 0, 0, 0.119),
     0px 8.4px 15.5px rgba(0, 0, 0, 0.144),
     0px 20px 37px rgba(0, 0, 0, 0.2);
+  --avatar-shadow: 0 2px 10px rgba(0, 0, 0, 0.226);
   --image-darken: brightness(100%);
 }
 
@@ -111,7 +112,7 @@
   --col-navtext: #eeeeee;
   --col-nav-hover: #7a7a8c;
   --col-navtitle: #7a7a8c;
-  --col-card-title: #eeeeef;
+  --col-card-title: #e1e1e3;
   --col-card-textprim: #eeeeee;
   --col-card-textsup: #7a7a8c;
   --col-card-thinborder: #7a7a8c;
@@ -148,7 +149,8 @@
     0px 0px 22.3px rgba(0, 0, 0, 0.107),
     0px 0px 41.8px rgba(0, 0, 0, 0.129),
     0px 0px 100px rgba(0, 0, 0, 0.18);
-  --image-darken: brightness(90%);
+  --avatar-shadow: 0 2px 10px rgba(0, 0, 0, 0.384);
+  --image-darken: brightness(75%);
 }
 
 body {
@@ -931,8 +933,8 @@ main {
   overflow: hidden;
   height: 3.125rem;
   width: 3.125rem;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.377);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.377);
+  -webkit-box-shadow: var(--avatar-shadow);
+          box-shadow: var(--avatar-shadow);
 }
 
 .avatar-img {
