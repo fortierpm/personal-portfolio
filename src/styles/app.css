@@ -10,6 +10,13 @@
   --add-margin-left: 2rem;
   --main-margin-left: calc(var(--logo-pad-total) + var(--logo-width) + var(--add-margin-left));
   --main-margin-right: 5rem;
+  --card-standard: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --card-standard: min(3vh, 2rem);
+  }
 }
 
 .lightmode {
@@ -819,7 +826,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem var(--main-margin-right) 2rem var(--main-margin-left);
+  padding: calc(var(--card-standard) * 2) var(--main-margin-right) 2rem var(--main-margin-left);
   overflow-x: scroll;
 }
 
@@ -838,12 +845,12 @@ main {
 }
 
 .project-card {
-  height: 22rem;
-  width: 20rem;
-  min-width: 16rem;
+  height: calc(var(--card-standard) * 22);
+  width: calc(var(--card-standard) * 20);
+  min-width: calc(var(--card-standard) * 16);
   margin: 0;
-  padding: 1.5rem;
-  border-radius: 1rem;
+  padding: calc(var(--card-standard) * 1.5);
+  border-radius: calc(var(--card-standard) * 1);
   background: var(--bg-card);
   -webkit-box-shadow: var(--shadow-card);
           box-shadow: var(--shadow-card);
@@ -863,34 +870,35 @@ main {
 
 /* ~ is used to select all sibling .cards after the focused or hovered .card */
 .project-card:focus-within ~ .project-card, .project-card:hover ~ .project-card {
-  -webkit-transform: translateX(4rem);
-          transform: translateX(4rem);
+  -webkit-transform: translateX(calc(var(--card-standard) * 4));
+          transform: translateX(calc(var(--card-standard) * 4));
 }
 
 .project-card:hover {
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+  -webkit-transform: translateY(calc(var(--card-standard) * (-1)));
+          transform: translateY(calc(var(--card-standard) * (-1)));
 }
 
 /* set stacked spacing style for all .cards (excluding the first .card) */
 .project-card:not(:first-child) {
-  margin-left: -4rem;
+  margin-left: calc(var(--card-standard) * (-4));
 }
 
 .card-title {
-  margin-bottom: 0.4rem;
+  margin-bottom: calc(var(--card-standard) * 0.4);
 }
 
-.card-title h3 {
+.card-h3 {
+  font-size: calc(var(--card-standard) * 1.17);
   color: var(--col-card-title);
 }
 
-.card-title h3 a {
+.card-h3 a {
   text-decoration: none;
 }
 
 .card-date {
-  font-size: var(--fontsize-detail);
+  font-size: calc(var(--card-standard) * 0.8);
   color: var(--col-card-textsup);
 }
 
@@ -898,7 +906,7 @@ main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  height: 3.125rem;
+  height: calc(var(--card-standard) * 3.125);
   -webkit-filter: var(--image-darken);
           filter: var(--image-darken);
 }
@@ -909,7 +917,7 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0.2rem;
+  border-radius: calc(var(--card-standard) * 0.2);
   -webkit-box-shadow: 0px 0.6px 1.7px rgba(0, 0, 0, 0.037), 0px 1.3px 4.1px rgba(0, 0, 0, 0.053), 0px 2.5px 7.6px rgba(0, 0, 0, 0.065), 0px 4.5px 13.6px rgba(0, 0, 0, 0.077), 0px 8.4px 25.5px rgba(0, 0, 0, 0.093), 0px 20px 61px rgba(0, 0, 0, 0.13);
           box-shadow: 0px 0.6px 1.7px rgba(0, 0, 0, 0.037), 0px 1.3px 4.1px rgba(0, 0, 0, 0.053), 0px 2.5px 7.6px rgba(0, 0, 0, 0.065), 0px 4.5px 13.6px rgba(0, 0, 0, 0.077), 0px 8.4px 25.5px rgba(0, 0, 0, 0.093), 0px 20px 61px rgba(0, 0, 0, 0.13);
 }
@@ -918,7 +926,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem 0 0.7rem;
+  margin: calc(var(--card-standard)*1) 0 calc(var(--card-standard)*0.7);
   color: var(--col-card-textprim);
 }
 
@@ -931,8 +939,8 @@ main {
 .author1-avatar {
   border-radius: 50%;
   overflow: hidden;
-  height: 3.125rem;
-  width: 3.125rem;
+  height: calc(var(--card-standard) * 3.125);
+  width: calc(var(--card-standard) * 3.125);
   -webkit-box-shadow: var(--avatar-shadow);
           box-shadow: var(--avatar-shadow);
 }
@@ -947,19 +955,20 @@ main {
 }
 
 .author-list {
-  margin-left: 1rem;
+  margin-left: calc(var(--card-standard) * 1);
   color: var(--col-card-textprim);
 }
 
 .author-prefix {
   color: var(--col-card-textsup);
-  font-size: var(--fontsize-detail);
+  font-size: calc(var(--card-standard) * 0.8);
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .author-link {
   text-decoration: none;
+  font-size: calc(var(--card-standard) *1);
 }
 
 .card-tags {
@@ -975,12 +984,12 @@ main {
 }
 
 .tag-link {
-  font-size: var(--fontsize-detail);
+  font-size: calc(var(--card-standard)* 0.8);
   text-decoration: none;
-  padding: 0.1rem 0.4rem;
-  margin-right: 0.4rem;
-  margin-top: 0.3rem;
-  border-radius: 1rem;
+  padding: calc(var(--card-standard)*0.1) calc(var(--card-standard)*0.4);
+  margin-right: calc(var(--card-standard) * 0.4);
+  margin-top: calc(var(--card-standard) * 0.3);
+  border-radius: calc(var(--card-standard) * 1);
   background: var(--col-card-tagbg);
   border: var(--border-carddetails);
 }

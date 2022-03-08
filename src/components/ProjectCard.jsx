@@ -6,7 +6,7 @@ const ProjectCard = ({ project, year, month, day }) => {
     <article className="project-card">
       <div className="card-title">
         <p className="card-date"><time dateTime={`${year}-${month}-${day}`}>{project.date}</time></p>
-        <h3><a href={project.titlelink}>{project.title}</a></h3>
+        <h3 className="card-h3"><a href={project.titlelink}>{project.title}</a></h3>
       </div>
       <a className="card-thumb-a" href={project.thumblink}><img className="card-thumb" src={project.thumb} alt="Project thumbnail" /></a>
       <address className={`card-authorship ${singleAuthor ? "single" : ""}`}>

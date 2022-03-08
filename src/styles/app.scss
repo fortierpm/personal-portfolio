@@ -12,6 +12,14 @@
   --add-margin-left: 2rem;
   --main-margin-left: calc(var(--logo-pad-total) + var(--logo-width) + var(--add-margin-left));
   --main-margin-right: 5rem;
+
+  --card-standard: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --card-standard: min(3vh, 2rem);
+  }
 }
 
 .lightmode {
@@ -697,7 +705,7 @@ main {
 .card-stack {
   display: flex;
   align-items: center;
-  padding: 2rem var(--main-margin-right) 2rem var(--main-margin-left);
+  padding: calc(var(--card-standard) * 2) var(--main-margin-right) 2rem var(--main-margin-left);
   overflow-x: scroll;
 
   &::-webkit-scrollbar {
@@ -714,12 +722,17 @@ main {
   }
 }
 .project-card {
-  height: 22rem; // ~350px
-  width: 20rem; // 400px; max-width
-  min-width: 16rem; // ~250px; effective width w/ crowding multiple cards
+  // height: 22rem; // ~350px
+  height: calc(var(--card-standard) * 22);
+  // width: 20rem; // 400px; max-width
+  width: calc(var(--card-standard) * 20);
+  // min-width: 16rem; // ~250px; effective width w/ crowding multiple cards
+  min-width: calc(var(--card-standard) * 16);
   margin: 0;
-  padding: 1.5rem;
-  border-radius: 1rem;
+  // padding: 1.5rem;
+  padding: calc(var(--card-standard) * 1.5);
+  // border-radius: 1rem;
+  border-radius: calc(var(--card-standard) * 1);
   background: var(--bg-card);
   box-shadow: var(--shadow-card);
   display: flex;
@@ -731,34 +744,40 @@ main {
 }
 /* ~ is used to select all sibling .cards after the focused or hovered .card */
 .project-card:focus-within~.project-card, .project-card:hover~.project-card {
-  transform: translateX(4rem);
+  // transform: translateX(4rem);
+  transform: translateX(calc(var(--card-standard) * 4));
 }
 .project-card:hover {
-  transform: translateY(-1rem);
+  // transform: translateY(-1rem);
+  transform: translateY(calc(var(--card-standard) * (-1)));
 }
 /* set stacked spacing style for all .cards (excluding the first .card) */
 .project-card:not(:first-child) {
-  margin-left: -4rem;
+  // margin-left: -4rem;
+  margin-left: calc(var(--card-standard) * (-4));
 }
 
 .card-title {
-  margin-bottom: 0.4rem;
+  // margin-bottom: 0.4rem;
+  margin-bottom: calc(var(--card-standard) * 0.4);
+}
+.card-h3 {
+  font-size: calc(var(--card-standard) * 1.17);
+  color: var(--col-card-title);
 
-  h3 {
-    color: var(--col-card-title);
-
-    a {
-      text-decoration: none;
-    }
+  a {
+    text-decoration: none;
   }
 }
 .card-date {
-  font-size: var(--fontsize-detail);
+  // font-size: var(--fontsize-detail);
+  font-size: calc(var(--card-standard) * 0.8);
   color: var(--col-card-textsup);
 }
 .card-thumb-a {
   flex-grow: 1;
-  height: 3.125rem; // overridden by flex-grow
+  // height: 3.125rem; // overridden by flex-grow
+  height: calc(var(--card-standard) * 3.125); // overridden by flex-grow
   filter: var(--image-darken);
 }
 .card-thumb {
@@ -768,7 +787,8 @@ main {
   //height: 3.125rem; // overridden by flex-grow
   object-fit: cover;
   // flex-grow: 1;
-  border-radius: 0.2rem;
+  // border-radius: 0.2rem;
+  border-radius: calc(var(--card-standard) * 0.2);
   //border: 1px solid white;
   box-shadow:
     0px 0.6px 1.7px rgba(0, 0, 0, 0.037),
@@ -780,7 +800,8 @@ main {
 }
 .card-authorship {
   display: flex;
-  margin: 1rem 0 0.7rem;
+  // margin: 1rem 0 0.7rem;
+  margin: calc(var(--card-standard)*1) 0 calc(var(--card-standard)*0.7);
   color: var(--col-card-textprim);
 
   &.single {
@@ -790,8 +811,10 @@ main {
 .author1-avatar {
   border-radius: 50%;
   overflow: hidden;
-  height: 3.125rem;
-  width: 3.125rem;
+  // height: 3.125rem;
+  height: calc(var(--card-standard) * 3.125);
+  // width: 3.125rem;
+  width: calc(var(--card-standard) * 3.125);
   box-shadow: var(--avatar-shadow);
 }
 .avatar-img {
@@ -801,17 +824,20 @@ main {
   filter: var(--image-darken);
 }
 .author-list {
-  margin-left: 1rem;
+  // margin-left: 1rem;
+  margin-left: calc(var(--card-standard) * 1);
   color: var(--col-card-textprim);
 }
 .author-prefix {
   color: var(--col-card-textsup);
-  font-size: var(--fontsize-detail);
+  // font-size: var(--fontsize-detail);
+  font-size: calc(var(--card-standard) * 0.8);
   text-transform: uppercase;
   font-weight: 700;
 }
 .author-link {
   text-decoration: none;
+  font-size: calc(var(--card-standard) *1);
 }
 
 .card-tags {
@@ -821,18 +847,19 @@ main {
   color: var(--col-card-tagtext);
 }
 .tag-link {
-  font-size: var(--fontsize-detail);
+  // font-size: var(--fontsize-detail);
+  font-size: calc(var(--card-standard)* 0.8);
   text-decoration: none;
-  padding: 0.1rem 0.4rem;
-  margin-right: 0.4rem;
-  margin-top: 0.3rem;
-  border-radius: 1rem;
+  // padding: 0.1rem 0.4rem; // Intentionally not --card-standard based
+  padding: calc(var(--card-standard)*0.1) calc(var(--card-standard)*0.4); 
+  // margin-right: 0.4rem; // Intentionally not --card-standard based
+  margin-right: calc(var(--card-standard) * 0.4);
+  // margin-top: 0.3rem;
+  margin-top: calc(var(--card-standard) * 0.3);
+  // border-radius: 1rem; // Intentionally not --card-standard based
+  border-radius: calc(var(--card-standard) * 1);
   background: var(--col-card-tagbg);
   border: var(--border-carddetails);
-
-  // &:last-of-type {
-  //   margin-top: 0.3rem;
-  // }
 }
 
 
