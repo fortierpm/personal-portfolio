@@ -737,7 +737,7 @@ main {
   box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
-  transition: all .2s ease;
+  transition: transform .2s ease;
   scroll-snap-align: start;
   clear: both;
   position: relative;
