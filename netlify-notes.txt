@@ -1,5 +1,13 @@
+To initiate deploys to netlify for a new repository
+- Open powershell OR cmd
+- Enter command `npx netlify-cli deploy`
+- Navigate
+- Navigate to search website and enter `[netlify website URL]`
+- Continue
+
 To deploy builds to netlify:
 - Open a Command Prompt terminal (cmd)
 - Enter command `netlify deploy --prod`
   * Use command `netlify -h` to get help
+- Type `dist` branch for deploy
   

@@ -16,7 +16,7 @@
   --card-standard: 1rem;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   :root {
     --card-standard: min(3vh, 2rem);
   }
